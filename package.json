@@ -1,0 +1,19 @@
+{
+  "name": "rewind",
+  "version": "1.0.0",
+  "description": "Models Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adviceinteractivegroup/rewind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adviceinteractivegroup/rewind/issues"
+  },
+  "homepage": "https://github.com/adviceinteractivegroup/rewind#readme"
+}
