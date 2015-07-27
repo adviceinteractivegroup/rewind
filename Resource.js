@@ -70,7 +70,7 @@ module.exports = {
     }
   },
 
-  afterUpdate(values, next) {
+  beforeUpdate(values, next) {
     if (values.used && values.limit && !values.available) {
       values.available = values.limit - values.used;
     }

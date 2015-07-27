@@ -25,6 +25,14 @@ module.exports = {
       type: 'datetime',
       defaultsTo: null
     },
+    errorCount: {
+      type: 'integer',
+      defaultsTo: 0
+    },
+    invalid: {
+      type: 'boolean',
+      defaultsTo: false
+    },
 
     client: {
       model: 'client',
