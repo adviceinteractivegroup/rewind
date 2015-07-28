@@ -14,9 +14,12 @@ module.exports = {
       type: 'string',
       required: true,
       enum: [
-        'georanker',
-        'yahoo-local',
-        'bing-local'
+        'google',
+        'googleLocal',
+        'bing',
+        'bingLocal',
+        'yahoo',
+        'yahooLocal'
       ]
     },
     lastAttempt: {
@@ -26,6 +29,14 @@ module.exports = {
     lastSuccess: {
       type: 'datetime',
       defaultsTo: null
+    },
+    errorCount: {
+      type: 'integer',
+      defaultsTo: 0
+    },
+    invalid: {
+      type: 'boolean',
+      defaultsTo: false
     },
 
     client: {
