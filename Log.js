@@ -16,6 +16,11 @@ module.exports = {
     details: {
       type: 'string',
       required: true
+    },
+
+    type: {
+      type: 'string',
+      defaultsTo: 'Unknown Error'
     }
   }
 };
