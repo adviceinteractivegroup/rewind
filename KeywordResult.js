@@ -14,6 +14,10 @@ module.exports = {
         'yahooLocal'
       ]
     },
+    data: {
+      type: 'json',
+      object: true
+    },
     position: {
       type: 'int',
       int: true
