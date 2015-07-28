@@ -2,7 +2,7 @@
 
 module.exports = {
   attributes: {
-    engine: {
+    provider: {
       type: 'string',
       required: true,
       enum: [
