@@ -40,6 +40,10 @@ module.exports = {
       type: 'string',
       url: true
     },
+    phone: {
+      type: 'string',
+      required: true
+    },
     active: {
       type: 'boolean',
       defaultsTo: true
