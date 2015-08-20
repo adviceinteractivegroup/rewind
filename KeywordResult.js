@@ -44,7 +44,7 @@ module.exports = {
     },
     reportId: {
       type: 'string'
-    }
+    },
 
     keyword: {
       model: 'keyword',
