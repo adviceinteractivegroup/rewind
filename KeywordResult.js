@@ -38,6 +38,13 @@ module.exports = {
       type: 'datetime',
       defaultsTo: null
     },
+    pending: {
+      type: 'boolean',
+      defaultsTo: false
+    },
+    reportId: {
+      type: 'string'
+    }
 
     keyword: {
       model: 'keyword',
