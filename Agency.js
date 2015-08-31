@@ -21,6 +21,11 @@ module.exports = {
       model: 'agency'
     },
 
+    users: {
+      collection: 'user',
+      via: 'agency'
+    },
+
     modules: {
       collection: 'agencyModule',
       via: 'agency',
