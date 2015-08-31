@@ -10,8 +10,7 @@ module.exports = {
     },
     email: {
       type: 'string',
-      required: true,
-      email: true
+      required: true
     },
     password: {
       type: 'string',
@@ -35,12 +34,12 @@ module.exports = {
       delete obj.password;
       delete obj.salt;
       return obj;
-    }
+    } 
   },
-  beforeCreate: function (values, cb) {
+  beforeValidate: function (values, cb) {
     var hrtime = process.hrtime();
-    values.salt = md5.digest_s(hrtime + "warpath forever!");
+    values.salt = md5(hrtime + "warpath forever!");
     cb();
-  }
-
-};
+  } 
+    
+};  
