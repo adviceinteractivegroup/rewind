@@ -26,6 +26,12 @@ module.exports = {
       via: 'agency'
     },
 
+    deactivated: {
+      type: 'string',
+      enum: ['false','true'],
+      defaultsTo: 'false'
+    },
+
     modules: {
       collection: 'agencyModule',
       via: 'agency',
