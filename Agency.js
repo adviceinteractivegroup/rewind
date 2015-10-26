@@ -40,6 +40,11 @@ module.exports = {
     reportingList: {
       collection: 'reportingList',
       via: 'agency'
+    },
+    type: {
+      type: 'string',
+      enum: ['retail','reseller','enterprise'],
+      defaultsTo: 'retail'
     }
   }
 };
