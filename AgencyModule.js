@@ -17,8 +17,7 @@ module.exports = {
     },
 
     agency: {
-      model: 'agency',
-      required: true
+      model: 'agency'
     }
   }
 };
