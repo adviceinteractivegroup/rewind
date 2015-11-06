@@ -51,7 +51,8 @@ module.exports = {
     clientId: {
       type: 'int',
       required: true,
-      int: true
+      int: true,
+      index: true
     },
 
     agency: {

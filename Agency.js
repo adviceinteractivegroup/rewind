@@ -9,12 +9,14 @@ module.exports = {
     domain: {
       type: 'string',
       required: true,
-      url: true
+      url: true,
+      index: true
     },
     partnerId: {
       type: 'int',
       required: true,
-      int: true
+      int: true,
+      index: true
     },
 
     parent: {
