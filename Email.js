@@ -12,7 +12,8 @@ module.exports = {
 
     projectId: {
       type: 'integer',
-      required: true
+      required: true,
+      index: true
     },
     email: {
       type: 'string',
