@@ -14,7 +14,6 @@ module.exports = {
     },
     partnerId: {
       type: 'int',
-      required: true,
       int: true,
       index: true
     },
