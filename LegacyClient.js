@@ -138,6 +138,11 @@ module.exports = {
     notes: {
       type: 'string',
       columnName: 'd25'
+    },
+
+    deleted: {
+      type: 'string',
+      enum: ['false','true']
     }
 
   }
