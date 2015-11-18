@@ -44,7 +44,7 @@ module.exports = {
     },
 
     website: {
-      type: 'string'
+      type: 'string',
       columnName: 'd9'
     },
     email: {

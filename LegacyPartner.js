@@ -39,12 +39,14 @@ module.exports = {
       defaultsTo: 'false'
     },
     apiKey: {
-      type: 'string'
+      type: 'string',
+      columnName: 'api_key'
     },
     type: {
       type: 'string',
       enum: ['retail','reseller','enterprise'],
-      defaultsTo: 'retail'
+      defaultsTo: 'retail',
+      columnName: 'pay_type'
     }
   }
 };  
