@@ -1,7 +1,5 @@
 'use strict';
 
-var md5 = require('md5');
-
 module.exports = {
 	connection: 'mysql',
   autoCreatedAt: false,
