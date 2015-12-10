@@ -50,7 +50,6 @@ module.exports = {
     },
     clientId: {
       type: 'int',
-      required: true,
       int: true,
       index: true
     },
