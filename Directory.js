@@ -13,6 +13,7 @@ let directoryModel = {
     },
     module: {
       type: 'string',
+      unique: true,
       required: true
     },
     country: {
