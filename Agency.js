@@ -10,7 +10,14 @@ module.exports = {
       type: 'string',
       required: true,
       url: true,
-      index: true
+      index: true,
+      unique: true
+    },
+    domainCustomer: {
+      type: 'string',
+      url: true,
+      index: true,
+      unique: true
     },
     partnerId: {
       type: 'int',
