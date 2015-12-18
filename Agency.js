@@ -28,9 +28,8 @@ module.exports = {
     },
 
     deactivated: {
-      type: 'string',
-      enum: ['false','true'],
-      defaultsTo: 'false'
+      type: 'boolean',
+      defaultsTo: false
     },
 
     modules: {
