@@ -8,7 +8,7 @@ let model = {
     },
     isGlobal: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: true
     },
 
     agency: {
