@@ -28,7 +28,7 @@ module.exports = {
       required: true
     },
     errors: {
-      type: 'boolean'
+      type: 'boolean',
       defaultsTo: false
     },
     results: {
