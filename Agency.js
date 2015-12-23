@@ -20,7 +20,7 @@ module.exports = {
       unique: true
     },
     partnerId: {
-      type: 'int',
+      type: 'integer',
       int: true,
       index: true
     },

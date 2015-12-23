@@ -49,7 +49,7 @@ module.exports = {
       defaultsTo: true
     },
     clientId: {
-      type: 'int',
+      type: 'integer',
       int: true,
       index: true
     },

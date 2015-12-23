@@ -41,12 +41,12 @@ let model = {
       url: true
     },
     baseScore: {
-      type: 'int',
+      type: 'integer',
       int: true,
       defaultsTo: null
     },
     currentScore: {
-      type: 'int',
+      type: 'integer',
       int: true,
       defaultsTo: null
     },

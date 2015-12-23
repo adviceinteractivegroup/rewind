@@ -3,22 +3,22 @@
 let model = {
   attributes: {
     nameScore: {
-      type: 'int',
+      type: 'integer',
       int: true,
       defaultsTo: null
     },
     addressScore: {
-      type: 'int',
+      type: 'integer',
       int: true,
       defaultsTo: null
     },
     phoneScore: {
-      type: 'int',
+      type: 'integer',
       int: true,
       defaultsTo: null
     },
     score: {
-      type: 'int',
+      type: 'integer',
       int: true,
       defaultsTo: null
     },

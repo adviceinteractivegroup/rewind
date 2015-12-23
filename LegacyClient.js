@@ -64,15 +64,11 @@ module.exports = {
     },
 
     years: {
-      type: 'int',
+      type: 'integer',
       columnName: 'd11'
     },
     description: {
-      type: 'int',
-      columnName: 'd12'
-    },
-    description: {
-      type: 'int',
+      type: 'integer',
       columnName: 'd12'
     },
     payment: {

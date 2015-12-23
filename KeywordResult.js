@@ -19,7 +19,7 @@ module.exports = {
       object: true
     },
     position: {
-      type: 'int',
+      type: 'integer',
       int: true
     },
     error: {
