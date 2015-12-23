@@ -44,6 +44,9 @@ module.exports = {
       via: 'agency',
       required: true
     },
+    reportingListDefault: {
+      model: 'reportingList'
+    },
     reportingLists: {
       collection: 'reportingList',
       via: 'agency'
