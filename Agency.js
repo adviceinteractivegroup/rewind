@@ -39,6 +39,15 @@ module.exports = {
       defaultsTo: false
     },
 
+    invoiced: {
+      type: 'boolean',
+      defaultsTo: false
+    },
+
+    apiKey: {
+      type: 'string'
+    },
+
     modules: {
       collection: 'agencyModule',
       via: 'agency',
