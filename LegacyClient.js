@@ -15,6 +15,10 @@ module.exports = {
       type: 'string',
       columnName: 'd1'
     },
+    partner: {
+      type: 'string',
+      columnName: 'user'
+    },
     street: {
       type: 'string',
       columnName: 'd3'
