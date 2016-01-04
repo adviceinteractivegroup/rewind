@@ -4,6 +4,7 @@ module.exports = {
   attributes: {
     jobs: {
       type: 'integer',
+      defaultsTo: 0,
       required: true
     },
     client: {
