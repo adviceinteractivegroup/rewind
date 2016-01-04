@@ -31,6 +31,10 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false
     },
+    elapsedTime: {
+      type: 'integer',
+      columnName: 'elapsed_ms'
+    },
     results: {
       type: 'boolean',
       defaultsTo: false
