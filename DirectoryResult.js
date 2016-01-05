@@ -38,12 +38,19 @@ let model = {
       type: 'datetime',
       defaultsTo: null
     },
-
+    elapsedTime: {
+      type: 'integer',
+      columnName: 'elapsed_ms'
+    },
     client: {
       model: 'client'
     },
     competitor: {
       model: 'clientCompetitor'
+    },
+    directoryName: {
+      type: 'string',
+      required: true
     },
     directory: {
       model: 'directory',
