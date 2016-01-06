@@ -141,8 +141,11 @@ module.exports = {
     deleted: {
       type: 'string',
       enum: ['false','true']
+    },
+    createdAt: {
+      type: 'datetime',
+      columnName: 'since'
     }
-
   }
 };  
 
