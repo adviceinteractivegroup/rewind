@@ -30,7 +30,8 @@ module.exports = {
     role: {
       type: 'string',
       enum: ['admin','agent','manager','sales','staff'],
-      defaultsTo: 'admin'
+      defaultsTo: 'admin',
+      columnName: 'utype'
     }
   }
 };  
