@@ -23,6 +23,10 @@ module.exports = {
       type: 'string',
       columnName: 'last'
     },
+    email: {
+      type: 'string',
+      required: true
+    },
     password: {
       type: 'string',
       columnNmae: 'password'
