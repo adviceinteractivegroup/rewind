@@ -13,6 +13,9 @@ module.exports = {
     },
     data: {
       type: 'json'
+    },
+    description: {
+      type: 'string'
     }
   }
 };
