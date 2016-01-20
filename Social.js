@@ -9,7 +9,8 @@ module.exports = {
         'google',
         'twitter',
         'facebook',
-        'linkedin'
+        'linkedin',
+        'foursquare'
       ]
     },
     link: {
