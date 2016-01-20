@@ -63,7 +63,7 @@ module.exports = {
       collection: 'keyword',
       via: 'client'
     },
-    social: {
+    socials: {
       collection: 'social',
       via: 'client'
     },
