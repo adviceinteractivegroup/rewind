@@ -53,8 +53,7 @@ let model = {
       required: true
     },
     directory: {
-      model: 'directory',
-      required: true
+      model: 'directory'
     }
   }
 };

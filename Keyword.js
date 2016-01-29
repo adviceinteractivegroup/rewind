@@ -40,8 +40,7 @@ module.exports = {
     },
 
     client: {
-      model: 'client',
-      required: true
+      model: 'client'
     }
   }
 };

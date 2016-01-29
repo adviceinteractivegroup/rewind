@@ -8,8 +8,7 @@ module.exports = {
       required: true
     },
     client: {
-      model: 'client',
-      index: true
+      model: 'client'
     },
     data: {
       type: 'json'

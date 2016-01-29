@@ -22,8 +22,7 @@ module.exports = {
       required: true
     },
     agency: {
-      model: 'agency',
-      required: true
+      model: 'agency'
     },
     type: {
       type: 'string',

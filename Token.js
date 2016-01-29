@@ -4,8 +4,7 @@ module.exports = {
 
   attributes: {
     user: {
-      model: 'user',
-      required: true
+      model: 'user'
     },
     ipAddress: {
       type: 'string'

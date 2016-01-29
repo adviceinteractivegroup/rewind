@@ -16,8 +16,7 @@ let model = {
       model: 'client'
     },
     directory: {
-      model: 'directory',
-      required: true
+      model: 'directory'
     }
   }
 };

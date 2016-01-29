@@ -47,12 +47,10 @@ module.exports = {
     },
 
     keyword: {
-      model: 'keyword',
-      required: true
+      model: 'keyword'
     },
     client: {
-      model: 'client',
-      required: true
+      model: 'client'
     }
   }
 };

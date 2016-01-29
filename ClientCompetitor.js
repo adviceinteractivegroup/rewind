@@ -52,8 +52,7 @@ let model = {
     },
 
     client: {
-      required: true,
-      model: 'client'
+      required: true
     },
 
     directoryResults: {

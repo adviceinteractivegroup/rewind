@@ -34,10 +34,8 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false
     },
-
     client: {
-      model: 'client',
-      required: true
+      model: 'client'
     }
   }
 };

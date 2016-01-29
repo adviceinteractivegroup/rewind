@@ -34,12 +34,10 @@ module.exports = {
     },
 
     social: {
-      model: 'social',
-      required: true
+      model: 'social'
     },
     client: {
-      model: 'client',
-      required: true
+      model: 'client'
     }
   }
 };
