@@ -19,6 +19,10 @@ module.exports = {
       type: 'string',
       columnName: 'previous'
     },
+    data_initial: {
+      type: 'string',
+      columnName: 'actual'
+    },
     type: {
       type: 'string',
       enum: ['local','directory','ranking','social','reputation','website','citations','competitor','cancelled'],
