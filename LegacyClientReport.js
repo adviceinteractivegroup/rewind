@@ -22,7 +22,8 @@ module.exports = {
     type: {
       type: 'string',
       enum: ['local','directory','ranking','social','reputation','website','citations','competitor','cancelled'],
-      required: true
+      required: true,
+      columnName: 'module'
     }
   }
 };  
