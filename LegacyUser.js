@@ -29,7 +29,7 @@ module.exports = {
     },
     password: {
       type: 'string',
-      columnNmae: 'password'
+      columnName: 'password'
     },
     role: {
       type: 'string',
