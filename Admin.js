@@ -9,7 +9,7 @@ module.exports = {
       required: true,
       index: true
     },
-    apiKey: {
+    token: {
       type: 'string',
       required: true,
       index: true
