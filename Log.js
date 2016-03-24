@@ -8,19 +8,18 @@
 
 module.exports = {
   attributes: {
-    server: {
+    level: {
+      type: 'string',
+      required: true,
+      enum: ['error','info','debug','warn'],
+      defaultsTo: 'error'
+    },
+    service: {
       type: 'string',
       required: true
     },
-
-    details: {
-      type: 'string',
-      required: true
-    },
-
-    type: {
-      type: 'string',
-      defaultsTo: 'Unknown Error'
+    data: {
+      type: 'json'
     }
   }
 };
