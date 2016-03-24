@@ -13,6 +13,9 @@ module.exports = {
     data: {
       type: 'json'
     },
+    details: {
+      type: 'json'
+    },
     description: {
       type: 'string'
     }
