@@ -27,10 +27,8 @@ module.exports = {
       type: 'string',
       required: true
     },
-    type: {
-      type: 'string',
-      enum: ['mandrill','ses'],
-      defaultsTo: 'mandrill'
+    s3: {
+      type: 'string'
     }
   }
 };
