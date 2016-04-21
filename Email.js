@@ -26,8 +26,12 @@ module.exports = {
     subject: {
       type: 'string',
       required: true
+    },
+    type: {
+      type: 'string',
+      enum: ['mandrill','ses'],
+      defaultsTo: 'mandrill'
     }
-
   }
 };
 
