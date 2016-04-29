@@ -45,6 +45,10 @@ module.exports = {
       enum: ['retail','reseller','enterprise'],
       defaultsTo: 'retail',
       columnName: 'pay_type'
+    },
+    agent: {
+      type: 'integer',
+      columnName: 'sales_agent_id'
     }
   }
 };  

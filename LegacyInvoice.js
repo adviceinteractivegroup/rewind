@@ -23,6 +23,10 @@ module.exports = {
       type: 'datetime',
       columnName: 'attempt_date'
     },
+    dateStarting: {
+      type: 'datetime',
+      columnName: 'invoice_date'
+    },
     data: {
       type: 'json'
     },
