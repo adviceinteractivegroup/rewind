@@ -44,6 +44,12 @@ module.exports = {
       type: 'string',
       required: true
     },
+    email: {
+      type: 'string'
+    },
+    owner: {
+      type: 'string'
+    },
     active: {
       type: 'boolean',
       defaultsTo: true
