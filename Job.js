@@ -25,6 +25,10 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false,
       index: true
+    },
+    success: {
+      type: 'boolean',
+      defaultsTo: false
     }
   }
 };
