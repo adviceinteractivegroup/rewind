@@ -24,7 +24,7 @@ module.exports = {
     completed: {
       type: 'boolean',
       defaultsTo: false,
-      indexed: true
+      index: true
     }
   }
 };
