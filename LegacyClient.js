@@ -137,7 +137,9 @@ module.exports = {
       type: 'string',
       columnName: 'd25'
     },
-
+    hide: {
+      type: 'boolean'
+    },
     deleted: {
       type: 'string',
       enum: ['false','true']
