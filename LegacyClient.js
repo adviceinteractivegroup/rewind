@@ -138,7 +138,8 @@ module.exports = {
       columnName: 'd25'
     },
     hide: {
-      type: 'boolean'
+      type: 'boolean',
+      columnName: 'hide_address'
     },
     deleted: {
       type: 'string',
