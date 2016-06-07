@@ -26,6 +26,9 @@ module.exports = {
       defaultsTo: false,
       index: true
     },
+    response: {
+      type: 'string'
+    },
     success: {
       type: 'boolean',
       defaultsTo: false

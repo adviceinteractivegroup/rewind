@@ -38,7 +38,7 @@ module.exports = {
     },
     website: {
       type: 'string',
-      url: true
+      urlish: true
     },
     hide: {
       type: 'boolean',
