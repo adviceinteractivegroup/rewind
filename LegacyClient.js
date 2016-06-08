@@ -15,6 +15,10 @@ module.exports = {
       type: 'string',
       columnName: 'd1'
     },
+    owner: {
+      type: 'string',
+      columnName: 'd2'
+    },
     partner: {
       type: 'string',
       columnName: 'user'
