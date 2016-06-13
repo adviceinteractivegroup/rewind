@@ -152,6 +152,12 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'since'
+    },
+    LAT: {
+      type: 'float'
+    },
+    LON: {
+      type: 'float'
     }
   }
 };  
