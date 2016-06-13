@@ -62,7 +62,12 @@ module.exports = {
       int: true,
       index: true
     },
-
+    LAT: {
+      type: 'float'
+    },
+    LON: {
+      type: 'float'
+    },
     agency: {
       'model': 'agency'
     },
