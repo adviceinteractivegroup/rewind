@@ -69,9 +69,15 @@ module.exports = {
       type: 'float'
     },
     agency: {
-      'model': 'agency'
+      'model': 'agency',
+      index: true
     },
-
+    category: {
+      type: 'text'
+    },
+    categories: {
+      type: 'json'
+    },
     keywords: {
       collection: 'keyword',
       via: 'client'
