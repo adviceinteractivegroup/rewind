@@ -97,6 +97,28 @@ module.exports = {
     links: {
       collection: 'clientLink',
       via: 'client'
+    },
+
+    custom1: {
+      type: 'string',
+      index: true
+    },
+    custom2: {
+      type: 'string',
+      index: true
+    },
+    custom3: {
+      type: 'string',
+      index: true
+    },
+    custom4: {
+      type: 'string',
+      index: true
+    },
+    custom5: {
+      type: 'string',
+      index: true
     }
+
   }
 };
