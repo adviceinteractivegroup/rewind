@@ -158,7 +158,29 @@ module.exports = {
     },
     LON: {
       type: 'float'
+    },
+
+    custom1: {
+      type: 'string',
+      columnName: 'fkc1'
+    },
+    custom2: {
+      type: 'string',
+      columnName: 'fkc2'
+    },
+    custom3: {
+      type: 'string',
+      columnName: 'fkc3'
+    },
+    custom4: {
+      type: 'string',
+      columnName: 'fkc4'
+    },
+    custom5: {
+      type: 'string',
+      columnName: 'fkc5'
     }
+
   }
 };  
 
