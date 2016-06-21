@@ -118,6 +118,10 @@ module.exports = {
     custom5: {
       type: 'string',
       index: true
+    },
+    status: {
+      type: 'string',
+      index: true
     }
 
   }

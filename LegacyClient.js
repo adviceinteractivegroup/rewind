@@ -179,8 +179,10 @@ module.exports = {
     custom5: {
       type: 'string',
       columnName: 'fkc5'
+    },
+    status: {
+      type: 'string'
     }
-
   }
 };  
 
