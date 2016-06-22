@@ -32,6 +32,9 @@ module.exports = {
     },
     error: {
       type: 'string'
+    },
+    data: {
+      type: 'json'
     }
   }
 };  
