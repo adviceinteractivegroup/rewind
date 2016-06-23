@@ -31,6 +31,10 @@ module.exports = {
       type: 'string',
       columnName: 'suite'
     },
+    hours: {
+      type: 'string',
+      columnName: 'd14'
+    },
     city: {
       type: 'string',
       columnName: 'd4'
