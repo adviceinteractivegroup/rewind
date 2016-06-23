@@ -22,7 +22,8 @@ module.exports = {
     partnerId: {
       type: 'integer',
       int: true,
-      index: true
+      index: true,
+      unique: true
     },
 
     parent: {

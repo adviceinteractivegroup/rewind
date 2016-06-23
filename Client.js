@@ -63,7 +63,8 @@ module.exports = {
     clientId: {
       type: 'integer',
       int: true,
-      index: true
+      index: true,
+      unique: true
     },
     LAT: {
       type: 'float'
