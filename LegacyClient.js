@@ -27,6 +27,10 @@ module.exports = {
       type: 'string',
       columnName: 'd3'
     },
+    suite: {
+      type: 'string',
+      columnName: 'suite'
+    },
     city: {
       type: 'string',
       columnName: 'd4'
