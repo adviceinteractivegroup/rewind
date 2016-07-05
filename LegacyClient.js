@@ -157,9 +157,21 @@ module.exports = {
       type: 'string',
       enum: ['false','true']
     },
+    isInactive: {
+      type: 'boolean',
+      columnName: 'inactive'
+    },
     createdAt: {
       type: 'datetime',
       columnName: 'since'
+    },
+    deletedAt: {
+      type: 'datetime',
+      columnName: 'date_deleted'
+    },
+    inactiveAt: {
+      type: 'datetime',
+      columnName: 'date_inactive'
     },
     LAT: {
       type: 'float'
