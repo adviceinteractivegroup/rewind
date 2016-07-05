@@ -17,7 +17,8 @@ module.exports = {
       index: true
     },
     client: {
-      model: 'legacyclient'
+      model: 'legacyclient',
+      columnName: 'client_id'
     },
     createdAt: {
       type: 'datetime',
