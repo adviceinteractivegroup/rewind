@@ -22,7 +22,8 @@ module.exports = {
     },
     createdAt: {
       type: 'datetime',
-      columnName: 'thedate'
+      columnName: 'thedate',
+      defaultsTo: new Date()
     },
     success: {
       type: 'string',
