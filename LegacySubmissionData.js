@@ -23,7 +23,7 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
-      defaultsTo: new Date()
+      defaultsTo: function () { return new Date(); }
     },
     success: {
       type: 'string',
