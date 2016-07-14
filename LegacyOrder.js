@@ -52,7 +52,7 @@ module.exports = {
     },
     schedule: {
       type: 'json'
-    }
+    },
     toJSON: function () {
       var obj = this.toObject();
       obj.products = obj.products.split("|");
