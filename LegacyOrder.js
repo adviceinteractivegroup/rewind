@@ -50,6 +50,10 @@ module.exports = {
       type: 'string',
       columnName: 'charge_id'
     },
+    price: {
+      type: 'string',
+      columnName: 'price'
+    },
     schedule: {
       type: 'json'
     },
