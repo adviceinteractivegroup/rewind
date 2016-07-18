@@ -12,8 +12,7 @@ module.exports = {
       columnName: 'sales_agent_id'
     },
     email: {
-      type: 'string',
-      columnName: 'username'
+      type: 'string'
     }
   }
 };  
