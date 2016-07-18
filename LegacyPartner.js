@@ -40,6 +40,10 @@ module.exports = {
       type: 'string',
       columnName: 'api_key'
     },
+    createdAt: {
+      type: 'datetime',
+      columnName: 'thedate'
+    },
     type: {
       type: 'string',
       enum: ['retail','reseller','enterprise'],
