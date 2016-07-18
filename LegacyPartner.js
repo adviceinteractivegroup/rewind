@@ -47,7 +47,7 @@ module.exports = {
       columnName: 'pay_type'
     },
     agent: {
-      type: 'integer',
+      model: 'legacysalesagent',
       columnName: 'sales_agent_id'
     }
   }
