@@ -60,7 +60,7 @@ module.exports = {
     },
     adjustments: {
       type: 'float',
-      columnName: 'total_adjustmants'
+      columnName: 'total_adjustments'
     }
 
   }
