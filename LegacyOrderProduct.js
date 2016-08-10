@@ -71,6 +71,17 @@ module.exports = {
       enum: ['false','true'],
       defaultsTo: 'false'
     },
+    isCompleted: {
+      type: 'string',
+      columnName: 'disabled',
+      enum: ['false','true'],
+      defaultsTo: 'false'
+    },
+    createdAt: {
+      type: 'datetime',
+      columnName: 'date_created',
+      defaultsTo: function () { return Date(); }
+    }
 
 
   }
