@@ -19,6 +19,10 @@ module.exports = {
       model: "legacyclient",
       columnName: 'client_id'
     },
+    order: {
+      model: "legacyorder",
+      columnName: 'order_id'
+    },
     product: {
       model: "legacyproduct",
       columnName: 'product_id'
