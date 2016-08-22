@@ -77,7 +77,7 @@ module.exports = {
     },
     isCompleted: {
       type: 'string',
-      columnName: 'disabled',
+      columnName: 'completed',
       enum: ['false','true'],
       defaultsTo: 'false'
     },
