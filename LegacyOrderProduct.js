@@ -86,6 +86,10 @@ module.exports = {
       columnName: 'date_created',
       defaultsTo: function () { return Date(); }
     }
+    completedAt: {
+      type: 'datetime',
+      columnName: 'date_completed'
+    }
 
 
   }
