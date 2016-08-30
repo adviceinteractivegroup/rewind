@@ -22,7 +22,8 @@ module.exports = {
     },
     token: {
       type: 'string',
-      required: true
+      required: true,
+      unique: true
     },
     clients: {
       type: 'integer',
