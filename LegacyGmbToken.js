@@ -11,7 +11,7 @@ module.exports = {
       primaryKey: true,
       columnName: 'id'
     },
-    username: {
+    email: {
       type: 'string',
       required: true,
       unique: true
