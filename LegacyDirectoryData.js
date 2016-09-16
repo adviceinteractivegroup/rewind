@@ -35,9 +35,8 @@ module.exports = {
       type: 'integer',
       columnName: 'elapsed_ms'
     },
-    results: {
-      type: 'boolean',
-      defaultsTo: false
+    score: {
+      type: 'integer'
     }
   }
 };  
