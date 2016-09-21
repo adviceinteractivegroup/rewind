@@ -12,16 +12,19 @@ module.exports = {
       columnName: 'partner_id'
     },
     username: {
-      type: 'string'
+      type: 'string',
+      required: true
     },
     domain: {
-      type: 'string'
+      type: 'string',
+      required: true
     },
     ssodomain: {
       type: 'string'
     },
     title: {
-      type: 'string'
+      type: 'string',
+      required: true
     },
     extras: {
       type: 'json'
