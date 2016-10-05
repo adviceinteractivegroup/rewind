@@ -13,7 +13,8 @@ module.exports = {
     },
     name: {
       type: 'string',
-      columnName: 'd1'
+      columnName: 'd1',
+      required: true
     },
     owner: {
       type: 'string',
@@ -21,7 +22,8 @@ module.exports = {
     },
     partner: {
       type: 'string',
-      columnName: 'user'
+      columnName: 'user',
+      required: true
     },
     street: {
       type: 'string',
@@ -37,20 +39,24 @@ module.exports = {
     },
     city: {
       type: 'string',
-      columnName: 'd4'
+      columnName: 'd4',
+      required: true
     },
     state: {
       type: 'string',
-      columnName: 'd5'
+      columnName: 'd5',
+      required: true
     },
     zipcode: {
       type: 'string',
-      columnName: 'd6'
+      columnName: 'd6',
+      required: true
     },
 
     phone: {
       type: 'string',
-      columnName: 'd7'
+      columnName: 'd7',
+      required: true
     },
     fax: {
       type: 'string',
