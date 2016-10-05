@@ -51,8 +51,7 @@ module.exports = {
       required: true
     },
     fax: {
-      type: 'string',
-      required: true
+      type: 'string'
     },
     email: {
       type: 'string'
