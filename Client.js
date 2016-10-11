@@ -59,11 +59,11 @@ module.exports = {
     owner: {
       type: 'string'
     },
-    active: {
+    isActive: {
       type: 'boolean',
       defaultsTo: true
     },
-    deleted: {
+    isDeleted: {
       type: 'boolean',
       defaultsTo: false
     },
