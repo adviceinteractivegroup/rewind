@@ -63,6 +63,10 @@ module.exports = {
       type: 'boolean',
       defaultsTo: true
     },
+    deleted: {
+      type: 'boolean',
+      defaultsTo: false
+    },
     clientId: {
       type: 'integer',
       int: true,
@@ -132,4 +136,3 @@ module.exports = {
     }
 
   }
-};
