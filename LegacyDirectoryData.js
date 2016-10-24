@@ -23,9 +23,10 @@ module.exports = {
     data: {
       type: 'json',
     },
-    provider: {
+    directory: {
       type: 'string',
-      required: true
+      required: true,
+      columnName: 'provider'
     },
     errors: {
       type: 'boolean',
