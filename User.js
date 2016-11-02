@@ -26,7 +26,7 @@ module.exports = {
     },
     type: {
       type: 'string',
-      enum: ['agency','fulfillment','support','admin','sales','agent','manager'],
+      enum: ['agency','fulfillment','support','admin','sales','agent','manager','internal'],
       required: true
     },
     toJSON: function () {
