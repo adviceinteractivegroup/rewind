@@ -9,10 +9,6 @@ module.exports = {
       index: true,
       unique: true
     },
-    lastAttempt: {
-      type: 'datetime',
-      defaultsTo: null
-    },
     lastSuccess: {
       type: 'datetime',
       defaultsTo: null
