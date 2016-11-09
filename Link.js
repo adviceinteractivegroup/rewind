@@ -26,8 +26,7 @@ module.exports = {
       defaultsTo: 0
     },
     statusCode: {
-      type: 'integer',
-      required: true
+      type: 'integer'
     },
     invalid: {
       type: 'boolean',
