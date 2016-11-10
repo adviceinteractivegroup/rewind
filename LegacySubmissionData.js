@@ -30,6 +30,13 @@ module.exports = {
       enum: ['false','true'],
       defaultsTo: 'false'
     },
+    action: {
+      type: 'string',
+      enum: ['submit','update','delete','link','claim']
+    },
+    url: {
+      type: 'string'
+    },
     error: {
       type: 'string'
     },
