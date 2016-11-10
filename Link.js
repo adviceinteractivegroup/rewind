@@ -13,6 +13,10 @@ module.exports = {
       type: 'datetime',
       defaultsTo: null
     },
+    lastActive: {
+      type: 'datetime',
+      defaultsTo: null
+    },
     errorCount: {
       type: 'integer',
       defaultsTo: 0
