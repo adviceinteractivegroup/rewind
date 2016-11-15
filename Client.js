@@ -73,7 +73,7 @@ module.exports = {
       index: true,
       unique: true
     },
-    client: {
+    legacyClient: {
       model: 'legacyclient'
     },
     LAT: {
