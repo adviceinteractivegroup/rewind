@@ -73,6 +73,9 @@ module.exports = {
       index: true,
       unique: true
     },
+    client: {
+      model: 'legacyclient'
+    },
     LAT: {
       type: 'float'
     },
