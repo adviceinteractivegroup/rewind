@@ -29,16 +29,30 @@ module.exports = {
       enum: ['agency','fulfillment','support','admin','sales','agent','manager','internal'],
       required: true
     },
+    permissions: {
+      type: 'json'
+    },
+    isVerified: {
+      type: 'boolean',
+      defaultsTo: false
+    },
+    isEnabled: {
+      type: 'boolean',
+      defaultsTo: false
+    },
+
     toJSON: function () {
       var obj = this.toObject();
       delete obj.password;
       delete obj.salt;
       return obj;
-    } 
+    }
   },
   beforeValidate: function (values, cb) {
-    var hrtime = process.hrtime();
-    values.salt = md5(hrtime + "warpath forever!");
+    if (!values.salt) {
+      var hrtime = process.hrtime();
+      values.salt = md5(hrtime + "warpath forever!");
+    }
     cb();
   } 
     
