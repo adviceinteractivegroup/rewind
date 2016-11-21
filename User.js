@@ -48,7 +48,7 @@ module.exports = {
       return obj;
     }
   },
-  beforeValidate: function (values, cb) {
+  beforeCreate: function (values, cb) {
     if (!values.salt) {
       var hrtime = process.hrtime();
       values.salt = md5(hrtime + "warpath forever!");
