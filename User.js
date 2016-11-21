@@ -18,8 +18,7 @@ module.exports = {
       required: true
     },
     salt: {
-      type: 'string',
-      required: true
+      type: 'string'
     },
     agency: {
       model: 'agency'
