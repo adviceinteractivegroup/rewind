@@ -9,7 +9,6 @@ module.exports = {
     domain: {
       type: 'string',
       required: true,
-      url: true,
       index: true,
       unique: true
     },
