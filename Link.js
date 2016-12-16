@@ -9,6 +9,9 @@ module.exports = {
       index: true,
       unique: true
     },
+    forwardedTo: {
+      type: 'string'
+    },
     lastSuccess: {
       type: 'datetime',
       defaultsTo: null

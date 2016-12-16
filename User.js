@@ -39,7 +39,9 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false
     },
-
+    team: {
+      model: 'team'
+    },
     toJSON: function () {
       var obj = this.toObject();
       delete obj.password;
