@@ -12,7 +12,13 @@ module.exports = {
       columnName: 'sales_agent_id'
     },
     email: {
-      type: 'string'
+      type: 'string',
+      required: true
+    },
+    referralCode: {
+      type: 'string',
+      required: true,
+      columnName: 'referral_code'
     }
   }
 };  
