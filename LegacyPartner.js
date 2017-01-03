@@ -56,6 +56,18 @@ module.exports = {
     agent: {
       model: 'legacysalesagent',
       columnName: 'sales_agent_id'
+    },
+    totalClients: {
+      type: 'integer',
+      columnName: 'total_clients'
+    },
+    totalOrders: {
+      type: 'integer',
+      columnName: 'total_orders'
+    },
+    totalSpend: {
+      type: 'integer',
+      columnName: 'total_spend'
     }
   }
 };  
