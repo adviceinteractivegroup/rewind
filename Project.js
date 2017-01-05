@@ -38,6 +38,16 @@ module.exports = {
     tasks: {
       collection: 'task',
       via: 'project'
+    },
+    totalClosed {
+      type: 'integer',
+      required: true,
+      defaultsTo: 0
+    },
+    totalOpened {
+      type: 'integer',
+      required: true,
+      defaultsTo: 0
     }
   }
 };

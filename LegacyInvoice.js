@@ -53,10 +53,24 @@ module.exports = {
       required: true,
       columnName: 'total_maintenance'
     },
+    totalRenewals: {
+      type: 'float',
+      required: true,
+      columnName: 'total_renewals'
+    },
+    totalMembership: {
+      type: 'float',
+      required: true,
+      columnName: 'total_membership'
+    },
     total: {
       type: 'float',
       required: true,
       columnName: 'total_grand'
+    },
+    chargeId: {
+      type: 'string',
+      columnName: 'charge_id'
     },
     totalAdjustments: {
       type: 'float',

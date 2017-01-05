@@ -31,7 +31,21 @@ module.exports = {
       required: true,
       defaultsTo: 1000
     },
-
+    tasksClosed {
+      type: 'integer',
+      required: true,
+      defaultsTo: 0
+    },
+    tasksOpened {
+      type: 'integer',
+      required: true,
+      defaultsTo: 0
+    },
+    projects {
+      type: 'integer',
+      required: true,
+      defaultsTo: 0
+    },
     active: {
       type: 'boolean',
       required: true,
