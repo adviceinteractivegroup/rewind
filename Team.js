@@ -31,17 +31,17 @@ module.exports = {
       required: true,
       defaultsTo: 1000
     },
-    tasksClosed {
+    tasksClosed: {
       type: 'integer',
       required: true,
       defaultsTo: 0
     },
-    tasksOpened {
+    tasksOpened: {
       type: 'integer',
       required: true,
       defaultsTo: 0
     },
-    projects {
+    projects: {
       type: 'integer',
       required: true,
       defaultsTo: 0
