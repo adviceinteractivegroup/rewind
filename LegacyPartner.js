@@ -70,6 +70,10 @@ module.exports = {
       type: 'integer',
       columnName: 'total_orders'
     },
+    totalProducts: {
+      type: 'integer',
+      columnName: 'total_products'
+    },
     totalSpend: {
       type: 'integer',
       columnName: 'total_spend'
