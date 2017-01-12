@@ -47,8 +47,7 @@ module.exports = {
       defaultsTo: false
     },
     phone: {
-      type: 'string',
-      required: true
+      type: 'string'
     },
     fax: {
       type: 'string'
