@@ -66,6 +66,10 @@ module.exports = {
       type: 'integer',
       columnName: 'total_clients'
     },
+    totalClientsActive: {
+      type: 'integer',
+      columnName: 'total_active'
+    },
     totalOrders: {
       type: 'integer',
       columnName: 'total_orders'
@@ -77,6 +81,22 @@ module.exports = {
     totalSpend: {
       type: 'integer',
       columnName: 'total_spend'
+    },
+    totalOrders30: {
+      type: 'integer',
+      columnName: 'total_orders_30'
+    },
+    totalOrders90: {
+      type: 'integer',
+      columnName: 'total_orders_90'
+    },
+    totalSpend30: {
+      type: 'integer',
+      columnName: 'total_spend_30'
+    },
+    totalSpend90: {
+      type: 'integer',
+      columnName: 'total_spend_90'
     }
   }
 };  
