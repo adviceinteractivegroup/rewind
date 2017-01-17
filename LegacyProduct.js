@@ -49,6 +49,10 @@ module.exports = {
     submissionModule: {
       type: 'string',
       columnName: 'submission_module'
+    },
+    submissionModuleOption: {
+      type: 'string',
+      columnName: 'submission_module_option'
     }
   }
 };  
