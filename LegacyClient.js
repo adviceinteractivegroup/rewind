@@ -208,6 +208,10 @@ module.exports = {
     },
     status: {
       type: 'string'
+    },
+    publicKey: {
+      type: 'string',
+      columnName: 'public'
     }
   }
 };  
