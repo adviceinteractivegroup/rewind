@@ -46,6 +46,11 @@ module.exports = {
     processedAt: {
       type: 'datetime',
       columnName: 'date_processed'
+    },
+    isInvalid: {
+      type: 'string',
+      enum: ['false','true'],
+      defaultsTo: 'false'
     }
   }
 };  
