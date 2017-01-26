@@ -5,7 +5,6 @@ module.exports = {
     link: {
       type: 'string',
       required: true,
-      url: true,
       index: true,
       unique: true
     },
