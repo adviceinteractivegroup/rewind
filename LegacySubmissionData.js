@@ -50,7 +50,8 @@ module.exports = {
     isInvalid: {
       type: 'string',
       enum: ['false','true'],
-      defaultsTo: 'false'
+      defaultsTo: 'false',
+      columnName: 'invalid'
     }
   }
 };  
