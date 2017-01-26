@@ -42,6 +42,10 @@ module.exports = {
     },
     data: {
       type: 'json'
+    },
+    processedAt: {
+      type: 'datetime',
+      columnName: 'date_processed'
     }
   }
 };  
