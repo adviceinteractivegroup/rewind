@@ -45,7 +45,7 @@ module.exports = {
     },
     processedAt: {
       type: 'datetime',
-      columnName: 'date_processed'
+      columnName: 'thedate_processed'
     },
     isInvalid: {
       type: 'string',
