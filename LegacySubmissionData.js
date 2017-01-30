@@ -46,7 +46,8 @@ module.exports = {
     isProcessed: {
       type: 'string',
       enum: ['false', 'true'],
-      defaultsTo: 'false'
+      defaultsTo: 'false',
+      columnName: 'processed'
     },
     isInvalid: {
       type: 'string',
