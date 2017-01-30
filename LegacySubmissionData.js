@@ -43,9 +43,10 @@ module.exports = {
     data: {
       type: 'json'
     },
-    processedAt: {
-      type: 'datetime',
-      columnName: 'thedate_processed'
+    isProcessed: {
+      type: 'string',
+      enum: ['false', 'true'],
+      defaultsTo: 'false'
     },
     isInvalid: {
       type: 'string',
