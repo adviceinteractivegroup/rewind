@@ -11,6 +11,10 @@ module.exports = {
       primaryKey: true,
       columnName: 'id'
     },
+    partner: {
+      model: 'legacypartner',
+      columnName: 'partner_id_fix'
+    },
     client: {
       model: 'legacyclient',
       columnName: 'client'
