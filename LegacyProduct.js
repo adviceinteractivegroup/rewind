@@ -50,6 +50,10 @@ module.exports = {
       type: 'string',
       columnName: 'submission_module'
     },
+    submissionModuleRequirements: {
+      type: 'json',
+      columnName: 'submission_module_requirements'
+    },
     submissionModuleOption: {
       type: 'string',
       columnName: 'submission_module_option'

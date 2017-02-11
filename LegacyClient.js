@@ -21,8 +21,8 @@ module.exports = {
       columnName: 'd2'
     },
     partner: {
-      type: 'string',
-      columnName: 'user',
+      model: 'legacypartner',
+      columnName: 'partner_id_fix',
       required: true
     },
     street: {
