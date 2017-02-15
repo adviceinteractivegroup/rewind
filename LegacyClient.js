@@ -25,6 +25,11 @@ module.exports = {
       columnName: 'partner_id_fix',
       required: true
     },
+    partnerUsername: {
+      type: 'string',
+      columnName: 'user',
+      required: true
+    },
     street: {
       type: 'string',
       columnName: 'd3'
