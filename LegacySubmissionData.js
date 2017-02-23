@@ -5,6 +5,7 @@ module.exports = {
   autoCreatedAt: false,
   autoUpdatedAt: false,
 	tableName: 'submission_data',
+  autoTK: false,
   attributes: {
     id: {
       type: 'integer',

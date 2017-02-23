@@ -3,6 +3,7 @@ module.exports = {
 	connection: 'mysql',
   autoCreatedAt: false,
   autoUpdatedAt: false,
+  autoTK: false,
 	tableName: 'newsub',
   attributes: {
     id: {

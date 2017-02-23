@@ -3,6 +3,7 @@
 module.exports = {
 	connection: 'mysql',
   autoCreatedAt: false,
+  autoTK: false,
   autoUpdatedAt: false,
 	tableName: 'directory_data',
   attributes: {

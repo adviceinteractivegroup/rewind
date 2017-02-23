@@ -2,6 +2,7 @@
 
 module.exports = {
 	connection: 'mysql',
+  autoTK: false,
   autoCreatedAt: false,
   autoUpdatedAt: false,
 	tableName: 'gmb_tokens_clients',

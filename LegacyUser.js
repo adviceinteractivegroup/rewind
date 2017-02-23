@@ -4,6 +4,7 @@ module.exports = {
 	connection: 'mysql',
   autoCreatedAt: false,
   autoUpdatedAt: false,
+  autoTK: false,
 	tableName: 'adminusers',
   attributes: {
     id: {
