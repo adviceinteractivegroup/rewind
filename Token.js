@@ -16,6 +16,16 @@ module.exports = {
     hash: {
       type: 'string',
       index: true
+    },
+    type: {
+      type: 'string',
+      required: true
+    },
+    partner: {
+      model: 'legacypartner'
+    },
+    agency: {
+      model: 'agency'
     }
   },
   beforeCreate: function (values, cb) {
