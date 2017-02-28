@@ -18,8 +18,7 @@ module.exports = {
       index: true
     },
     type: {
-      type: 'string',
-      required: true
+      type: 'string'
     },
     partner: {
       model: 'legacypartner'
