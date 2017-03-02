@@ -31,10 +31,11 @@ module.exports = {
     directory: {
       type: 'string'
     },
-    status_initial: {
+    statusInitial: {
       type: 'string',
       enum: ['not_present','present','claimed'],
-      columnName: 'initial_status'
+      columnName: 'initial_status',
+      defaultsTo: 'not_present'
     },
     url: {
       type: 'string',
@@ -106,7 +107,12 @@ module.exports = {
       type: 'datetime',
       columnName: 'date_verified'
     },
-
+    type: {
+      type: 'string',
+      enum: ['manual','api'],
+      required: true,
+      columnName: 'fulfillment_type'
+    },
   }
 };  
 

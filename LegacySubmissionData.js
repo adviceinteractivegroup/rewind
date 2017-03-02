@@ -33,7 +33,7 @@ module.exports = {
     },
     action: {
       type: 'string',
-      enum: ['submit','update','delete','link','claim']
+      enum: ['submit','update','delete','link','claim','duplicate']
     },
     url: {
       type: 'string'
