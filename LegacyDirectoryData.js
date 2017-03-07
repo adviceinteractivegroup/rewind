@@ -12,7 +12,7 @@ module.exports = {
       primaryKey: true,
       columnName: 'DIRECTORY_DATA_ID'
     },
-    clientId: {
+    client: {
       type: 'integer',
       required: true,
       columnName: 'client_id'
