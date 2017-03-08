@@ -1,36 +1,36 @@
 'use strict';
 
-var md5 = require('md5');
+let md5 = require('md5');
 module.exports = {
 
   attributes: {
     user: {
-      model: 'user'
+      model: 'user',
     },
     ipAddress: {
-      type: 'string'
+      type: 'string',
     },
     usedAt: {
-      type: 'datetime'
+      type: 'datetime',
     },
     hash: {
       type: 'string',
-      index: true
+      index: true,
     },
     type: {
-      type: 'string'
+      type: 'string',
     },
     partner: {
-      model: 'legacypartner'
+      model: 'legacypartner',
     },
     agency: {
-      model: 'agency'
-    }
+      model: 'agency',
+    },
   },
-  beforeCreate: function (values, cb) {
-    var hrtime = process.hrtime();
-    values.hash = md5(hrtime + "https://www.youtube.com/watch?v=jZkdcYlOn5M");
+  beforeCreate: function(values, cb) {
+    let hrtime = process.hrtime();
+    values.hash = md5(hrtime + 'https://www.youtube.com/watch?v=jZkdcYlOn5M');
     cb();
-  } 
- 
+  },
+
 };

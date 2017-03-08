@@ -4,24 +4,24 @@ let model = {
   attributes: {
     name: {
       type: 'string',
-      required: true
+      required: true,
     },
     isGlobal: {
       type: 'boolean',
-      defaultsTo: true
+      defaultsTo: true,
     },
     isDefault: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     agency: {
-      model: 'agency'
+      model: 'agency',
     },
     directories: {
       collection: 'directory',
-      dominant: true
-    }
-  }
+      dominant: true,
+    },
+  },
 };
 
 module.exports = model;

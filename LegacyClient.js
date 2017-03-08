@@ -10,215 +10,215 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     name: {
       type: 'string',
       columnName: 'd1',
-      required: true
+      required: true,
     },
     owner: {
       type: 'string',
-      columnName: 'd2'
+      columnName: 'd2',
     },
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id_fix',
-      required: true
+      required: true,
     },
     partnerUsername: {
       type: 'string',
       columnName: 'user',
-      required: true
+      required: true,
     },
     street: {
       type: 'string',
-      columnName: 'd3'
+      columnName: 'd3',
     },
     suite: {
       type: 'string',
-      columnName: 'suite'
+      columnName: 'suite',
     },
     hours: {
       type: 'string',
-      columnName: 'd14'
+      columnName: 'd14',
     },
     city: {
       type: 'string',
       columnName: 'd4',
-      required: true
+      required: true,
     },
     state: {
       type: 'string',
       columnName: 'd5',
-      required: true
+      required: true,
     },
     zipcode: {
       type: 'string',
       columnName: 'd6',
-      required: true
+      required: true,
     },
 
     phone: {
       type: 'string',
       columnName: 'd7',
-      required: true
+      required: true,
     },
     fax: {
       type: 'string',
-      columnName: 'd8'
+      columnName: 'd8',
     },
 
     website: {
       type: 'string',
-      columnName: 'd9'
+      columnName: 'd9',
     },
     email: {
       type: 'string',
-      columnName: 'd10'
+      columnName: 'd10',
     },
 
     facebook: {
       type: 'string',
-      columnName: 'd29'
+      columnName: 'd29',
     },
     twitter: {
       type: 'string',
-      columnName: 'd30'
+      columnName: 'd30',
     },
     linkedin: {
       type: 'string',
-      columnName: 'd31'
+      columnName: 'd31',
     },
 
     years: {
       type: 'integer',
-      columnName: 'd11'
+      columnName: 'd11',
     },
     description: {
       type: 'integer',
-      columnName: 'd12'
+      columnName: 'd12',
     },
     payment: {
       type: 'string',
-      columnName: 'd13'
+      columnName: 'd13',
     },
     hours: {
       type: 'string',
-      columnName: 'd14'
+      columnName: 'd14',
     },
     services: {
       type: 'string',
-      columnName: 'd15'
+      columnName: 'd15',
     },
     license: {
       type: 'string',
-      columnName: 'd16'
+      columnName: 'd16',
     },
 
     keyword1: {
       type: 'string',
-      columnName: 'd17'
+      columnName: 'd17',
     },
     keyword2: {
       type: 'string',
-      columnName: 'd18'
+      columnName: 'd18',
     },
     keyword3: {
       type: 'string',
-      columnName: 'd19'
+      columnName: 'd19',
     },
     keyword4: {
       type: 'string',
-      columnName: 'd20'
+      columnName: 'd20',
     },
     keyword5: {
       type: 'string',
-      columnName: 'd21'
+      columnName: 'd21',
     },
 
     keyword1_location: {
       type: 'string',
-      columnName: 'd17_location'
+      columnName: 'd17_location',
     },
     keyword2_location: {
       type: 'string',
-      columnName: 'd18_location'
+      columnName: 'd18_location',
     },
     keyword3_location: {
       type: 'string',
-      columnName: 'd19_location'
+      columnName: 'd19_location',
     },
     keyword4_location: {
       type: 'string',
-      columnName: 'd20_location'
+      columnName: 'd20_location',
     },
     keyword5_location: {
       type: 'string',
-      columnName: 'd21_location'
+      columnName: 'd21_location',
     },
     notes: {
       type: 'string',
-      columnName: 'd25'
+      columnName: 'd25',
     },
     hide: {
       type: 'boolean',
-      columnName: 'hide_address'
+      columnName: 'hide_address',
     },
     deleted: {
       type: 'string',
-      enum: ['false','true']
+      enum: ['false', 'true'],
     },
     isInactive: {
       type: 'boolean',
-      columnName: 'inactive'
+      columnName: 'inactive',
     },
     createdAt: {
       type: 'datetime',
-      columnName: 'since'
+      columnName: 'since',
     },
     deletedAt: {
       type: 'datetime',
-      columnName: 'date_deleted'
+      columnName: 'date_deleted',
     },
     inactiveAt: {
       type: 'datetime',
-      columnName: 'date_inactive'
+      columnName: 'date_inactive',
     },
     LAT: {
-      type: 'float'
+      type: 'float',
     },
     LON: {
-      type: 'float'
+      type: 'float',
     },
 
     custom1: {
       type: 'string',
-      columnName: 'fkc1'
+      columnName: 'fkc1',
     },
     custom2: {
       type: 'string',
-      columnName: 'fkc2'
+      columnName: 'fkc2',
     },
     custom3: {
       type: 'string',
-      columnName: 'fkc3'
+      columnName: 'fkc3',
     },
     custom4: {
       type: 'string',
-      columnName: 'fkc4'
+      columnName: 'fkc4',
     },
     custom5: {
       type: 'string',
-      columnName: 'fkc5'
+      columnName: 'fkc5',
     },
     status: {
-      type: 'string'
+      type: 'string',
     },
     publicKey: {
       type: 'string',
-      columnName: 'public'
-    }
-  }
-};  
+      columnName: 'public',
+    },
+  },
+};
 

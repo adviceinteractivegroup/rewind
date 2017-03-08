@@ -12,15 +12,15 @@ module.exports = {
   attributes: {
     partnerId: {
       type: 'integer',
-      required: true
+      required: true,
     },
     stripeId: {
-      type: 'string'
+      type: 'string',
     },
     email: {
       type: 'text',
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 

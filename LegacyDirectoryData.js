@@ -10,16 +10,16 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'DIRECTORY_DATA_ID'
+      columnName: 'DIRECTORY_DATA_ID',
     },
     client: {
       type: 'integer',
       required: true,
-      columnName: 'client_id'
+      columnName: 'client_id',
     },
     createdAt: {
       type: 'datetime',
-      columnName: 'thedate'
+      columnName: 'thedate',
     },
     data: {
       type: 'json',
@@ -27,19 +27,19 @@ module.exports = {
     directory: {
       type: 'string',
       required: true,
-      columnName: 'provider'
+      columnName: 'provider',
     },
     errors: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     elapsedTime: {
       type: 'integer',
-      columnName: 'elapsed_ms'
+      columnName: 'elapsed_ms',
     },
     score: {
-      type: 'integer'
-    }
-  }
-};  
+      type: 'integer',
+    },
+  },
+};
 

@@ -10,63 +10,63 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     partner: {
       model: 'legacypartner',
-      columnName: 'partner_id_fix'
+      columnName: 'partner_id_fix',
     },
     client: {
       model: 'legacyclient',
-      columnName: 'client'
+      columnName: 'client',
     },
     products: {
       type: 'string',
-      columnName: 'orde'
+      columnName: 'orde',
     },
     createdAt: {
       type: 'datetime',
-      columnName: 'dates'
+      columnName: 'dates',
     },
     startedAt: {
       type: 'datetime',
-      columnName: 'start_date'
+      columnName: 'start_date',
     },
     publishedAt: {
       type: 'datetime',
-      columnName: 'publish_date'
+      columnName: 'publish_date',
     },
     isPaid: {
       type: 'boolean',
       defaultsTo: false,
-      columnName: 'paid'
+      columnName: 'paid',
     },
     isVerified: {
       type: 'boolean',
       defaultsTo: false,
-      columnName: 'verified'
+      columnName: 'verified',
     },
     isDrip: {
       type: 'boolean',
       defaultsTo: false,
-      columnName: 'drip_feed'
+      columnName: 'drip_feed',
     },
     chargeId: {
       type: 'string',
-      columnName: 'charge_id'
+      columnName: 'charge_id',
     },
     price: {
       type: 'string',
-      columnName: 'price'
+      columnName: 'price',
     },
     schedule: {
-      type: 'json'
+      type: 'json',
     },
-    toJSON: function () {
-      var obj = this.toObject();
-      obj.products = obj.products.split("|");
+    toJSON: function() {
+      let obj = this.toObject();
+      obj.products = obj.products.split('|');
       return obj;
-    }
-  }
-};  
+    },
+  },
+};
 

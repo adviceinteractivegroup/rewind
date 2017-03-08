@@ -10,8 +10,8 @@ module.exports = {
   attributes: {
     data: {
       type: 'json',
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 

@@ -10,32 +10,34 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     email: {
       type: 'string',
       required: true,
-      unique: true
+      unique: true,
     },
     password: {
       type: 'string',
-      required: true
+      required: true,
     },
     token: {
       type: 'string',
       required: true,
-      unique: true
+      unique: true,
     },
     clients: {
       type: 'integer',
       required: true,
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     createdAt: {
       date: 'datetime',
       columnName: 'thedate',
-      defaultsTo: function () { return Date(); }
-    }
-  }
-};  
+      defaultsTo: function() {
+ return Date();
+},
+    },
+  },
+};
 

@@ -10,21 +10,23 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     token: {
       model: 'legacygmbtoken',
-      columnName: 'gmb_token_id'
+      columnName: 'gmb_token_id',
     },
     client: {
       model: 'legacyclient',
-      columnName: 'client_id'
+      columnName: 'client_id',
     },
     createdAt: {
       date: 'datetime',
       columnName: 'thedate',
-      defaultsTo: function () { return Date(); }
-    }
-  }
-};  
+      defaultsTo: function() {
+ return Date();
+},
+    },
+  },
+};
 

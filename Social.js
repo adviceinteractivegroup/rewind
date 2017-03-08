@@ -10,32 +10,32 @@ module.exports = {
         'twitter',
         'facebook',
         'linkedin',
-        'foursquare'
-      ]
+        'foursquare',
+      ],
     },
     link: {
       type: 'string',
       required: true,
-      url: true
+      url: true,
     },
     lastAttempt: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     lastSuccess: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     errorCount: {
       type: 'integer',
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     invalid: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     client: {
-      model: 'client'
-    }
-  }
+      model: 'client',
+    },
+  },
 };

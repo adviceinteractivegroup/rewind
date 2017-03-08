@@ -3,13 +3,13 @@
 let model = {
   attributes: {
     client: {
-      model: 'client'
+      model: 'client',
     },
 
     list: {
-      model: 'reportingList'
-    }
-  }
+      model: 'reportingList',
+    },
+  },
 };
 
 module.exports = model;

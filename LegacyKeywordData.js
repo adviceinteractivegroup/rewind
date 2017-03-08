@@ -10,31 +10,31 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'KEYWORD_DATA_ID'
+      columnName: 'KEYWORD_DATA_ID',
     },
     clientId: {
       type: 'integer',
       required: true,
-      columnName: 'client_id'
+      columnName: 'client_id',
     },
     lastUpdated: {
       type: 'datetime',
-      columnName: 'last_updated'
+      columnName: 'last_updated',
     },
     data: {
       type: 'json',
     },
     keyword: {
       type: 'string',
-      required: true
+      required: true,
     },
     provider: {
       type: 'string',
-      required: true
+      required: true,
     },
     lastSuccess: {
       type: 'datetime',
-      columnName: 'last_success'
-    }
-  }
-};  
+      columnName: 'last_success',
+    },
+  },
+};

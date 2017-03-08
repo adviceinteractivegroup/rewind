@@ -11,16 +11,16 @@ module.exports = {
     level: {
       type: 'string',
       required: true,
-      enum: ['error','info','debug','warn'],
-      defaultsTo: 'error'
+      enum: ['error', 'info', 'debug', 'warn'],
+      defaultsTo: 'error',
     },
     service: {
       type: 'string',
-      required: true
+      required: true,
     },
     data: {
-      type: 'json'
-    }
-  }
+      type: 'json',
+    },
+  },
 };
 

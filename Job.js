@@ -10,29 +10,29 @@ module.exports = {
   attributes: {
     params: {
       type: 'json',
-      required: true
+      required: true,
     },
     callback: {
-      type: 'string'
+      type: 'string',
     },
     callbackResponse: {
-      type: 'string'
+      type: 'string',
     },
     completedAt: {
-      type: 'datetime'
+      type: 'datetime',
     },
     completed: {
       type: 'boolean',
       defaultsTo: false,
-      index: true
+      index: true,
     },
     response: {
-      type: 'string'
+      type: 'string',
     },
     success: {
       type: 'boolean',
-      defaultsTo: false
-    }
-  }
+      defaultsTo: false,
+    },
+  },
 };
 

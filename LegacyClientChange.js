@@ -10,25 +10,25 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'client_changelog_id'
+      columnName: 'client_changelog_id',
     },
     client: {
       model: 'legacyclient',
       columnName: 'client_id',
-      required: true
+      required: true,
     },
     fields: {
       type: 'json',
-      required: true
+      required: true,
     },
     diff: {
-      type: 'json'
+      type: 'json',
     },
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
-      required: true
-    }
-  }
-};  
+      required: true,
+    },
+  },
+};
 

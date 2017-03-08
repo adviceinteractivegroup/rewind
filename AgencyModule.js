@@ -8,16 +8,16 @@ module.exports = {
       enum: [
         'keywords',
         'social',
-        'directories'
-      ]
+        'directories',
+      ],
     },
     enabled: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
 
     agency: {
-      model: 'agency'
-    }
-  }
+      model: 'agency',
+    },
+  },
 };

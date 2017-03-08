@@ -4,25 +4,25 @@ module.exports = {
   attributes: {
     businessName: {
       type: 'string',
-      required: true
+      required: true,
     },
     city: {
       type: 'string',
-      required: true
+      required: true,
     },
     street1: {
-      type: 'string'
+      type: 'string',
     },
     street2: {
-      type: 'string'
+      type: 'string',
     },
     state: {
       type: 'string',
-      required: true
+      required: true,
     },
     postal: {
       type: 'string',
-      required: true
+      required: true,
     },
     country: {
       type: 'string',
@@ -33,108 +33,108 @@ module.exports = {
         'CA',
         'AU',
         'DE',
-        'NZ'
-      ]
+        'NZ',
+      ],
     },
     website: {
-      type: 'string'
+      type: 'string',
     },
     hours: {
-      type: 'json'
+      type: 'json',
     },
     hide: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     phone: {
-      type: 'string'
+      type: 'string',
     },
     fax: {
-      type: 'string'
+      type: 'string',
     },
     email: {
-      type: 'string'
+      type: 'string',
     },
     owner: {
-      type: 'string'
+      type: 'string',
     },
     isActive: {
       type: 'boolean',
-      defaultsTo: true
+      defaultsTo: true,
     },
     isDeleted: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     clientId: {
       type: 'integer',
       int: true,
       index: true,
-      unique: true
+      unique: true,
     },
     legacyClient: {
-      model: 'legacyclient'
+      model: 'legacyclient',
     },
     LAT: {
-      type: 'float'
+      type: 'float',
     },
     LON: {
-      type: 'float'
+      type: 'float',
     },
     agency: {
       'model': 'agency',
-      index: true
+      'index': true,
     },
     category: {
-      type: 'text'
+      type: 'text',
     },
     categories: {
-      type: 'json'
+      type: 'json',
     },
     keywords: {
       collection: 'keyword',
-      via: 'client'
+      via: 'client',
     },
     socials: {
       collection: 'social',
-      via: 'client'
+      via: 'client',
     },
     competitors: {
       collection: 'clientCompetitor',
-      via: 'client'
+      via: 'client',
     },
     reportingLists: {
       collection: 'clientReportingList',
-      via: 'client'
+      via: 'client',
     },
     links: {
       collection: 'clientLink',
-      via: 'client'
+      via: 'client',
     },
 
     custom1: {
       type: 'string',
-      index: true
+      index: true,
     },
     custom2: {
       type: 'string',
-      index: true
+      index: true,
     },
     custom3: {
       type: 'string',
-      index: true
+      index: true,
     },
     custom4: {
       type: 'string',
-      index: true
+      index: true,
     },
     custom5: {
       type: 'string',
-      index: true
+      index: true,
     },
     status: {
       type: 'string',
-      index: true
-    }
-  }
+      index: true,
+    },
+  },
 };

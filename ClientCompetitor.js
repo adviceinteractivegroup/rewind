@@ -4,25 +4,25 @@ let model = {
   attributes: {
     businessName: {
       type: 'string',
-      required: true
+      required: true,
     },
     city: {
       type: 'string',
-      required: true
+      required: true,
     },
     street1: {
-      type: 'string'
+      type: 'string',
     },
     street2: {
-      type: 'string'
+      type: 'string',
     },
     state: {
       type: 'string',
-      required: true
+      required: true,
     },
     postal: {
       type: 'string',
-      required: true
+      required: true,
     },
     country: {
       type: 'string',
@@ -33,33 +33,33 @@ let model = {
         'CA',
         'AU',
         'DE',
-        'NZ'
-      ]
+        'NZ',
+      ],
     },
     website: {
       type: 'string',
-      url: true
+      url: true,
     },
     baseScore: {
       type: 'integer',
       int: true,
-      defaultsTo: null
+      defaultsTo: null,
     },
     currentScore: {
       type: 'integer',
       int: true,
-      defaultsTo: null
+      defaultsTo: null,
     },
 
     client: {
-      required: true
+      required: true,
     },
 
     directoryResults: {
       collection: 'directoryResult',
-      via: 'competitor'
-    }
-  }
+      via: 'competitor',
+    },
+  },
 };
 
 module.exports = model;

@@ -4,66 +4,66 @@ module.exports = {
   attributes: {
     name: {
       type: 'string',
-      required: true
+      required: true,
     },
     domain: {
       type: 'string',
       required: true,
       index: true,
-      unique: true
+      unique: true,
     },
     domainCustomer: {
       type: 'string',
       url: true,
       index: true,
-      unique: true
+      unique: true,
     },
     partnerId: {
       type: 'integer',
       int: true,
       index: true,
-      unique: true
+      unique: true,
     },
 
     parent: {
-      model: 'agency'
+      model: 'agency',
     },
 
     users: {
       collection: 'user',
-      via: 'agency'
+      via: 'agency',
     },
 
     deactivated: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
 
     invoiced: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
 
     apiKey: {
-      type: 'string'
+      type: 'string',
     },
 
     modules: {
       collection: 'agencyModule',
       via: 'agency',
-      required: true
+      required: true,
     },
     reportingListDefault: {
-      model: 'reportingList'
+      model: 'reportingList',
     },
     reportingLists: {
       collection: 'reportingList',
-      via: 'agency'
+      via: 'agency',
     },
     type: {
       type: 'string',
-      enum: ['retail','reseller','enterprise'],
-      defaultsTo: 'retail'
-    }
-  }
+      enum: ['retail', 'reseller', 'enterprise'],
+      defaultsTo: 'retail',
+    },
+  },
 };

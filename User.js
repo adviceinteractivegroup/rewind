@@ -1,60 +1,60 @@
 'use strict';
 
-var md5 = require('md5');
+let md5 = require('md5');
 
 module.exports = {
   attributes: {
     name: {
       type: 'string',
-      required: true
+      required: true,
     },
     email: {
       type: 'string',
       required: true,
-      index: true
+      index: true,
     },
     password: {
       type: 'string',
-      required: true
+      required: true,
     },
     salt: {
-      type: 'string'
+      type: 'string',
     },
     agency: {
-      model: 'agency'
+      model: 'agency',
     },
     type: {
       type: 'string',
-      enum: ['agency','fulfillment','support','admin','sales','agent','manager','internal'],
-      required: true
+      enum: ['agency', 'fulfillment', 'support', 'admin', 'sales', 'agent', 'manager', 'internal'],
+      required: true,
     },
     permissions: {
-      type: 'json'
+      type: 'json',
     },
     isVerified: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     isEnabled: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     team: {
-      model: 'team'
+      model: 'team',
     },
-    toJSON: function () {
-      var obj = this.toObject();
+    toJSON: function() {
+      let obj = this.toObject();
       delete obj.password;
       delete obj.salt;
       return obj;
-    }
+    },
   },
-  beforeCreate: function (values, cb) {
+  beforeCreate: function(values, cb) {
     if (!values.salt) {
-      var hrtime = process.hrtime();
-      values.salt = md5(hrtime + "warpath forever!");
+      let hrtime = process.hrtime();
+      values.salt = md5(hrtime + 'warpath forever!');
     }
     cb();
-  } 
-    
-};  
+  },
+
+};

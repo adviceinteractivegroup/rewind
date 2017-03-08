@@ -5,57 +5,57 @@ let model = {
     nameScore: {
       type: 'integer',
       int: true,
-      defaultsTo: null
+      defaultsTo: null,
     },
     addressScore: {
       type: 'integer',
       int: true,
-      defaultsTo: null
+      defaultsTo: null,
     },
     phoneScore: {
       type: 'integer',
       int: true,
-      defaultsTo: null
+      defaultsTo: null,
     },
     score: {
       type: 'integer',
       int: true,
-      defaultsTo: null
+      defaultsTo: null,
     },
     error: {
       type: 'string',
-      defaultsTo: null
+      defaultsTo: null,
     },
     queueTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     startTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     endTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     elapsedTime: {
       type: 'integer',
-      columnName: 'elapsed_ms'
+      columnName: 'elapsed_ms',
     },
     client: {
-      model: 'client'
+      model: 'client',
     },
     competitor: {
-      model: 'clientCompetitor'
+      model: 'clientCompetitor',
     },
     directoryName: {
       type: 'string',
-      required: true
+      required: true,
     },
     directory: {
-      model: 'directory'
-    }
-  }
+      model: 'directory',
+    },
+  },
 };
 
 module.exports = model;

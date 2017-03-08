@@ -12,8 +12,8 @@ module.exports = {
     email: {
       type: 'string',
       required: true,
-      index: true
-    }
-  }
+      index: true,
+    },
+  },
 };
 

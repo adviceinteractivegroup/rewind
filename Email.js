@@ -13,23 +13,23 @@ module.exports = {
     projectId: {
       type: 'integer',
       required: true,
-      index: true
+      index: true,
     },
     email: {
       type: 'string',
-      required: true
+      required: true,
     },
     name: {
       type: 'string',
-      required: true
+      required: true,
     },
     subject: {
       type: 'string',
-      required: true
+      required: true,
     },
     s3: {
-      type: 'string'
-    }
-  }
+      type: 'string',
+    },
+  },
 };
 

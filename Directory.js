@@ -4,18 +4,18 @@ let directoryModel = {
   attributes: {
     name: {
       type: 'string',
-      required: true
+      required: true,
     },
     website: {
       type: 'string',
       required: true,
-      url: true
+      url: true,
     },
     module: {
       type: 'string',
       unique: true,
       required: true,
-      unique: true
+      unique: true,
     },
     country: {
       type: 'string',
@@ -26,12 +26,12 @@ let directoryModel = {
         'CA',
         'AU',
         'DE',
-        'NZ'
-      ]
+        'NZ',
+      ],
     },
     enabled: {
       type: 'boolean',
-      defaultsTo: true
+      defaultsTo: true,
     },
     frequency: {
       type: 'string',
@@ -48,14 +48,14 @@ let directoryModel = {
         'month',
         'months',
         'year',
-        'years'
+        'years',
       ],
-      defaultsTo: 'week'
+      defaultsTo: 'week',
     },
     frequencyInterval: {
       type: 'integer',
       integer: true,
-      defaultsTo: 1
+      defaultsTo: 1,
     },
 
     pendingFrequency: {
@@ -73,14 +73,14 @@ let directoryModel = {
         'month',
         'months',
         'year',
-        'years'
+        'years',
       ],
-      defaultsTo: 'days'
+      defaultsTo: 'days',
     },
     pendingFrequencyInterval: {
       type: 'integer',
       integer: true,
-      defaultsTo: 2
+      defaultsTo: 2,
     },
 
     foundFrequency: {
@@ -98,14 +98,14 @@ let directoryModel = {
         'month',
         'months',
         'year',
-        'years'
+        'years',
       ],
-      defaultsTo: 'month'
+      defaultsTo: 'month',
     },
     foundFrequencyInterval: {
       type: 'integer',
       integer: true,
-      defaultsTo: 1
+      defaultsTo: 1,
     },
 
     successFrequency: {
@@ -123,20 +123,20 @@ let directoryModel = {
         'month',
         'months',
         'year',
-        'years'
+        'years',
       ],
-      defaultsTo: 'month'
+      defaultsTo: 'month',
     },
     successFrequencyInterval: {
       type: 'integer',
       integer: true,
-      defaultsTo: 2
+      defaultsTo: 2,
     },
 
     reportingList: {
-      collection: 'reportingList'
-    }
-  }
+      collection: 'reportingList',
+    },
+  },
 };
 
 module.exports = directoryModel;

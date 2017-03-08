@@ -9,24 +9,28 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     order: {
-      model: "legacyorder",
-      columnName: 'orderid'
+      model: 'legacyorder',
+      columnName: 'orderid',
     },
     createdAt: {
       type: 'datetime',
       columnName: 'init',
-      defaultsTo: function () { return Date(); }
+      defaultsTo: function() {
+ return Date();
+},
     },
     finishedAt: {
       type: 'datetime',
       columnName: 'end',
-      defaultsTo: function () { return Date(); }
+      defaultsTo: function() {
+ return Date();
+},
     },
     status: {
-      type: 'integer'
-    }
-  }
-};  
+      type: 'integer',
+    },
+  },
+};

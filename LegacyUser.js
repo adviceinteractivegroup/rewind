@@ -10,34 +10,34 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'user_id'
+      columnName: 'user_id',
     },
     partner: {
       type: 'string',
-      columnName: 'username'
+      columnName: 'username',
     },
     firstName: {
       type: 'string',
-      columnName: 'name'
+      columnName: 'name',
     },
     lastName: {
       type: 'string',
-      columnName: 'last'
+      columnName: 'last',
     },
     email: {
       type: 'string',
-      required: true
+      required: true,
     },
     password: {
       type: 'string',
-      columnName: 'password'
+      columnName: 'password',
     },
     role: {
       type: 'string',
-      enum: ['admin','agent','manager','sales','staff'],
+      enum: ['admin', 'agent', 'manager', 'sales', 'staff'],
       defaultsTo: 'admin',
-      columnName: 'utype'
-    }
-  }
-};  
+      columnName: 'utype',
+    },
+  },
+};
 

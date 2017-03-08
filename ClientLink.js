@@ -5,20 +5,20 @@ let model = {
     link: {
       type: 'string',
       url: true,
-      required: true
+      required: true,
     },
     submissionDate: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
 
     client: {
-      model: 'client'
+      model: 'client',
     },
     directory: {
-      model: 'directory'
-    }
-  }
+      model: 'directory',
+    },
+  },
 };
 
 module.exports = model;

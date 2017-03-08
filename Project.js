@@ -9,46 +9,46 @@ module.exports = {
   attributes: {
     legacyclient: {
       model: 'legacyclient',
-      required: true
+      required: true,
     },
     legacyorder: {
       model: 'legacyorder',
-      required: true
+      required: true,
     },
     team: {
-      model: 'team'
+      model: 'team',
     },
     completedAt: {
-      type: 'datetime'
+      type: 'datetime',
     },
     dueAt: {
-      type: 'datetime'
+      type: 'datetime',
     },
     email: {
-      type: 'string'
+      type: 'string',
     },
     password: {
-      type: 'string'
+      type: 'string',
     },
     status: {
       type: 'string',
-      enum: ['not_started','paused','in_progress','overdue','completed'],
-      defaultsTo: 'not_started'
+      enum: ['not_started', 'paused', 'in_progress', 'overdue', 'completed'],
+      defaultsTo: 'not_started',
     },
     tasks: {
       collection: 'task',
-      via: 'project'
+      via: 'project',
     },
     totalClosed: {
       type: 'integer',
       required: true,
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     totalOpened: {
       type: 'integer',
       required: true,
-      defaultsTo: 0
-    }
-  }
+      defaultsTo: 0,
+    },
+  },
 };
 

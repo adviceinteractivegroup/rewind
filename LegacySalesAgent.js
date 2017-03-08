@@ -10,17 +10,17 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'sales_agent_id'
+      columnName: 'sales_agent_id',
     },
     email: {
       type: 'string',
-      required: true
+      required: true,
     },
     referralCode: {
       type: 'string',
       required: true,
-      columnName: 'referral_code'
-    }
-  }
-};  
+      columnName: 'referral_code',
+    },
+  },
+};
 

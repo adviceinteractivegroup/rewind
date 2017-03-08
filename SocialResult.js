@@ -9,35 +9,35 @@ module.exports = {
         'google',
         'twitter',
         'facebook',
-        'linkedin'
-      ]
+        'linkedin',
+      ],
     },
     data: {
       type: 'json',
-      object: true
+      object: true,
     },
     error: {
       type: 'string',
-      defaultsTo: null
+      defaultsTo: null,
     },
     queueTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     startTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     endTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
 
     social: {
-      model: 'social'
+      model: 'social',
     },
     client: {
-      model: 'client'
-    }
-  }
+      model: 'client',
+    },
+  },
 };

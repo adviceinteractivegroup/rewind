@@ -10,74 +10,75 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'invoice_id'
+      columnName: 'invoice_id',
     },
     partner: {
       model: 'legacypartner',
-      columnName: 'partner_id'
+      columnName: 'partner_id',
     },
     datePaid: {
       type: 'datetime',
-      columnName: 'paid_date'
+      columnName: 'paid_date',
     },
     dateAttempted: {
       type: 'datetime',
-      columnName: 'attempt_date'
+      columnName: 'attempt_date',
     },
     dateStarting: {
       type: 'datetime',
-      columnName: 'invoice_date'
+      columnName: 'invoice_date',
     },
     data: {
-      type: 'json'
+      type: 'json',
     },
     paid: {
-      type: 'boolean',
-      defaultsTo: false
+      type: 'string',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     notes: {
-      type: 'text'
+      type: 'text',
     },
 
     totalServices: {
       type: 'float',
       required: true,
-      columnName: 'total_services'
+      columnName: 'total_services',
     },
     totalReporting: {
       type: 'float',
       required: true,
-      columnName: 'total_reporting'
+      columnName: 'total_reporting',
     },
     totalMaintenance: {
       type: 'float',
       required: true,
-      columnName: 'total_maintenance'
+      columnName: 'total_maintenance',
     },
     totalRenewals: {
       type: 'float',
       required: true,
-      columnName: 'total_renewals'
+      columnName: 'total_renewals',
     },
     totalMembership: {
       type: 'float',
       required: true,
-      columnName: 'total_membership'
+      columnName: 'total_membership',
     },
     total: {
       type: 'float',
       required: true,
-      columnName: 'total_grand'
+      columnName: 'total_grand',
     },
     chargeId: {
       type: 'string',
-      columnName: 'charge_id'
+      columnName: 'charge_id',
     },
     totalAdjustments: {
       type: 'float',
-      columnName: 'total_adjustments'
-    }
+      columnName: 'total_adjustments',
+    },
 
-  }
-};  
+  },
+};
 

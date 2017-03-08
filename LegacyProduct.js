@@ -10,55 +10,55 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     name: {
       type: 'string',
-      columnName: 'product'
+      columnName: 'product',
     },
     description: {
-      type: 'string'
+      type: 'string',
     },
     extra: {
       type: 'string',
-      columnName: 'description_extra'
+      columnName: 'description_extra',
     },
     priceRetail: {
       type: 'float',
-      columnName: 'pricea'
+      columnName: 'pricea',
     },
     priceReseller: {
       type: 'float',
-      columnName: 'priceb'
+      columnName: 'priceb',
     },
     maintenanceInterval: {
       type: 'string',
-      columnName: 'repeat'
+      columnName: 'repeat',
     },
     productType: {
       type: 'string',
-      columnName: 'type'
+      columnName: 'type',
     },
     maintenancePriceRetail: {
       type: 'float',
-      columnName: 'repeat_aprice'
+      columnName: 'repeat_aprice',
     },
     maintenancePriceReseller: {
       type: 'float',
-      columnName: 'repeat_price'
+      columnName: 'repeat_price',
     },
     submissionModule: {
       type: 'string',
-      columnName: 'submission_module'
+      columnName: 'submission_module',
     },
     submissionModuleRequirements: {
       type: 'json',
-      columnName: 'submission_module_requirements'
+      columnName: 'submission_module_requirements',
     },
     submissionModuleOption: {
       type: 'string',
-      columnName: 'submission_module_option'
-    }
-  }
-};  
+      columnName: 'submission_module_option',
+    },
+  },
+};
 

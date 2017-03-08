@@ -6,33 +6,33 @@ module.exports = {
       type: 'string',
       required: true,
       index: true,
-      unique: true
+      unique: true,
     },
     forwardedTo: {
-      type: 'string'
+      type: 'string',
     },
     lastSuccess: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     lastActive: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     errorCount: {
       type: 'integer',
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     checkCount: {
       type: 'integer',
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     statusCode: {
-      type: 'integer'
+      type: 'integer',
     },
     invalid: {
       type: 'boolean',
-      defaultsTo: false
-    }
-  }
+      defaultsTo: false,
+    },
+  },
 };

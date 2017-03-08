@@ -10,52 +10,54 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'SUBMISSION_DATA_ID'
+      columnName: 'SUBMISSION_DATA_ID',
     },
     directory: {
       type: 'string',
       required: true,
-      index: true
+      index: true,
     },
     client: {
       model: 'legacyclient',
-      columnName: 'client_id'
+      columnName: 'client_id',
     },
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
-      defaultsTo: function () { return new Date(); }
+      defaultsTo: function() {
+ return new Date();
+},
     },
     success: {
       type: 'string',
-      enum: ['false','true'],
-      defaultsTo: 'false'
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     action: {
       type: 'string',
-      enum: ['submit','update','delete','link','claim','duplicate']
+      enum: ['submit', 'update', 'delete', 'link', 'claim', 'duplicate'],
     },
     url: {
-      type: 'string'
+      type: 'string',
     },
     error: {
-      type: 'string'
+      type: 'string',
     },
     data: {
-      type: 'json'
+      type: 'json',
     },
     isProcessed: {
       type: 'string',
       enum: ['false', 'true'],
       defaultsTo: 'false',
-      columnName: 'processed'
+      columnName: 'processed',
     },
     isInvalid: {
       type: 'string',
-      enum: ['false','true'],
+      enum: ['false', 'true'],
       defaultsTo: 'false',
-      columnName: 'invalid'
-    }
-  }
-};  
+      columnName: 'invalid',
+    },
+  },
+};
 

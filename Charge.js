@@ -12,30 +12,30 @@ module.exports = {
   attributes: {
     partnerId: {
       type: 'integer',
-      required: true
+      required: true,
     },
     clientId: {
       type: 'integer',
-      required: true
+      required: true,
     },
     orderId: {
       type: 'integer',
-      required: true
+      required: true,
     },
     amount: {
       type: 'integer',
-      required: true
+      required: true,
     },
     description: {
-      type: 'string'
+      type: 'string',
     },
     statementDescription: {
-      type: 'string'
+      type: 'string',
     },
     chargeId: {
       type: 'string',
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 

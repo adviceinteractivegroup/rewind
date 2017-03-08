@@ -10,25 +10,25 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     clientId: {
       type: 'integer',
-      columnName: 'clientid'
+      columnName: 'clientid',
     },
     data: {
       type: 'string',
-      columnName: 'previous'
+      columnName: 'previous',
     },
     data_initial: {
       type: 'string',
-      columnName: 'actual'
+      columnName: 'actual',
     },
     type: {
       type: 'string',
-      enum: ['local','directory','ranking','social','reputation','website','citations','competitor','cancelled'],
+      enum: ['local', 'directory', 'ranking', 'social', 'reputation', 'website', 'citations', 'competitor', 'cancelled'],
       required: true,
-      columnName: 'module'
-    }
-  }
-};  
+      columnName: 'module',
+    },
+  },
+};

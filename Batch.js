@@ -5,19 +5,19 @@ module.exports = {
     jobs: {
       type: 'integer',
       defaultsTo: 0,
-      required: true
+      required: true,
     },
     client: {
-      model: 'client'
+      model: 'client',
     },
     data: {
-      type: 'json'
+      type: 'json',
     },
     details: {
-      type: 'json'
+      type: 'json',
     },
     description: {
-      type: 'string'
-    }
-  }
+      type: 'string',
+    },
+  },
 };

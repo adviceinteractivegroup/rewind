@@ -9,32 +9,32 @@ module.exports = {
   attributes: {
     project: {
       model: 'project',
-      required: true
+      required: true,
     },
     user: {
-      model: 'user'
+      model: 'user',
     },
     data: {
-      type: 'json'
+      type: 'json',
     },
     directory: {
       model: 'directory',
-      required: true
+      required: true,
     },
     completedAt: {
-      type: 'datetime'
+      type: 'datetime',
     },
     pausedAt: {
-      type: 'datetime'
+      type: 'datetime',
     },
     duration: {
-      type: 'integer'
+      type: 'integer',
     },
     status: {
       type: 'string',
-      enum: ['not_started','paused','in_progress','overdue','completed'],
-      defaultsTo: 'not_started'
-    }
-  }
+      enum: ['not_started', 'paused', 'in_progress', 'overdue', 'completed'],
+      defaultsTo: 'not_started',
+    },
+  },
 };
 

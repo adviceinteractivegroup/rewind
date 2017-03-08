@@ -10,15 +10,15 @@ module.exports = {
   attributes: {
     name: {
       type: 'string',
-      required: true
+      required: true,
     },
     frequency: {
       type: 'string',
-      required: true
+      required: true,
     },
     command: {
       type: 'string',
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };

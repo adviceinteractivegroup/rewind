@@ -11,49 +11,49 @@ module.exports = {
     name: {
       type: 'string',
       required: true,
-      unique: true
+      unique: true,
     },
     location: {
       type: 'string',
-      required: true
+      required: true,
     },
     hours: {
-      type: 'string'
+      type: 'string',
     },
     phone: {
-      type: 'string'
+      type: 'string',
     },
     leader: {
-      model: 'user'
+      model: 'user',
     },
     threshold: {
       type: 'integer',
       required: true,
-      defaultsTo: 1000
+      defaultsTo: 1000,
     },
     tasksClosed: {
       type: 'integer',
       required: true,
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     tasksOpened: {
       type: 'integer',
       required: true,
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     projects: {
       type: 'integer',
       required: true,
-      defaultsTo: 0
+      defaultsTo: 0,
     },
     active: {
       type: 'boolean',
       required: true,
-      defaultsTo: true
+      defaultsTo: true,
     },
     users: {
       collection: 'user',
-      via: 'team'
-    }
-  }
+      via: 'team',
+    },
+  },
 };

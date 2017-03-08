@@ -4,26 +4,26 @@ module.exports = {
   attributes: {
     type: {
       type: 'string',
-      required: true
+      required: true,
     },
     legacypartner: {
-      model: 'legacypartner'
+      model: 'legacypartner',
     },
     legacyclient: {
-      model: 'legacyclient'
+      model: 'legacyclient',
     },
     user: {
-      model: 'user'
+      model: 'user',
     },
     client: {
-      model: 'client'
+      model: 'client',
     },
     agency: {
-      model: 'agency'
+      model: 'agency',
     },
     diff: {
       type: 'json',
-      required: true
-    }
-  }
-};  
+      required: true,
+    },
+  },
+};

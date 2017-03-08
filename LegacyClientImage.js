@@ -10,20 +10,20 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'id'
+      columnName: 'id',
     },
     client: {
       model: 'legacyclient',
-      columnName: 'id'
+      columnName: 'id',
     },
     imageArray: {
       type: 'string',
-      columnName: 'imgarray'
+      columnName: 'imgarray',
     },
     imageObject: {
       type: 'string',
-      columnName: 'additional_images'
-    }
-  }
-};  
+      columnName: 'additional_images',
+    },
+  },
+};
 

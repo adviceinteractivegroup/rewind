@@ -10,95 +10,95 @@ module.exports = {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'partner_id'
+      columnName: 'partner_id',
     },
     username: {
       type: 'string',
-      required: true
+      required: true,
     },
     domain: {
       type: 'string',
-      required: true
+      required: true,
     },
     ssodomain: {
-      type: 'string'
+      type: 'string',
     },
     title: {
       type: 'string',
-      required: true
+      required: true,
     },
     extras: {
-      type: 'json'
+      type: 'json',
     },
     deactivated: {
       type: 'string',
-      enum: ['false','true'],
-      defaultsTo: 'false'
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     test: {
       type: 'string',
-      enum: ['false','true'],
-      defaultsTo: 'false'
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     invoiced: {
       type: 'string',
-      enum: ['false','true'],
-      defaultsTo: 'false'
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     apiKey: {
       type: 'string',
-      columnName: 'api_key'
+      columnName: 'api_key',
     },
     createdAt: {
       type: 'datetime',
-      columnName: 'thedate'
+      columnName: 'thedate',
     },
     type: {
       type: 'string',
-      enum: ['retail','reseller','enterprise'],
+      enum: ['retail', 'reseller', 'enterprise'],
       defaultsTo: 'retail',
-      columnName: 'pay_type'
+      columnName: 'pay_type',
     },
     agent: {
       model: 'legacysalesagent',
-      columnName: 'sales_agent_id'
+      columnName: 'sales_agent_id',
     },
     totalClients: {
       type: 'integer',
-      columnName: 'total_clients'
+      columnName: 'total_clients',
     },
     totalClientsActive: {
       type: 'integer',
-      columnName: 'total_active'
+      columnName: 'total_active',
     },
     totalOrders: {
       type: 'integer',
-      columnName: 'total_orders'
+      columnName: 'total_orders',
     },
     totalProducts: {
       type: 'integer',
-      columnName: 'total_products'
+      columnName: 'total_products',
     },
     totalSpend: {
       type: 'integer',
-      columnName: 'total_spend'
+      columnName: 'total_spend',
     },
     totalOrders30: {
       type: 'integer',
-      columnName: 'total_orders_30'
+      columnName: 'total_orders_30',
     },
     totalOrders90: {
       type: 'integer',
-      columnName: 'total_orders_90'
+      columnName: 'total_orders_90',
     },
     totalSpend30: {
       type: 'integer',
-      columnName: 'total_spend_30'
+      columnName: 'total_spend_30',
     },
     totalSpend90: {
       type: 'integer',
-      columnName: 'total_spend_90'
-    }
-  }
-};  
+      columnName: 'total_spend_90',
+    },
+  },
+};
 

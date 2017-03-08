@@ -11,46 +11,46 @@ module.exports = {
         'bing',
         'bingLocal',
         'yahoo',
-        'yahooLocal'
-      ]
+        'yahooLocal',
+      ],
     },
     data: {
       type: 'json',
-      object: true
+      object: true,
     },
     position: {
       type: 'integer',
-      int: true
+      int: true,
     },
     error: {
       type: 'string',
-      defaultsTo: null
+      defaultsTo: null,
     },
     queueTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     startTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     endTime: {
       type: 'datetime',
-      defaultsTo: null
+      defaultsTo: null,
     },
     pending: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: false,
     },
     reportId: {
-      type: 'string'
+      type: 'string',
     },
 
     keyword: {
-      model: 'keyword'
+      model: 'keyword',
     },
     client: {
-      model: 'client'
-    }
-  }
+      model: 'client',
+    },
+  },
 };
