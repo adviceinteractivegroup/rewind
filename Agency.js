@@ -24,7 +24,9 @@ module.exports = {
       index: true,
       unique: true,
     },
-
+    partner: {
+      model: 'legacypartner',
+    },
     parent: {
       model: 'agency',
     },

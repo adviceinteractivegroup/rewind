@@ -48,6 +48,7 @@ module.exports = {
     apiKey: {
       type: 'string',
       columnName: 'api_key',
+      indexed: true,
     },
     createdAt: {
       type: 'datetime',

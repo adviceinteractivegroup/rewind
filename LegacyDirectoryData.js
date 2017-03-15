@@ -13,7 +13,7 @@ module.exports = {
       columnName: 'DIRECTORY_DATA_ID',
     },
     client: {
-      type: 'integer',
+      model: 'legacyclient',
       required: true,
       columnName: 'client_id',
     },
