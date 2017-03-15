@@ -59,6 +59,9 @@ module.exports = {
       type: 'string',
       columnName: 'submission_module_option',
     },
+    replacement: {
+      type: 'json',
+    },
   },
 };
 
