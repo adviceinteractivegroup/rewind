@@ -6,6 +6,10 @@ module.exports = {
       model: 'user',
       required: true,
     },
+    filters: {
+      type: 'json',
+      required: true,
+    },
     files: {
       type: 'json',
       required: true,
