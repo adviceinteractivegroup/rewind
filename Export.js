@@ -3,8 +3,7 @@
 module.exports = {
   attributes: {
     user: {
-      model: 'user',
-      required: true,
+      model: 'user'
     },
     filters: {
       type: 'json',
