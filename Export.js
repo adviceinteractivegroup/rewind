@@ -3,7 +3,7 @@
 module.exports = {
   attributes: {
     user: {
-      model: 'user'
+      model: 'user',
     },
     report: {
       type: 'string',
@@ -14,7 +14,7 @@ module.exports = {
       required: true,
     },
     files: {
-      type: 'json'
+      type: 'json',
     },
   },
 };

@@ -51,12 +51,16 @@ module.exports = {
       columnName: 'delay_maintenance',
     },
     intervalMaintenance: {
-      type: 'int',
+      type: 'string',
       columnName: 'interval_maintenance',
+      enum: ['monthly', 'yearly'],
+      defaultsTo: 'monthly',
     },
     intervalRenewal: {
-      type: 'int',
+      type: 'string',
       columnName: 'interval_renewal',
+      enum: ['monthly', 'yearly'],
+      defaultsTo: 'yearly',
     },
 
     periodMaintenance: {
