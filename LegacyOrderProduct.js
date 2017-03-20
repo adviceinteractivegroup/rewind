@@ -39,7 +39,7 @@ module.exports = {
     },
     priceMaintenance: {
       type: 'float',
-      columnName: 'price',
+      columnName: 'price_maintenance',
     },
     priceRenewal: {
       type: 'float',
