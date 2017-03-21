@@ -40,6 +40,11 @@ module.exports = {
       type: 'text',
     },
 
+    totalDrip: {
+      type: 'float',
+      required: true,
+      columnName: 'total_drip',
+    },
     totalServices: {
       type: 'float',
       required: true,
