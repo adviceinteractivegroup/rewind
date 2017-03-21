@@ -11,6 +11,7 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       columnName: 'invoice_id',
+      autoIncrement: true
     },
     partner: {
       model: 'legacypartner',
