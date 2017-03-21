@@ -11,7 +11,7 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       columnName: 'invoice_id',
-      autoIncrement: true
+      autoIncrement: true,
     },
     partner: {
       model: 'legacypartner',
@@ -28,6 +28,17 @@ module.exports = {
     dateStarting: {
       type: 'datetime',
       columnName: 'invoice_date',
+    },
+    dateUpdated: {
+      type: 'datetime',
+      columnName: 'date_updated',
+    },
+    dateGenerated: {
+      type: 'datetime',
+      columnName: 'date_generated',
+    },
+    url: {
+      type: 'string',
     },
     data: {
       type: 'json',
