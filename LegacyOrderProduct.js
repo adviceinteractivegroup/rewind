@@ -43,7 +43,7 @@ module.exports = {
     },
     priceRenewal: {
       type: 'float',
-      columnName: 'price',
+      columnName: 'price_renewal',
     },
 
     delayMaintenance: {
