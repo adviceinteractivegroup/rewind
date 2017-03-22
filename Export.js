@@ -16,5 +16,10 @@ module.exports = {
     files: {
       type: 'json',
     },
+    status: {
+      type: 'string',
+      enum: ['pending', 'completed'],
+      defaultsTo: 'pending',
+    },
   },
 };
