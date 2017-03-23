@@ -90,15 +90,17 @@ module.exports = {
       type: 'datetime',
       columnName: 'date_created',
       defaultsTo: function() {
- return Date();
-},
+       return Date();
+      },
     },
     completedAt: {
       type: 'datetime',
       columnName: 'date_completed',
     },
-
-
+    disabledAt: {
+      type: 'datetime',
+      columnName: 'date_disabled',
+    },
   },
 };
 
