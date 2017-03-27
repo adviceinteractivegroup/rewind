@@ -12,6 +12,10 @@ module.exports = {
       primaryKey: true,
       columnName: 'DIRECTORY_DATA_ID',
     },
+    batch: {
+      type: 'string',
+      columnName: 'batch_id',
+    },
     client: {
       model: 'legacyclient',
       required: true,
