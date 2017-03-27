@@ -13,7 +13,7 @@ module.exports = {
     name: {
       type: 'string',
       indexed: true
-    }
+    },
     data: {
       type: 'json',
     },
