@@ -28,6 +28,10 @@ module.exports = {
     data: {
       type: 'json',
     },
+    results: {
+      type: 'string',
+      enum: ['false', 'true'],
+    },
     directory: {
       type: 'string',
       required: true,
