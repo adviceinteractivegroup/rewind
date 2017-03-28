@@ -26,7 +26,10 @@ module.exports = {
       required: true,
       columnName: 'provider',
     },
-
+    batch: {
+      type: 'string',
+      columnName: 'batch_id',
+    },
     link: {
       type: 'string',
     },

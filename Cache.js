@@ -12,7 +12,7 @@ module.exports = {
   attributes: {
     name: {
       type: 'string',
-      indexed: true
+      indexed: true,
     },
     data: {
       type: 'json',
