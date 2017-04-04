@@ -215,6 +215,9 @@ module.exports = {
     status: {
       type: 'string',
     },
+    orders: {
+      type: 'integer',
+    },
     publicKey: {
       type: 'string',
       columnName: 'public',

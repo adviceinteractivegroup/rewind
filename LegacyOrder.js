@@ -11,6 +11,7 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       columnName: 'id',
+      autoIncrement: true,
     },
     partner: {
       model: 'legacypartner',
@@ -27,14 +28,23 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'dates',
+      defaultsTo: function() {
+ return Date();
+},
     },
     startedAt: {
       type: 'datetime',
       columnName: 'start_date',
+      defaultsTo: function() {
+ return Date();
+},
     },
     publishedAt: {
       type: 'datetime',
       columnName: 'publish_date',
+      defaultsTo: function() {
+ return Date();
+},
     },
     isPaid: {
       type: 'boolean',
