@@ -35,6 +35,14 @@ module.exports = {
       enum: ['false', 'true'],
       defaultsTo: 'false',
     },
+    deactivatedAt: {
+      type: 'datetime',
+      columnName: 'deactivated_date',
+    },
+    deactivatedReason: {
+      type: 'string',
+      columnName: 'deactivated_reason',
+    },
     test: {
       type: 'string',
       enum: ['false', 'true'],
