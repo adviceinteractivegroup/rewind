@@ -53,6 +53,10 @@ module.exports = {
       enum: ['false', 'true'],
       defaultsTo: 'false',
     },
+    chargeDescription: {
+      type: 'string',
+      columnName: 'charge_name',
+    },
     apiKey: {
       type: 'string',
       columnName: 'api_key',
