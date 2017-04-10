@@ -32,7 +32,7 @@ module.exports = {
       defaultsTo: 0,
     },
     createdAt: {
-      date: 'datetime',
+      type: 'datetime',
       columnName: 'thedate',
       defaultsTo: function() {
  return Date();

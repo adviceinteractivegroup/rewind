@@ -21,7 +21,7 @@ module.exports = {
       columnName: 'client_id',
     },
     createdAt: {
-      date: 'datetime',
+      type: 'datetime',
       columnName: 'thedate',
       defaultsTo: function() {
  return Date();
