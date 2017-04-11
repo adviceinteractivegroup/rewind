@@ -222,6 +222,10 @@ module.exports = {
       type: 'string',
       columnName: 'public',
     },
+    tokenGoogle: {
+      type: 'string',
+      columnName: 'google_token',
+    },
   },
 };
 
