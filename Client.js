@@ -136,5 +136,8 @@ module.exports = {
       type: 'string',
       index: true,
     },
+    tokenGoogle: {
+      type: 'string',
+    },
   },
 };

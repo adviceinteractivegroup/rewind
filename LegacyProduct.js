@@ -25,11 +25,11 @@ module.exports = {
     },
     priceRetail: {
       type: 'float',
-      columnName: 'pricea',
+      columnName: 'priceb',
     },
     priceReseller: {
       type: 'float',
-      columnName: 'priceb',
+      columnName: 'pricea',
     },
     maintenanceInterval: {
       type: 'string',
@@ -41,11 +41,11 @@ module.exports = {
     },
     maintenancePriceRetail: {
       type: 'float',
-      columnName: 'repeat_aprice',
+      columnName: 'repeat_price',
     },
     maintenancePriceReseller: {
       type: 'float',
-      columnName: 'repeat_price',
+      columnName: 'repeat_aprice',
     },
     submissionModule: {
       type: 'string',
