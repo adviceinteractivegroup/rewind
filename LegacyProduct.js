@@ -31,13 +31,14 @@ module.exports = {
       type: 'float',
       columnName: 'pricea',
     },
-    maintenanceInterval: {
-      type: 'string',
-      columnName: 'repeat',
-    },
     productType: {
       type: 'string',
       columnName: 'type',
+    },
+
+    maintenanceInterval: {
+      type: 'string',
+      columnName: 'repeat',
     },
     maintenancePriceRetail: {
       type: 'float',
@@ -47,6 +48,20 @@ module.exports = {
       type: 'float',
       columnName: 'repeat_aprice',
     },
+
+    renewalInterval: {
+      type: 'string',
+      columnName: 'renewal_interval',
+    },
+    renewalPriceRetail: {
+      type: 'float',
+      columnName: 'renewal_price_retail',
+    },
+    renewalPriceReseller: {
+      type: 'float',
+      columnName: 'renewal_price',
+    },
+
     submissionModule: {
       type: 'string',
       columnName: 'submission_module',
