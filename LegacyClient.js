@@ -96,7 +96,7 @@ module.exports = {
       columnName: 'd11',
     },
     description: {
-      type: 'integer',
+      type: 'string',
       columnName: 'd12',
     },
     payment: {
@@ -214,6 +214,8 @@ module.exports = {
     },
     status: {
       type: 'string',
+      enum: ['Inactive', 'Widget Lead', 'Active'],
+      defaultsTo: 'Inactive',
     },
     orders: {
       type: 'integer',
