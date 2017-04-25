@@ -74,6 +74,12 @@ module.exports = {
       type: 'string',
       columnName: 'submission_module_option',
     },
+    submissionModuleCategory: {
+      type: 'string',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
+      columnName: 'submission_module_category',
+    },
     replacement: {
       type: 'json',
     },
