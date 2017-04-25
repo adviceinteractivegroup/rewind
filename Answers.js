@@ -22,5 +22,9 @@ module.exports = {
       type: 'integer',
       defaultsTo: 0,
     },
+    internal: {
+      type: 'boolean',
+      defaultsTo: false,
+    },
   },
 };
