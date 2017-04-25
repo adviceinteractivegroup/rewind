@@ -228,6 +228,10 @@ module.exports = {
       type: 'string',
       columnName: 'google_token',
     },
+    categoryGoogle: {
+      type: 'string',
+      columnName: 'google_category_id',
+    },
   },
 };
 
