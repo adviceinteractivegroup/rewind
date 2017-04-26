@@ -162,8 +162,10 @@ module.exports = {
       columnName: 'd25',
     },
     hide: {
-      type: 'boolean',
+      type: 'string',
       columnName: 'hide_address',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     deleted: {
       type: 'string',
