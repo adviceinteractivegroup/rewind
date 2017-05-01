@@ -228,7 +228,7 @@ module.exports = {
       columnName: 'public',
     },
     tokenGoogle: {
-      type: 'string',
+      type: 'json',
       columnName: 'google_token',
     },
     categoryGoogle: {
