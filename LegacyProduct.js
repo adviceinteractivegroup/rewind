@@ -83,6 +83,12 @@ module.exports = {
     replacement: {
       type: 'json',
     },
+    isDisabled: {
+      type: 'string',
+      columnName: 'disable',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
+    },
   },
 };
 
