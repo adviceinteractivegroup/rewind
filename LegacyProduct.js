@@ -84,10 +84,9 @@ module.exports = {
       type: 'json',
     },
     isDisabled: {
-      type: 'string',
+      type: 'boolean',
       columnName: 'disable',
-      enum: ['false', 'true'],
-      defaultsTo: 'false',
+      defaultsTo: false,
     },
   },
 };
