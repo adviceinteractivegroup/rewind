@@ -220,6 +220,10 @@ module.exports = {
       enum: ['Inactive', 'Widget Lead', 'Active'],
       defaultsTo: 'Inactive',
     },
+    country: {
+      type: 'string',
+      defaultsTo: 'US',
+    },
     orders: {
       type: 'integer',
     },
