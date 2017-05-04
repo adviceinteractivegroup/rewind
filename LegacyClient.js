@@ -1,5 +1,7 @@
 'use strict';
 
+let md5 = require('md5');
+
 module.exports = {
 	connection: 'mysql',
   autoCreatedAt: false,
@@ -179,6 +181,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'since',
+      defaultsTo: function() {
+ return new Date();
+},
     },
     deletedAt: {
       type: 'datetime',
@@ -231,6 +236,7 @@ module.exports = {
       type: 'string',
       columnName: 'public',
     },
+
     tokenGoogle: {
       type: 'json',
       columnName: 'google_token',
@@ -239,6 +245,13 @@ module.exports = {
       type: 'string',
       columnName: 'google_category_id',
     },
+  },
+  beforeCreate: function(values, cb) {
+    if (!values.publicKey) {
+      let hrtime = process.hrtime();
+      values.publicKey = md5(hrtime + 'warpath forever!');
+    }
+    cb();
   },
 };
 
