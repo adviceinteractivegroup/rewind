@@ -11,6 +11,7 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       columnName: 'client_changelog_id',
+      autoIncrement: true,
     },
     client: {
       model: 'legacyclient',
@@ -18,16 +19,20 @@ module.exports = {
       required: true,
     },
     fields: {
-      type: 'json',
+      type: 'string',
       required: true,
     },
     diff: {
       type: 'json',
+      required: true,
     },
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
       required: true,
+      defaultsTo: function() {
+ return Date();
+},
     },
   },
 };
