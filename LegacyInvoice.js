@@ -25,6 +25,14 @@ module.exports = {
       type: 'datetime',
       columnName: 'attempt_date',
     },
+    dateAttempted2: {
+      type: 'datetime',
+      columnName: 'attempt_date_2',
+    },
+    dateAttempted3: {
+      type: 'datetime',
+      columnName: 'attempt_date_3',
+    },
     dateStarting: {
       type: 'datetime',
       columnName: 'invoice_date',
