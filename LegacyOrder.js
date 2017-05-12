@@ -16,6 +16,12 @@ module.exports = {
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id_fix',
+      required: true,
+    },
+    partnerUsername: {
+      type: 'string',
+      columnName: 'user',
+      required: true,
     },
     client: {
       model: 'legacyclient',
