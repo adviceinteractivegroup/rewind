@@ -72,8 +72,12 @@ module.exports = {
       columnName: 'charge_id',
     },
     price: {
-      type: 'string',
+      type: 'float',
       columnName: 'price',
+    },
+    discount: {
+      type: 'float',
+      columnName: 'discount',
     },
     schedule: {
       type: 'json',
