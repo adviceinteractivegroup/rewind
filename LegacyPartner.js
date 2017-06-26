@@ -76,6 +76,10 @@ module.exports = {
       model: 'legacysalesagent',
       columnName: 'sales_agent_id',
     },
+    manager: {
+      model: 'legacyaccountmanager',
+      columnName: 'account_manager_id',
+    },
     totalClients: {
       type: 'integer',
       columnName: 'total_clients',
