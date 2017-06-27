@@ -35,7 +35,8 @@ module.exports = {
       required: true,
     },
     gmb: {
-      model: 'gmb',
+      model: 'gmbtoken',
+      columnName: 'gmb_token_id',
     },
     street: {
       type: 'string',
