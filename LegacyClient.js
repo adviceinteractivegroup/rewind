@@ -34,7 +34,7 @@ module.exports = {
       columnName: 'user',
       required: true,
     },
-    gmb: {
+    gmb_token: {
       model: 'gmbtoken',
       columnName: 'gmb_token_id',
     },
