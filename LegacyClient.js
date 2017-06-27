@@ -34,6 +34,9 @@ module.exports = {
       columnName: 'user',
       required: true,
     },
+    gmb: {
+      model: 'gmb',
+    },
     street: {
       type: 'string',
       columnName: 'd3',
