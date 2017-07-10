@@ -11,6 +11,7 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       columnName: 'SUBMISSION_DATA_ID',
+      autoIncrement: true,
     },
     directory: {
       type: 'string',
