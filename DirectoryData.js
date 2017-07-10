@@ -3,7 +3,7 @@
 module.exports = {
   attributes: {
     client: {
-      model: 'legacyclient',
+      model: 'client',
       required: true,
       index: true,
     },
