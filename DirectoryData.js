@@ -2,9 +2,6 @@
 
 module.exports = {
   attributes: {
-    batch: {
-      model: 'batch',
-    },
     client: {
       model: 'legacyclient',
       required: true,
