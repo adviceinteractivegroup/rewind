@@ -112,6 +112,10 @@ module.exports = {
       via: 'client',
     },
 
+    submissions: {
+      type: 'json',
+    },
+
     custom1: {
       type: 'string',
       index: true,
