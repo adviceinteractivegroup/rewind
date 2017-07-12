@@ -47,12 +47,14 @@ module.exports = {
     data: {
       type: 'json',
     },
+    /*
     isProcessed: {
       type: 'string',
       enum: ['false', 'true'],
       defaultsTo: 'false',
       columnName: 'processed',
     },
+    */
     isInvalid: {
       type: 'string',
       enum: ['false', 'true'],
