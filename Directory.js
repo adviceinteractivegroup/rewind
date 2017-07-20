@@ -136,7 +136,7 @@ let directoryModel = {
       collection: 'reportingList',
     },
     description: {
-      type: 'string'
+      type: 'string',
     },
   },
 };
