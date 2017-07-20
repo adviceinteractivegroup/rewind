@@ -132,9 +132,11 @@ let directoryModel = {
       integer: true,
       defaultsTo: 2,
     },
-
     reportingList: {
       collection: 'reportingList',
+    },
+    description: {
+      type: 'string',
     },
   },
 };
