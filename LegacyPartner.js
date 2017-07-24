@@ -27,6 +27,14 @@ module.exports = {
       type: 'string',
       required: true,
     },
+    emailBilling: {
+      type: 'string',
+      columnName: 'email_billing',
+    },
+    emailMain: {
+      type: 'string',
+      columnName: 'email_main',
+    },
     extras: {
       type: 'json',
     },
