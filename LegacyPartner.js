@@ -35,6 +35,14 @@ module.exports = {
       type: 'string',
       columnName: 'email_main',
     },
+    lastLogin: {
+      type: 'datetime',
+      columnName: 'date_lastlogin',
+    },
+    lastRenewals: {
+      type: 'datetime',
+      columnName: 'date_lastrenewal',
+    },
     extras: {
       type: 'json',
     },
