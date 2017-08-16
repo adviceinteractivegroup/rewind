@@ -226,7 +226,7 @@ module.exports = {
     },
     status: {
       type: 'string',
-      enum: ['Inactive', 'Widget Lead', 'Active','Paused'],
+      enum: ['Inactive', 'Widget Lead', 'Active', 'Paused'],
       defaultsTo: 'Inactive',
     },
     country: {

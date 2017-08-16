@@ -114,6 +114,11 @@ module.exports = {
       required: true,
       columnName: 'fulfillment_type',
     },
+    isDisabled: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'disabled',
+    },
   },
 };
 
