@@ -85,6 +85,11 @@ module.exports = {
       enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons'],
       defaultsTo: 'primary',
     },
+    country: {
+      type: 'string',
+      enum: ['us', 'ca'],
+      defaultsTo: 'us',
+    },
     hasLink: {
       type: 'boolean',
       defaultsTo: false,
