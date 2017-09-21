@@ -80,10 +80,11 @@ module.exports = {
       defaultsTo: 'false',
       columnName: 'submission_module_category',
     },
-    type: {
+    productType: {
       type: 'string',
       enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons'],
       defaultsTo: 'primary',
+      columnName: 'type',
     },
     country: {
       type: 'string',
