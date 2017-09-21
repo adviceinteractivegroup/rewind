@@ -80,6 +80,16 @@ module.exports = {
       defaultsTo: 'false',
       columnName: 'submission_module_category',
     },
+    type: {
+      type: 'string',
+      enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons'],
+      defaultsTo: 'primary',
+    },
+    hasLink: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'link_back',
+    },
     replacement: {
       type: 'json',
     },
