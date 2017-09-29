@@ -179,10 +179,10 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'since',
-      defaultsTo: function() {
-			 return new Date();
+			defaultsTo: function() {
+				return new Date();
 			},
-    },
+		},
     deletedAt: {
       type: 'datetime',
       columnName: 'date_deleted',
