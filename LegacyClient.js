@@ -3,11 +3,11 @@
 let md5 = require('md5');
 
 module.exports = {
-	connection: 'mysql',
+  connection: 'mysql',
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'aclients',
+  tableName: 'aclients',
   attributes: {
     id: {
       type: 'integer',
