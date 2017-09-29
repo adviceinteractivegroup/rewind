@@ -65,7 +65,6 @@ module.exports = {
       columnName: 'd6',
       required: true,
     },
-
     phone: {
       type: 'string',
       columnName: 'd7',
@@ -75,7 +74,6 @@ module.exports = {
       type: 'string',
       columnName: 'd8',
     },
-
     website: {
       type: 'string',
       columnName: 'd9',
@@ -84,7 +82,6 @@ module.exports = {
       type: 'string',
       columnName: 'd10',
     },
-
     facebook: {
       type: 'string',
       columnName: 'd29',
@@ -97,7 +94,6 @@ module.exports = {
       type: 'string',
       columnName: 'd31',
     },
-
     years: {
       type: 'integer',
       columnName: 'd11',
@@ -122,7 +118,6 @@ module.exports = {
       type: 'string',
       columnName: 'd16',
     },
-
     keyword1: {
       type: 'string',
       columnName: 'd17',
@@ -143,7 +138,6 @@ module.exports = {
       type: 'string',
       columnName: 'd21',
     },
-
     keyword1_location: {
       type: 'string',
       columnName: 'd17_location',
@@ -186,8 +180,8 @@ module.exports = {
       type: 'datetime',
       columnName: 'since',
       defaultsTo: function() {
- return new Date();
-},
+			 return new Date();
+			},
     },
     deletedAt: {
       type: 'datetime',
@@ -203,7 +197,6 @@ module.exports = {
     LON: {
       type: 'float',
     },
-
     custom1: {
       type: 'string',
       columnName: 'fkc1',
@@ -240,11 +233,6 @@ module.exports = {
       type: 'string',
       columnName: 'public',
     },
-
-    tokenGoogle: {
-      type: 'json',
-      columnName: 'google_token',
-    },
     categoryGoogle: {
       type: 'string',
       columnName: 'google_category_id',
@@ -258,4 +246,3 @@ module.exports = {
     cb();
   },
 };
-
