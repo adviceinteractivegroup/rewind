@@ -21,7 +21,6 @@ module.exports = {
     },
     tag: {
       type: 'string',
-      required: true,
       index: true,
     },
     data: {
