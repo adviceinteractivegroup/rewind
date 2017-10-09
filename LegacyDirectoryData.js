@@ -21,6 +21,11 @@ module.exports = {
       required: true,
       columnName: 'client_id',
     },
+    partner: {
+      model: 'legacypartner',
+      required: true,
+      columnName: 'partner_id_fix',
+    },
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
