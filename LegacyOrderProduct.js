@@ -102,6 +102,10 @@ module.exports = {
       type: 'datetime',
       columnName: 'date_disabled',
     },
+    derezzedAt: {
+      type: 'datetime',
+      columnName: 'date_derezzed',
+    },
   },
 };
 
