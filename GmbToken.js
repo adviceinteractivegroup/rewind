@@ -13,6 +13,7 @@ module.exports = {
     },
     refresh_token: {
       type: 'string',
+      required: true,
     },
     location: {
       type: 'string',
