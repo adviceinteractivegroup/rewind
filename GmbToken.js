@@ -18,5 +18,10 @@ module.exports = {
     location: {
       type: 'string',
     },
+    status: {
+      type: 'string',
+      enum: ['Pending', 'GmbTab', 'GmbBulk'],
+      defaultsTo: 'Pending',
+    },
   },
 };
