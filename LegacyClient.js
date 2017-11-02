@@ -71,6 +71,10 @@ module.exports = {
       columnName: 'd7',
       required: true,
     },
+    phoneAlt: {
+      type: 'string',
+      columnName: 'additional_phone_numbers'
+    },
     fax: {
       type: 'string',
       columnName: 'd8',
