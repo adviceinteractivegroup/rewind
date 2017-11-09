@@ -73,7 +73,7 @@ module.exports = {
     },
     phoneAlt: {
       type: 'string',
-      columnName: 'additional_phone_numbers'
+      columnName: 'additional_phone_numbers',
     },
     fax: {
       type: 'string',
