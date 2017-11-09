@@ -104,6 +104,11 @@ module.exports = {
       columnName: 'disable',
       defaultsTo: false,
     },
+    hasFulfillment: {
+      type: 'boolean',
+      defaultsTo: true,
+      columnName: 'has_fulfillment',
+    },
   },
 };
 
