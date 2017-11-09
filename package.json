@@ -1,6 +1,6 @@
 {
   "name": "rewind",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "description": "Models Repository",
   "main": "index.js",
   "scripts": {

@@ -253,6 +253,9 @@ module.exports = {
       type: 'string',
       columnName: 'google_category_id',
     },
+    extra: {
+      type: 'json',
+    },
   },
   beforeCreate: function(values, cb) {
     if (!values.publicKey) {
