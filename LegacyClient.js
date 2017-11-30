@@ -71,6 +71,10 @@ module.exports = {
       columnName: 'd7',
       required: true,
     },
+    phoneAlt: {
+      type: 'string',
+      columnName: 'additional_phone_numbers',
+    },
     fax: {
       type: 'string',
       columnName: 'd8',
@@ -226,7 +230,7 @@ module.exports = {
     },
     status: {
       type: 'string',
-      enum: ['Inactive', 'Widget Lead', 'Active'],
+      enum: ['Inactive', 'Widget Lead', 'Active', 'Paused'],
       defaultsTo: 'Inactive',
     },
     country: {
@@ -248,6 +252,9 @@ module.exports = {
     categoryGoogle: {
       type: 'string',
       columnName: 'google_category_id',
+    },
+    extra: {
+      type: 'json',
     },
   },
   beforeCreate: function(values, cb) {

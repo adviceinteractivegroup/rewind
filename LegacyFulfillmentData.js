@@ -11,6 +11,7 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       columnName: 'id',
+      autoIncrement: true,
     },
     partner: {
       model: 'legacypartner',
@@ -112,6 +113,11 @@ module.exports = {
       enum: ['manual', 'api'],
       required: true,
       columnName: 'fulfillment_type',
+    },
+    isDisabled: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'disabled',
     },
   },
 };

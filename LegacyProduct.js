@@ -80,6 +80,22 @@ module.exports = {
       defaultsTo: 'false',
       columnName: 'submission_module_category',
     },
+    productType: {
+      type: 'string',
+      enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons'],
+      defaultsTo: 'primary',
+      columnName: 'type',
+    },
+    country: {
+      type: 'string',
+      enum: ['us', 'ca'],
+      defaultsTo: 'us',
+    },
+    hasLink: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'link_back',
+    },
     replacement: {
       type: 'json',
     },
@@ -87,6 +103,11 @@ module.exports = {
       type: 'boolean',
       columnName: 'disable',
       defaultsTo: false,
+    },
+    hasFulfillment: {
+      type: 'boolean',
+      defaultsTo: true,
+      columnName: 'has_fulfillment',
     },
   },
 };

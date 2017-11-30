@@ -42,6 +42,9 @@ module.exports = {
     hours: {
       type: 'json',
     },
+    description: {
+      type: 'text',
+    },
     hide: {
       type: 'boolean',
       defaultsTo: false,

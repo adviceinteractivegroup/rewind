@@ -17,6 +17,11 @@ module.exports = {
     service: {
       type: 'string',
       required: true,
+      index: true,
+    },
+    tag: {
+      type: 'string',
+      index: true,
     },
     data: {
       type: 'json',
