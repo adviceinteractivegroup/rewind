@@ -47,12 +47,6 @@ module.exports = {
     data: {
       type: 'json',
     },
-    username: {
-      type: 'string',
-    },
-    password: {
-      type: 'string',
-    },
     /*
     isProcessed: {
       type: 'string',
