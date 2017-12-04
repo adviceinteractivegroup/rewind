@@ -94,6 +94,10 @@ module.exports = {
        return Date();
       },
     },
+    startedAt: {
+      type: 'datetime',
+      columnName: 'date_started',
+    },
     completedAt: {
       type: 'datetime',
       columnName: 'date_completed',
