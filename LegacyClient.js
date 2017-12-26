@@ -41,6 +41,7 @@ module.exports = {
     street: {
       type: 'string',
       columnName: 'd3',
+      required: true,
     },
     suite: {
       type: 'string',
@@ -113,10 +114,6 @@ module.exports = {
     payment: {
       type: 'string',
       columnName: 'd13',
-    },
-    hours: {
-      type: 'string',
-      columnName: 'd14',
     },
     services: {
       type: 'string',
