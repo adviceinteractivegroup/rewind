@@ -42,6 +42,9 @@ module.exports = {
     hours: {
       type: 'json',
     },
+    hoursSpecial: {
+      type: 'json',
+    },
     description: {
       type: 'text',
     },
