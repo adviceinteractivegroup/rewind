@@ -51,6 +51,12 @@ module.exports = {
       type: 'string',
       columnName: 'd14',
     },
+    hoursObject: {
+      type: 'json',
+    },
+    hoursSpecialObject: {
+      type: 'json',
+    },
     city: {
       type: 'string',
       columnName: 'd4',
