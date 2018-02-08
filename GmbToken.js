@@ -18,5 +18,8 @@ module.exports = {
     location: {
       type: 'string',
     },
+    status: {
+      type: 'string',
+    },
   },
 };
