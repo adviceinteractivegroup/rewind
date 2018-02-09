@@ -38,6 +38,10 @@ module.exports = {
       model: 'gmbtoken',
       columnName: 'gmb_token_id',
     },
+    gmb_location: {
+      type: 'json',
+      columnName: 'gmb_location',
+    },
     street: {
       type: 'string',
       columnName: 'd3',
@@ -246,11 +250,6 @@ module.exports = {
     publicKey: {
       type: 'string',
       columnName: 'public',
-    },
-
-    tokenGoogle: {
-      type: 'json',
-      columnName: 'google_token',
     },
     categoryGoogle: {
       type: 'string',
