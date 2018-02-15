@@ -19,7 +19,7 @@ module.exports = {
       type: 'string',
     },
     account: {
-      type: 'account',
+      type: 'string',
     },
     status: {
       type: 'string',
