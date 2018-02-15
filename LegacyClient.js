@@ -39,7 +39,7 @@ module.exports = {
       columnName: 'gmb_token_id',
     },
     gmb_location: {
-      type: 'json',
+      type: 'string',
       columnName: 'gmb_location',
     },
     street: {
@@ -76,7 +76,6 @@ module.exports = {
       columnName: 'd6',
       required: true,
     },
-
     phone: {
       type: 'string',
       columnName: 'd7',
@@ -267,4 +266,3 @@ module.exports = {
     cb();
   },
 };
-

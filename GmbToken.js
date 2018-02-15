@@ -18,6 +18,9 @@ module.exports = {
     location: {
       type: 'string',
     },
+    account: {
+      type: 'account',
+    },
     status: {
       type: 'string',
     },
