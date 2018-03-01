@@ -15,12 +15,6 @@ module.exports = {
       type: 'string',
       required: true,
     },
-    location: {
-      type: 'string',
-    },
-    account: {
-      type: 'string',
-    },
     status: {
       type: 'string',
     },
