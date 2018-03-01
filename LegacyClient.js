@@ -38,11 +38,11 @@ module.exports = {
       model: 'gmbtoken',
       columnName: 'gmb_token_id',
     },
-		gmb_location: {
+    gmb_location: {
       type: 'string',
       columnName: 'gmb_location',
     },
-		gmb_account: {
+    gmb_account: {
       type: 'string',
       columnName: 'gmb_account',
     },
