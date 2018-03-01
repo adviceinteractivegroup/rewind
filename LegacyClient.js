@@ -42,6 +42,10 @@ module.exports = {
       type: 'string',
       columnName: 'gmb_location',
     },
+    gmb_account: {
+      type: 'string',
+      columnName: 'gmb_account',
+    },
     street: {
       type: 'string',
       columnName: 'd3',
