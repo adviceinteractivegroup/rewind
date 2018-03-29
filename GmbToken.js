@@ -17,6 +17,8 @@ module.exports = {
     },
     status: {
       type: 'string',
+      enum: ['undefined', 'valid', 'invalid'],
+      defaultsTo: 'undefined',
     },
   },
 };
