@@ -142,7 +142,7 @@ module.exports = {
       type: 'integer',
       columnName: 'total_spend_90',
     },
-		gmb_tokens: {
+    gmb_tokens: {
       type: 'json',
     },
   },
