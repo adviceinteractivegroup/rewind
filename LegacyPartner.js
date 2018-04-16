@@ -74,6 +74,11 @@ module.exports = {
       enum: ['false', 'true'],
       defaultsTo: 'false',
     },
+    test4: {
+      type: 'string',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
+    },
     invoiced: {
       type: 'string',
       enum: ['false', 'true'],
