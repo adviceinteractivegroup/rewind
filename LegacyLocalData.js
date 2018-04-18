@@ -59,9 +59,6 @@ module.exports = {
     photos: {
       type: 'integer',
     },
-    photos: {
-      type: 'integer',
-    },
     website: {
       type: 'string',
       columnName: 'website',
