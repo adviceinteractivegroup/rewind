@@ -29,6 +29,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     data: {
       type: 'json',

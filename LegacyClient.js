@@ -200,8 +200,8 @@ module.exports = {
       type: 'datetime',
       columnName: 'since',
       defaultsTo: function() {
- return new Date();
-},
+       return new Date();
+      },
     },
     deletedAt: {
       type: 'datetime',
