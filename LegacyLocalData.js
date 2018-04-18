@@ -25,6 +25,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'report_date',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     directory: {
       type: 'string',
