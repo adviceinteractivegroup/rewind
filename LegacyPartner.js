@@ -147,6 +147,15 @@ module.exports = {
       type: 'integer',
       columnName: 'total_spend_90',
     },
+    reportingList: {
+      model: 'reportinglist',
+      columnName: 'reporting_list',
+    },
+    isThrottled: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'throttle',
+    },
   },
 };
 
