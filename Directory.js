@@ -132,6 +132,7 @@ let directoryModel = {
     },
     reportingList: {
       collection: 'reportingList',
+      via: 'directories',
     },
     description: {
       type: 'string',

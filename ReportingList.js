@@ -20,6 +20,7 @@ let model = {
     directories: {
       collection: 'directory',
       dominant: true,
+      via: 'reportingList',
     },
   },
 };
