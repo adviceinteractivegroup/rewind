@@ -46,8 +46,9 @@ module.exports = {
       columnName: 'provider',
     },
     errors: {
-      type: 'boolean',
-      defaultsTo: false,
+      type: 'string',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     elapsedTime: {
       type: 'integer',
