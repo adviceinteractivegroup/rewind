@@ -11,6 +11,9 @@ let directoryModel = {
       required: true,
       url: true,
     },
+    logo: {
+      type: 'string',
+    },
     module: {
       type: 'string',
       unique: true,
@@ -136,6 +139,11 @@ let directoryModel = {
     },
     description: {
       type: 'string',
+    },
+    executionTime: {
+      type: 'integer',
+      intger: true,
+      defaultsTo: 60,
     },
   },
 };
