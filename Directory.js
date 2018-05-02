@@ -146,7 +146,7 @@ let directoryModel = {
       defaultsTo: 60,
     },
     product: {
-      model: 'product',
+      model: 'legacyproduct',
     },
   },
 };
