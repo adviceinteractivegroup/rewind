@@ -145,6 +145,9 @@ let directoryModel = {
       intger: true,
       defaultsTo: 60,
     },
+    product: {
+      model: 'product',
+    },
   },
 };
 
