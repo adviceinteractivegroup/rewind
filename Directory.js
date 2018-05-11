@@ -18,6 +18,12 @@ let directoryModel = {
       type: 'string',
       unique: true,
     },
+    moduleLogic: {
+      type: 'string',
+      required: true,
+      defaultsTo: 'native',
+      enum: ['native', 'generic', 'native-generic', 'generic-native'],
+    },
     country: {
       type: 'string',
       required: true,
