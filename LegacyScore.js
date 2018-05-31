@@ -16,6 +16,9 @@ module.exports = {
       model: 'legacyclient',
       columnName: 'id',
     },
+    directories: {
+      type: 'json',
+    },
     data: {
       type: 'json',
     },
@@ -36,6 +39,11 @@ module.exports = {
        return new Date();
       },
     },
+    isComplete: {
+      type: 'boolean',
+      columnName: 'is_complete',
+      defaultsTo: 0
+    }
   },
 };
 
