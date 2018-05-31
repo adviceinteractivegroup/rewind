@@ -19,13 +19,22 @@ module.exports = {
     data: {
       type: 'json',
     },
+    version: {
+      type: 'string',
+    },
     updatedAt: {
       type: 'datetime',
       columnName: 'updated',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
   },
 };
