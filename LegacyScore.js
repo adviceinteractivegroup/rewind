@@ -17,6 +17,10 @@ module.exports = {
       model: 'legacyclient',
       columnName: 'client_id',
     },
+    partner: {
+      model: 'legacypartner',
+      columnName: 'partner_id',
+    },
     directories: {
       type: 'json',
     },
