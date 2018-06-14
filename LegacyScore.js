@@ -11,6 +11,7 @@ module.exports = {
       type: 'integer',
       primaryKey: true,
       columnName: 'id',
+      autoIncrement: true,
     },
     client: {
       model: 'legacyclient',
