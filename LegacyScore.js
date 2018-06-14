@@ -15,7 +15,7 @@ module.exports = {
     },
     client: {
       model: 'legacyclient',
-      columnName: 'id',
+      columnName: 'client_id',
     },
     directories: {
       type: 'json',
