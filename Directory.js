@@ -148,7 +148,7 @@ let directoryModel = {
     },
     executionTime: {
       type: 'integer',
-      intger: true,
+      integer: true,
       defaultsTo: 60,
     },
     product: {
