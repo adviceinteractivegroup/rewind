@@ -21,11 +21,23 @@ module.exports = {
       model: 'legacypartner',
       columnName: 'partner_id',
     },
+    batch: {
+      model: 'batch',
+      columnName: 'batch_id',
+    },
     directories: {
       type: 'json',
     },
     data: {
       type: 'json',
+    },
+    countRequested: {
+      type: 'integer',
+      columnName: 'num_requested',
+    },
+    countCompleted: {
+      type: 'integer',
+      columnName: 'num_completed',
     },
     score: {
       type: 'integer',

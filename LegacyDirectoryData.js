@@ -13,7 +13,7 @@ module.exports = {
       columnName: 'DIRECTORY_DATA_ID',
     },
     batch: {
-      type: 'string',
+      model: 'batch',
       columnName: 'batch_id',
     },
     client: {

@@ -35,7 +35,7 @@ module.exports = {
       columnName: 'provider',
     },
     batch: {
-      type: 'string',
+      model: 'batch',
       columnName: 'batch_id',
     },
     link: {
