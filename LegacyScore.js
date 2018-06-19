@@ -27,6 +27,9 @@ module.exports = {
     data: {
       type: 'json',
     },
+    score: {
+      type: 'integer',
+    },
     version: {
       type: 'string',
     },
