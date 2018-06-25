@@ -75,6 +75,10 @@ module.exports = {
       type: 'float',
       columnName: 'price',
     },
+    priceAdjust: {
+      type: 'float',
+      columnName: 'price_adjust',
+    },
     discount: {
       type: 'float',
       columnName: 'discount',
