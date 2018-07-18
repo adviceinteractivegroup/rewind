@@ -86,6 +86,10 @@ module.exports = {
     schedule: {
       type: 'json',
     },
+    postData: {
+      type: 'json',
+      columnName: 'post_data',
+    },
     toJSON: function() {
       let obj = this.toObject();
       obj.products = obj.products.split('|');

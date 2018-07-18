@@ -62,8 +62,8 @@ module.exports = {
     isComplete: {
       type: 'boolean',
       columnName: 'is_complete',
-      defaultsTo: 0
-    }
+      defaultsTo: 0,
+    },
   },
 };
 
