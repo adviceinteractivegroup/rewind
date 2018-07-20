@@ -79,6 +79,14 @@ module.exports = {
       type: 'float',
       columnName: 'price_adjust',
     },
+    priceRecurring: {
+      type: 'float',
+      columnName: 'price_recurring',
+    },
+    interval: {
+      type: 'string',
+      columnName: 'interval',
+    },
     discount: {
       type: 'float',
       columnName: 'discount',
