@@ -98,6 +98,10 @@ module.exports = {
       type: 'json',
       columnName: 'post_data',
     },
+    extra: {
+      type: 'json',
+      columnName: 'order_details',
+    },
     toJSON: function() {
       let obj = this.toObject();
       obj.products = obj.products.split('|');
