@@ -41,6 +41,10 @@ module.exports = {
     link: {
       type: 'string',
     },
+    reviews: {
+      type: 'integer',
+      columnName: 'reviews',
+    },
     claimed: {
       type: 'string',
       enum: ['false', 'true'],
