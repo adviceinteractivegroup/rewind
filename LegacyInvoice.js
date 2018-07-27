@@ -95,6 +95,10 @@ module.exports = {
       required: true,
       columnName: 'total_grand',
     },
+    totalRecalc: {
+      type: 'float',
+      columnName: 'total_grand_recalc',
+    },
     chargeId: {
       type: 'string',
       columnName: 'charge_id',
