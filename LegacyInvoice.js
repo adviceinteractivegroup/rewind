@@ -84,6 +84,10 @@ module.exports = {
       required: true,
       columnName: 'total_maintenance',
     },
+    totalMaintenanceRecalc: {
+      type: 'float',
+      columnName: 'total_maintenance_recalc',
+    },
     totalRenewals: {
       type: 'float',
       required: true,
