@@ -55,6 +55,10 @@ module.exports = {
     data: {
       type: 'json',
     },
+    dataRecalc: {
+      type: 'json',
+      columnName: 'data_recalc',
+    },
     paid: {
       type: 'string',
       enum: ['false', 'true'],
