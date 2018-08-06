@@ -19,9 +19,11 @@ module.exports = {
     domain: {
       type: 'string',
       required: true,
+      regex: /^[a-zA-Z0-9\.\-]*$/i,
     },
     ssodomain: {
       type: 'string',
+      regex: /^[a-zA-Z0-9\.\-]*$/i,
     },
     title: {
       type: 'string',
