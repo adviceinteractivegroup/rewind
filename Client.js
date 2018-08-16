@@ -149,5 +149,8 @@ module.exports = {
     tokenGoogle: {
       type: 'string',
     },
+    extra: {
+      type: 'json',
+    },
   },
 };
