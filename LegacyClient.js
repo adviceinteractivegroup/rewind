@@ -1,6 +1,7 @@
 'use strict';
 
 let md5 = require('md5');
+let utf8 = require('utf8');
 
 module.exports = {
 	connection: 'mysql',

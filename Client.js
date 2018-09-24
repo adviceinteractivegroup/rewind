@@ -1,5 +1,7 @@
 'use strict';
 
+let utf8 = require('utf8');
+
 module.exports = {
   attributes: {
     businessName: {
