@@ -154,10 +154,18 @@ module.exports = {
     },
     toJSON: function() {
       let obj = this.toObject();
-      obj.businessName = utf8.decode(obj.businessName);
-      obj.street1 = utf8.decode(obj.street1);
-      obj.city = utf8.decode(obj.city);
-      obj.description = utf8.decode(obj.description);
+      if (obj.businessName) {
+        obj.businessName = utf8.decode(obj.businessName);
+      }
+      if (obj.street1) {
+        obj.street1 = utf8.decode(obj.street1);
+      }
+      if (obj.city) {
+        obj.city = utf8.decode(obj.city);
+      }
+      if (obj.description) {
+        obj.description = utf8.decode(obj.description);
+      }
       return obj;
     },
   },

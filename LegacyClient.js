@@ -263,10 +263,18 @@ module.exports = {
     },
     toJSON: function() {
       let obj = this.toObject();
-      obj.name = utf8.decode(obj.name);
-      obj.street = utf8.decode(obj.street);
-      obj.city = utf8.decode(obj.city);
-      obj.description = utf8.decode(obj.description);
+      if (obj.name) {
+        obj.name = utf8.decode(obj.name);
+      }
+      if (obj.street) {
+        obj.street = utf8.decode(obj.street);
+      }
+      if (obj.city) {
+        obj.city = utf8.decode(obj.city);
+      }
+      if (obj.description) {
+        obj.description = utf8.decode(obj.description);
+      }
       return obj;
     },
   },
