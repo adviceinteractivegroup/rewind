@@ -261,6 +261,13 @@ module.exports = {
     extra: {
       type: 'json',
     },
+    toJSON: function() {
+      let obj = this.toObject();
+      obj.name = utf8.decode(obj.name);
+      obj.street = utf8.decode(obj.street);
+      obj.city = utf8.decode(obj.city);
+      return obj;
+    },
   },
   beforeCreate: function(values, cb) {
     if (!values.publicKey) {

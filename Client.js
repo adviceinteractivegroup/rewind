@@ -152,5 +152,12 @@ module.exports = {
     extra: {
       type: 'json',
     },
+    toJSON: function() {
+      let obj = this.toObject();
+      obj.businessName = utf8.decode(obj.businessName);
+      obj.street1 = utf8.decode(obj.street1);
+      obj.city = utf8.decode(obj.city);
+      return obj;
+    },
   },
 };
