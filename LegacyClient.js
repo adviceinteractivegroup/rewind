@@ -266,6 +266,7 @@ module.exports = {
       obj.name = utf8.decode(obj.name);
       obj.street = utf8.decode(obj.street);
       obj.city = utf8.decode(obj.city);
+      obj.description = utf8.decode(obj.description);
       return obj;
     },
   },

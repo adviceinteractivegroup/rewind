@@ -157,6 +157,7 @@ module.exports = {
       obj.businessName = utf8.decode(obj.businessName);
       obj.street1 = utf8.decode(obj.street1);
       obj.city = utf8.decode(obj.city);
+      obj.description = utf8.decode(obj.description);
       return obj;
     },
   },
