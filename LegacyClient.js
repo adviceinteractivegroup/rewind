@@ -279,7 +279,7 @@ module.exports = {
         }
       }
       if (obj.city) {
-        try { 
+        try {
           utf8.decode(obj.city);
           obj.city = utf8.decode(obj.city);
         } catch (e) {
