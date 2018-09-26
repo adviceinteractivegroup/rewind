@@ -265,16 +265,32 @@ module.exports = {
     toJSON: function() {
       let obj = this.toObject();
       if (obj.name) {
-        obj.name = utf8.decode(obj.name);
+        try {
+          utf8.decode(obj.name);
+          obj.name = utf8.decode(obj.name);
+        } catch (e) {
+        }
       }
       if (obj.street) {
-        obj.street = utf8.decode(obj.street);
+        try {
+          utf8.decode(obj.street);
+          obj.street = utf8.decode(obj.street);
+        } catch (e) {
+        }
       }
       if (obj.city) {
-        obj.city = utf8.decode(obj.city);
+        try { 
+          utf8.decode(obj.city);
+          obj.city = utf8.decode(obj.city);
+        } catch (e) {
+        }
       }
       if (obj.description) {
-        obj.description = utf8.decode(obj.description);
+        try {
+          utf8.decode(obj.description);
+          obj.description = utf8.decode(obj.description);
+        } catch (e) {
+        }
       }
       return obj;
     },
