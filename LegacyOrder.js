@@ -27,6 +27,10 @@ module.exports = {
       model: 'legacyclient',
       columnName: 'client',
     },
+    user: {
+      model: 'legacyuser',
+      columnName: 'adminuser_id',
+    },
     products: {
       type: 'string',
       columnName: 'orde',
