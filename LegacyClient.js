@@ -246,6 +246,7 @@ module.exports = {
     },
     country: {
       type: 'string',
+      enum: ['US', 'CA', 'BS', 'PR', 'CR'],
       defaultsTo: 'US',
     },
     orders: {
