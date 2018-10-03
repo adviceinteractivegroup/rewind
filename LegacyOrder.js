@@ -27,7 +27,7 @@ module.exports = {
       model: 'legacyclient',
       columnName: 'client',
     },
-    user: {
+    admin: {
       model: 'legacyuser',
       columnName: 'adminuser_id',
     },
