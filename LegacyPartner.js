@@ -25,6 +25,12 @@ module.exports = {
       type: 'string',
       regex: /^[a-zA-Z0-9\.\-]*$/i,
     },
+    country: {
+      type: 'string',
+      enum: ['US', 'CA', 'CR'],
+      defaultsTo: 'US',
+      columnName: 'country_code',
+    },
     title: {
       type: 'string',
       required: true,
