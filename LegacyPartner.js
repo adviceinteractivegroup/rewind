@@ -27,7 +27,7 @@ module.exports = {
     },
     country: {
       type: 'string',
-      enum: ['US', 'CA', 'CR'],
+      enum: ['US', 'CA', 'CR', 'BS'],
       defaultsTo: 'US',
       columnName: 'country_code',
     },
