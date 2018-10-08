@@ -48,16 +48,8 @@ module.exports = {
     url: {
       type: 'string',
     },
-    urlRecalc: {
-      type: 'string',
-      columnName: 'url_recalc',
-    },
     data: {
       type: 'json',
-    },
-    dataRecalc: {
-      type: 'json',
-      columnName: 'data_recalc',
     },
     paid: {
       type: 'string',
