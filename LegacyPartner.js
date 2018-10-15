@@ -164,6 +164,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'throttle',
     },
+    featurePython: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_python',
+    },
   },
 };
 
