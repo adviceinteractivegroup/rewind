@@ -21,6 +21,10 @@ module.exports = {
       model: 'legacypartner',
       columnName: 'partner_id',
     },
+    admin: {
+      model: 'legacyuser',
+      columnName: 'adminuser_id',
+    },
     batch: {
       model: 'batch',
       columnName: 'batch_id',
