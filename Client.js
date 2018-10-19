@@ -36,6 +36,7 @@ module.exports = {
         'AU',
         'DE',
         'NZ',
+        'CR',
       ],
     },
     website: {
