@@ -107,7 +107,7 @@ module.exports = {
     },
     type: {
       type: 'string',
-      enum: ['retail', 'reseller', 'enterprise'],
+      enum: ['retail', 'reseller', 'enterprise', 'python'],
       defaultsTo: 'retail',
       columnName: 'pay_type',
     },
