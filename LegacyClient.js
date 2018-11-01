@@ -103,7 +103,10 @@ module.exports = {
       type: 'string',
       columnName: 'd10',
     },
-
+    emailPrivate: {
+      type: 'string',
+      columnName: 'cred_email',
+    },
     facebook: {
       type: 'string',
       columnName: 'd29',
