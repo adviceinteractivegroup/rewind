@@ -17,6 +17,7 @@ let directoryModel = {
     module: {
       type: 'string',
       unique: true,
+      required: true,
     },
     moduleLogic: {
       type: 'string',
