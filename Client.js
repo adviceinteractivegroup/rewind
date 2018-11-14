@@ -34,6 +34,7 @@ module.exports = {
         'GB',
         'CA',
         'AU',
+        'BS',
         'DE',
         'NZ',
         'CR',
