@@ -56,6 +56,9 @@ module.exports = {
       type: 'string',
       columnName: 'suite',
     },
+    addressExtraObject: {
+      type: 'json',
+    },
     hours: {
       type: 'string',
       columnName: 'd14',
