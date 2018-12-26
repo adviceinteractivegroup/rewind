@@ -13,7 +13,7 @@ module.exports = {
       columnName: 'DIRECTORY_DATA_ID',
     },
     batch: {
-      type: 'string',
+      model: 'batch',
       columnName: 'batch_id',
     },
     client: {
@@ -29,6 +29,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     data: {
       type: 'json',
@@ -43,8 +46,9 @@ module.exports = {
       columnName: 'provider',
     },
     errors: {
-      type: 'boolean',
-      defaultsTo: false,
+      type: 'string',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
     },
     elapsedTime: {
       type: 'integer',

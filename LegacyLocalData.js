@@ -25,6 +25,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'report_date',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     directory: {
       type: 'string',
@@ -32,11 +35,15 @@ module.exports = {
       columnName: 'provider',
     },
     batch: {
-      type: 'string',
+      model: 'batch',
       columnName: 'batch_id',
     },
     link: {
       type: 'string',
+    },
+    reviews: {
+      type: 'integer',
+      columnName: 'reviews',
     },
     claimed: {
       type: 'string',
@@ -51,9 +58,6 @@ module.exports = {
       enum: ['false', 'true'],
     },
     categories: {
-      type: 'integer',
-    },
-    photos: {
       type: 'integer',
     },
     photos: {

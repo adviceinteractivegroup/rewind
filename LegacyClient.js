@@ -1,6 +1,7 @@
 'use strict';
 
 let md5 = require('md5');
+let utf8 = require('utf8');
 
 module.exports = {
 	connection: 'mysql',
@@ -38,17 +39,35 @@ module.exports = {
       model: 'gmbtoken',
       columnName: 'gmb_token_id',
     },
+    gmb_location: {
+      type: 'string',
+      columnName: 'gmb_location',
+    },
+    gmb_account: {
+      type: 'string',
+      columnName: 'gmb_account',
+    },
     street: {
       type: 'string',
       columnName: 'd3',
+      required: true,
     },
     suite: {
       type: 'string',
       columnName: 'suite',
     },
+    addressExtraObject: {
+      type: 'json',
+    },
     hours: {
       type: 'string',
       columnName: 'd14',
+    },
+    hoursObject: {
+      type: 'json',
+    },
+    hoursSpecialObject: {
+      type: 'json',
     },
     city: {
       type: 'string',
@@ -65,7 +84,6 @@ module.exports = {
       columnName: 'd6',
       required: true,
     },
-
     phone: {
       type: 'string',
       columnName: 'd7',
@@ -88,7 +106,10 @@ module.exports = {
       type: 'string',
       columnName: 'd10',
     },
-
+    emailPrivate: {
+      type: 'string',
+      columnName: 'cred_email',
+    },
     facebook: {
       type: 'string',
       columnName: 'd29',
@@ -113,10 +134,6 @@ module.exports = {
     payment: {
       type: 'string',
       columnName: 'd13',
-    },
-    hours: {
-      type: 'string',
-      columnName: 'd14',
     },
     services: {
       type: 'string',
@@ -190,8 +207,8 @@ module.exports = {
       type: 'datetime',
       columnName: 'since',
       defaultsTo: function() {
- return new Date();
-},
+       return new Date();
+      },
     },
     deletedAt: {
       type: 'datetime',
@@ -244,17 +261,44 @@ module.exports = {
       type: 'string',
       columnName: 'public',
     },
-
-    tokenGoogle: {
-      type: 'json',
-      columnName: 'google_token',
-    },
     categoryGoogle: {
       type: 'string',
       columnName: 'google_category_id',
     },
     extra: {
       type: 'json',
+    },
+    toJSON: function() {
+      let obj = this.toObject();
+      if (obj.name) {
+        try {
+          utf8.decode(obj.name);
+          obj.name = utf8.decode(obj.name);
+        } catch (e) {
+        }
+      }
+      if (obj.street) {
+        try {
+          utf8.decode(obj.street);
+          obj.street = utf8.decode(obj.street);
+        } catch (e) {
+        }
+      }
+      if (obj.city) {
+        try {
+          utf8.decode(obj.city);
+          obj.city = utf8.decode(obj.city);
+        } catch (e) {
+        }
+      }
+      if (obj.description) {
+        try {
+          utf8.decode(obj.description);
+          obj.description = utf8.decode(obj.description);
+        } catch (e) {
+        }
+      }
+      return obj;
     },
   },
   beforeCreate: function(values, cb) {
@@ -265,4 +309,3 @@ module.exports = {
     cb();
   },
 };
-

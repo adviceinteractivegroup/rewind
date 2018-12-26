@@ -5,6 +5,7 @@ module.exports = {
     email: {
       type: 'string',
       required: true,
+      unique: true,
       index: true,
     },
     url: {
@@ -15,8 +16,10 @@ module.exports = {
       type: 'string',
       required: true,
     },
-    location: {
+    status: {
       type: 'string',
+      enum: ['undefined', 'valid', 'invalid'],
+      defaultsTo: 'undefined',
     },
   },
 };

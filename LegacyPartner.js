@@ -19,9 +19,17 @@ module.exports = {
     domain: {
       type: 'string',
       required: true,
+      regex: /^[a-zA-Z0-9\.\-]*$/i,
     },
     ssodomain: {
       type: 'string',
+      regex: /^[a-zA-Z0-9\.\-]*$/i,
+    },
+    country: {
+      type: 'string',
+      enum: ['US', 'CA', 'CR', 'BS'],
+      defaultsTo: 'US',
+      columnName: 'country_code',
     },
     title: {
       type: 'string',
@@ -74,6 +82,11 @@ module.exports = {
       enum: ['false', 'true'],
       defaultsTo: 'false',
     },
+    test4: {
+      type: 'string',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
+    },
     invoiced: {
       type: 'string',
       enum: ['false', 'true'],
@@ -94,7 +107,7 @@ module.exports = {
     },
     type: {
       type: 'string',
-      enum: ['retail', 'reseller', 'enterprise'],
+      enum: ['retail', 'reseller', 'enterprise', 'python'],
       defaultsTo: 'retail',
       columnName: 'pay_type',
     },
@@ -141,6 +154,20 @@ module.exports = {
     totalSpend90: {
       type: 'integer',
       columnName: 'total_spend_90',
+    },
+    reportingList: {
+      model: 'reportinglist',
+      columnName: 'reporting_list',
+    },
+    isThrottled: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'throttle',
+    },
+    featurePython: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_python',
     },
   },
 };

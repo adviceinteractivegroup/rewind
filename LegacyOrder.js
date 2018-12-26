@@ -27,6 +27,10 @@ module.exports = {
       model: 'legacyclient',
       columnName: 'client',
     },
+    admin: {
+      model: 'legacyuser',
+      columnName: 'adminuser_id',
+    },
     products: {
       type: 'string',
       columnName: 'orde',
@@ -75,12 +79,32 @@ module.exports = {
       type: 'float',
       columnName: 'price',
     },
+    priceAdjust: {
+      type: 'float',
+      columnName: 'price_adjust',
+    },
+    priceRecurring: {
+      type: 'float',
+      columnName: 'price_recurring',
+    },
+    interval: {
+      type: 'string',
+      columnName: 'interval',
+    },
     discount: {
       type: 'float',
       columnName: 'discount',
     },
     schedule: {
       type: 'json',
+    },
+    postData: {
+      type: 'json',
+      columnName: 'post_data',
+    },
+    extra: {
+      type: 'json',
+      columnName: 'order_details',
     },
     toJSON: function() {
       let obj = this.toObject();

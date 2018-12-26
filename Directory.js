@@ -11,11 +11,19 @@ let directoryModel = {
       required: true,
       url: true,
     },
+    logo: {
+      type: 'string',
+    },
     module: {
       type: 'string',
       unique: true,
       required: true,
-      unique: true,
+    },
+    moduleLogic: {
+      type: 'string',
+      required: true,
+      defaultsTo: 'native',
+      enum: ['native', 'generic', 'native-generic', 'generic-native'],
     },
     country: {
       type: 'string',
@@ -134,9 +142,18 @@ let directoryModel = {
     },
     reportingList: {
       collection: 'reportingList',
+      via: 'directories',
     },
     description: {
       type: 'string',
+    },
+    executionTime: {
+      type: 'integer',
+      integer: true,
+      defaultsTo: 60,
+    },
+    product: {
+      model: 'legacyproduct',
     },
   },
 };

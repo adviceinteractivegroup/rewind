@@ -1,5 +1,7 @@
 'use strict';
 
+let utf8 = require('utf8');
+
 module.exports = {
   attributes: {
     businessName: {
@@ -32,14 +34,19 @@ module.exports = {
         'GB',
         'CA',
         'AU',
+        'BS',
         'DE',
         'NZ',
+        'CR',
       ],
     },
     website: {
       type: 'string',
     },
     hours: {
+      type: 'json',
+    },
+    hoursSpecial: {
       type: 'json',
     },
     description: {
@@ -145,6 +152,41 @@ module.exports = {
     },
     tokenGoogle: {
       type: 'string',
+    },
+    extra: {
+      type: 'json',
+    },
+    toJSON: function() {
+      let obj = this.toObject();
+      if (obj.businessName) {
+        try {
+          utf8.decode(obj.businessName);
+          obj.businessName = utf8.decode(obj.businessName);
+        } catch (e) {
+        }
+      }
+      if (obj.street1) {
+        try {
+          utf8.decode(obj.street1);
+          obj.street1 = utf8.decode(obj.street1);
+        } catch (e) {
+        }
+      }
+      if (obj.city) {
+        try {
+          utf8.decode(obj.city);
+          obj.city = utf8.decode(obj.city);
+        } catch (e) {
+        }
+      }
+      if (obj.description) {
+        try {
+          utf8.decode(obj.description);
+          obj.description = utf8.decode(obj.description);
+        } catch (e) {
+        }
+      }
+      return obj;
     },
   },
 };
