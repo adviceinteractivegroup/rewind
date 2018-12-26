@@ -279,7 +279,7 @@ module.exports = {
       ];
 
       // convert all the fields
-      utf8Fields.foreach((field) => {
+      utf8Fields.forEach((field) => {
         if (obj[field]) {
           try {
             utf8.decode(obj[field]);
