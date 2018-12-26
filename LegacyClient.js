@@ -270,34 +270,24 @@ module.exports = {
     },
     toJSON: function() {
       let obj = this.toObject();
-      if (obj.name) {
-        try {
-          utf8.decode(obj.name);
-          obj.name = utf8.decode(obj.name);
-        } catch (e) {
+
+      // define fields taht require utf8 support
+      let utf8Fields = ['name', 'street', 'city', 'description', 'payment', 'state',
+        'keyword1', 'keyword2', 'keyword3', 'keyword4', 'keyword5',
+        'keyword1_location', 'keyword2_location', 'keyword3_location', 'keyword4_location', 'keyword5_location',
+        'notes',
+      ];
+
+      // convert all the fields
+      utf8Fields.foreach((field) => {
+        if (obj[field]) {
+          try {
+            utf8.decode(obj[field]);
+            obj[field] = utf8.decode(obj[field]);
+          } catch (e) {
+          }
         }
-      }
-      if (obj.street) {
-        try {
-          utf8.decode(obj.street);
-          obj.street = utf8.decode(obj.street);
-        } catch (e) {
-        }
-      }
-      if (obj.city) {
-        try {
-          utf8.decode(obj.city);
-          obj.city = utf8.decode(obj.city);
-        } catch (e) {
-        }
-      }
-      if (obj.description) {
-        try {
-          utf8.decode(obj.description);
-          obj.description = utf8.decode(obj.description);
-        } catch (e) {
-        }
-      }
+      });
       return obj;
     },
   },
