@@ -174,6 +174,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_social',
     },
+    featureReview: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_review',
+    },
   },
 };
 
