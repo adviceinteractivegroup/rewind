@@ -46,13 +46,13 @@ module.exports = {
       type: 'string',
     },
     reviewer: {
-      type: 'string'
+      type: 'string',
     },
     sentiment: {
-      type: 'integer'
+      type: 'integer',
     },
     score: {
-      type: 'integer'
+      type: 'integer',
     },
   },
 };

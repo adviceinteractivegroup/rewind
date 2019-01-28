@@ -22,6 +22,16 @@ let model = {
       dominant: true,
       via: 'reportingList',
     },
+    reviews: {
+      collection: 'reviewsite',
+      dominant: true,
+      via: 'reportingList',
+    },
+    socials: {
+      collection: 'socialsite',
+      dominant: true,
+      via: 'reportingList',
+    },
   },
 };
 
