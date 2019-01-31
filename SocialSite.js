@@ -31,7 +31,7 @@ let socialSiteModel = {
     },
     reportingList: {
       collection: 'reportingList',
-      via: 'socials',
+      via: 'socialsites',
     },
   },
 };

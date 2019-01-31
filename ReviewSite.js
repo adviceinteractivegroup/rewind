@@ -31,7 +31,7 @@ let reviewSiteModel = {
     },
     reportingList: {
       collection: 'reportingList',
-      via: 'reviews',
+      via: 'reviewsites',
     },
 
   },

@@ -22,12 +22,12 @@ let model = {
       dominant: true,
       via: 'reportingList',
     },
-    reviews: {
+    reviewsites: {
       collection: 'reviewsite',
       dominant: true,
       via: 'reportingList',
     },
-    socials: {
+    socialsites: {
       collection: 'socialsite',
       dominant: true,
       via: 'reportingList',
