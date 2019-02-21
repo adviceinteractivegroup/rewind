@@ -22,5 +22,11 @@ module.exports = {
     errors: {
       type: 'json',
     },
+    to: {
+      type: 'string',
+    },
+    subject: {
+      type: 'string'
+    },
   },
 };
