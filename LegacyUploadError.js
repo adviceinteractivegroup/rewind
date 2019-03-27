@@ -13,6 +13,10 @@ module.exports = {
       columnName: 'id',
       autoIncrement: true,
     },
+    partner: {
+      model: 'legacypartner',
+      columnName: 'partner_id',
+    },
     data: {
       type: 'json',
     },
