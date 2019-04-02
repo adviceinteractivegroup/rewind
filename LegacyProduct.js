@@ -23,6 +23,9 @@ module.exports = {
       type: 'string',
       columnName: 'description_extra',
     },
+    extras: {
+      type: 'json',
+    },
     priceRetail: {
       type: 'float',
       columnName: 'priceb',
