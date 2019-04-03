@@ -81,6 +81,12 @@ module.exports = {
       enum: ['false', 'true'],
       defaultsTo: 'false',
     },
+    isValid: {
+      type: 'string',
+      columnName: 'is_valid',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
+    },
     isCompleted: {
       type: 'string',
       columnName: 'completed',

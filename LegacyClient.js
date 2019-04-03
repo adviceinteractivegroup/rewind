@@ -122,7 +122,6 @@ module.exports = {
       type: 'string',
       columnName: 'd31',
     },
-
     years: {
       type: 'integer',
       columnName: 'd11',
