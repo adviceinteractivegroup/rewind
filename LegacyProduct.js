@@ -19,6 +19,12 @@ module.exports = {
     description: {
       type: 'string',
     },
+    productType: {
+      type: 'string',
+      enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons'],
+      defaultsTo: 'primary',
+      columnName: 'type',
+    },
     extra: {
       type: 'string',
       columnName: 'description_extra',
@@ -34,11 +40,6 @@ module.exports = {
       type: 'float',
       columnName: 'pricea',
     },
-    productType: {
-      type: 'string',
-      columnName: 'type',
-    },
-
     maintenanceInterval: {
       type: 'string',
       columnName: 'repeat',
@@ -51,7 +52,6 @@ module.exports = {
       type: 'float',
       columnName: 'repeat_aprice',
     },
-
     renewalInterval: {
       type: 'string',
       columnName: 'renewal_interval',
@@ -64,7 +64,6 @@ module.exports = {
       type: 'float',
       columnName: 'renewal_price',
     },
-
     submissionModule: {
       type: 'string',
       columnName: 'submission_module',
@@ -82,18 +81,6 @@ module.exports = {
       enum: ['false', 'true'],
       defaultsTo: 'false',
       columnName: 'submission_module_category',
-    },
-    productType: {
-      type: 'string',
-      enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons'],
-      defaultsTo: 'primary',
-      columnName: 'type',
-    },
-    verticalType: {
-      type: 'string',
-      enum: ['none', 'healthcare', 'legal'],
-      defaultsTo: 'none',
-      columnName: 'vertical_type',
     },
     country: {
       type: 'string',
