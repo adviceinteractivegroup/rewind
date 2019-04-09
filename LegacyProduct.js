@@ -89,6 +89,12 @@ module.exports = {
       defaultsTo: 'primary',
       columnName: 'type',
     },
+    verticalType: {
+      type: 'string',
+      enum: ['none', 'healthcare', 'legal'],
+      defaultsTo: 'none',
+      columnName: 'vertical_type',
+    },
     country: {
       type: 'string',
       enum: ['us', 'ca'],
