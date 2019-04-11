@@ -21,7 +21,7 @@ module.exports = {
     },
     productType: {
       type: 'string',
-      enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons'],
+      enum: ['primary', 'additional', 'verified', 'spring_data_clean', 'realtime', 'realtime_aggregators', 'realtime_addons', 'vertical'],
       defaultsTo: 'primary',
       columnName: 'type',
     },
