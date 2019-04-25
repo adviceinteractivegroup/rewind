@@ -169,6 +169,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_python',
     },
+    featureVerticals: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_verticals',
+    },
     featureSocial: {
       type: 'boolean',
       defaultsTo: false,
