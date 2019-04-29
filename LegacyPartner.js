@@ -155,6 +155,10 @@ module.exports = {
       type: 'integer',
       columnName: 'total_spend_90',
     },
+    totalBillingErrors: {
+      type: 'integer',
+      columnName: 'total_billing_errors',
+    },
     reportingList: {
       model: 'reportinglist',
       columnName: 'reporting_list',
