@@ -31,7 +31,7 @@ module.exports = {
     },
     data: {
       type: 'json',
-    }
+    },
   },
 };
 

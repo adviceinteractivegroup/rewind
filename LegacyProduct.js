@@ -105,6 +105,32 @@ module.exports = {
       defaultsTo: true,
       columnName: 'has_fulfillment',
     },
+
+    countActive: {
+      type: 'integer',
+      columnName: 'count_active',
+    },
+    countInactive: {
+      type: 'integer',
+      columnName: 'count_inactive',
+    },
+    featureRead: {
+      type: 'integer',
+      columnName: 'feature_read',
+    },
+    featureHiddenAddress: {
+      type: 'integer',
+      columnName: 'feature_hidden_address',
+    },
+    featureDerez: {
+      type: 'integer',
+      columnName: 'feature_derez',
+    },
+    featureApi: {
+      type: 'integer',
+      columnName: 'feature_api',
+    },
+
   },
 };
 

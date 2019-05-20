@@ -26,7 +26,7 @@ module.exports = {
       type: 'string',
     },
     subject: {
-      type: 'string'
+      type: 'string',
     },
   },
 };
