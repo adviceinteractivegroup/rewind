@@ -114,6 +114,7 @@ module.exports = {
       type: 'integer',
       columnName: 'count_inactive',
     },
+
     featureRead: {
       type: 'integer',
       columnName: 'feature_read',
