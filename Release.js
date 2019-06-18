@@ -13,7 +13,7 @@ module.exports = {
     },
     version: {
       type: 'string',
-    }
+    },
     added: {
       type: 'string',
     },
