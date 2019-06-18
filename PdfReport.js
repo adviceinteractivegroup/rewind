@@ -2,6 +2,9 @@
 
 module.exports = {
   attributes: {
+    partner: {
+      model: 'legacypartner',
+    },
     emails: {
       type: 'json',
     },
