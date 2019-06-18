@@ -2,31 +2,34 @@
 
 module.exports = {
   attributes: {
-    emails: {
-      type: 'json',
+    partner: {
+      model: 'legacypartner'
+    },
+    reportCycle: {
+      type: 'string'
     },
     pdfReportsBucket: {
       type: 'string',
       required: true,
       unique: true,
-      index: true,
+      index: true
     },
-    pdfZipUrl: {
-      type: 'string',
+    zipUrl: {
+      type: 'string'
     },
-    pdfLastUpdated: {
-      type: 'string',
+    emails: {
+      type: 'json'
     },
     pdfLastRequested: {
-      type: 'string',
+      type: 'string'
     },
     pdfLastUpdated: {
-      type: 'string',
+      type: 'string'
     },
     status: {
       type: 'string',
       enum: ['ready', 'processing', 'suspended', 'done'],
-      defaultsTo: 'ready',
+      defaultsTo: 'ready'
     },
   },
 };
