@@ -188,6 +188,15 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_review',
     },
+    featurePdfReports: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_pdf_reports',
+    },
+    pdf_report: {
+      model: 'pdfreport',
+      columnName: 'pdf_report_id',
+    },
   },
 };
 
