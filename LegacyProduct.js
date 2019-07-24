@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = {
-	connection: 'mysql',
+  connection: 'mysql',
   autoCreatedAt: false,
   autoUpdatedAt: false,
   autoTK: false,
-	tableName: 'products',
+  tableName: 'products',
   attributes: {
     id: {
       type: 'integer',
@@ -97,8 +97,8 @@ module.exports = {
     },
     isDisabled: {
       type: 'boolean',
-      columnName: 'disable',
       defaultsTo: false,
+      columnName: 'disable',
     },
     hasFulfillment: {
       type: 'boolean',
@@ -131,7 +131,11 @@ module.exports = {
       type: 'integer',
       columnName: 'feature_api',
     },
-
+    deactivationInterval: {
+      type: 'string',
+      enum: ['monthly', 'yearly'],
+      defaultsTo: 'monthly',
+      columnName: 'deactivation_interval',
+    },
   },
 };
-
