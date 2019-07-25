@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-	connection: 'mysql',
+  connection: 'mysql',
   autoCreatedAt: false,
   autoUpdatedAt: false,
-	tableName: 'submission_data',
+  tableName: 'submission_data',
   autoTK: false,
   attributes: {
     id: {
@@ -25,9 +25,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
-      defaultsTo: function() {
- return new Date();
-},
+      defaultsTo: function () {
+        return new Date();
+      },
     },
     success: {
       type: 'string',
@@ -36,7 +36,7 @@ module.exports = {
     },
     action: {
       type: 'string',
-      enum: ['submit', 'update', 'delete', 'link', 'claim', 'duplicate'],
+      enum: ['submit', 'update', 'delete', 'link', 'claim', 'duplicate', 'deactivate'],
     },
     url: {
       type: 'string',
