@@ -26,7 +26,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
-      defaultsTo: function () { return new Date(); }t
-    }
+      defaultsTo: function() {
+ return new Date();
+},
+    },
   },
 };
