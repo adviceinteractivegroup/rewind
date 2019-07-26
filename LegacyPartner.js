@@ -192,7 +192,7 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false,
       columnName: 'feature_pdf_reports',
-    }
+    },
   },
 };
 
