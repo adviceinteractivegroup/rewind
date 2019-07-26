@@ -23,5 +23,9 @@ module.exports = {
     error: {
       type: 'json',
     },
+    createdAt: {
+      columnName: 'thedate',
+      defaultsTo: function () { return new Date(); }
+    }
   },
 };
