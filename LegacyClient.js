@@ -281,6 +281,7 @@ module.exports = {
       utf8Fields.forEach((field) => {
         if (obj[field]) {
           try {
+            obj[field] = obj[field].replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"');
             utf8.decode(obj[field]);
             obj[field] = utf8.decode(obj[field]);
           } catch (e) {
@@ -295,6 +296,24 @@ module.exports = {
       let hrtime = process.hrtime();
       values.publicKey = md5(hrtime + 'warpath forever!');
     }
+
+    // define fields taht require utf8 support
+    let utf8Fields = ['name', 'street', 'city', 'description', 'payment', 'state',
+      'keyword1', 'keyword2', 'keyword3', 'keyword4', 'keyword5',
+      'keyword1_location', 'keyword2_location', 'keyword3_location', 'keyword4_location', 'keyword5_location',
+      'notes',
+    ];
+
+    // convert all the fields
+    utf8Fields.forEach((field) => {
+      if (values[field]) {
+        try {
+          values[field] = values[field].replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"');
+        } catch (e) {
+        }
+      }
+    });
+
     cb();
   },
 };
