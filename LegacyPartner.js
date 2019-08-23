@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = {
-	connection: 'mysql',
+  connection: 'mysql',
   autoCreatedAt: false,
   autoUpdatedAt: false,
   autoTK: false,
-	tableName: 'partners',
+  tableName: 'partners',
   attributes: {
     id: {
       type: 'integer',
@@ -175,7 +175,7 @@ module.exports = {
     },
     featureVerticals: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_verticals',
     },
     featureSocial: {
