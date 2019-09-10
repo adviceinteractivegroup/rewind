@@ -193,6 +193,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_pdf_reports',
     },
+    featureGmb: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_gmb',
+    },
   },
 };
 
