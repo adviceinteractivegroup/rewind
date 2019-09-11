@@ -87,6 +87,12 @@ module.exports = {
       enum: ['false', 'true'],
       defaultsTo: 'false',
     },
+    isPending: {
+      type: 'string',
+      columnName: 'pending',
+      enum: ['false', 'true'],
+      defaultsTo: 'false',
+    },
     isCompleted: {
       type: 'string',
       columnName: 'completed',
