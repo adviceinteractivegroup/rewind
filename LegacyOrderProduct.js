@@ -33,7 +33,6 @@ module.exports = {
       type: 'string',
       columnName: 'custom_package',
     },
-
     price: {
       type: 'float',
       columnName: 'price',
@@ -46,7 +45,6 @@ module.exports = {
       type: 'float',
       columnName: 'price_renewal',
     },
-
     delayMaintenance: {
       type: 'int',
       columnName: 'delay_maintenance',
@@ -63,12 +61,15 @@ module.exports = {
       enum: ['monthly', 'yearly'],
       defaultsTo: 'yearly',
     },
-
     periodMaintenance: {
       type: 'int',
       columnName: 'period',
     },
-
+    pendingRefresh: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'pending_refresh',
+    },
     isDrip: {
       type: 'string',
       columnName: 'drip_feed',
@@ -84,12 +85,6 @@ module.exports = {
     isValid: {
       type: 'string',
       columnName: 'is_valid',
-      enum: ['false', 'true'],
-      defaultsTo: 'false',
-    },
-    isPending: {
-      type: 'string',
-      columnName: 'pending',
       enum: ['false', 'true'],
       defaultsTo: 'false',
     },
