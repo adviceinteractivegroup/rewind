@@ -117,6 +117,10 @@ module.exports = {
       type: 'datetime',
       columnName: 'date_derezzed',
     },
+    lastCheckedAt: {
+      type: 'datetime',
+      columnName: 'date_last_check',
+    },
   },
 };
 
