@@ -23,7 +23,10 @@ let directoryModel = {
       type: 'string',
       required: true,
       defaultsTo: 'native',
-      enum: ['native', 'generic', 'native-generic', 'generic-native'],
+      enum: ['native', 'generic', 'scantool'],
+    },
+    moduleOption: {
+      type: 'string',
     },
     country: {
       type: 'string',
