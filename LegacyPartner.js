@@ -198,6 +198,18 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_gmb',
     },
+    aarTotal: {
+      type: 'integer',
+      columnName: 'aar_total',
+    },
+    aarCancelled: {
+      type: 'integer',
+      columnName: 'aar_cancelled',
+    },
+    aarRate: {
+      type: 'float',
+      columnName: 'aar_rate',
+    },
   },
 };
 
