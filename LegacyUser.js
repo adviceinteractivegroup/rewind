@@ -38,6 +38,10 @@ module.exports = {
       defaultsTo: 'admin',
       columnName: 'utype',
     },
+    countSnapshot: {
+      type: 'integer',
+      columnName: 'count_snapshot'
+    }
   },
 };
 
