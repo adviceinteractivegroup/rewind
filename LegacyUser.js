@@ -40,8 +40,8 @@ module.exports = {
     },
     countSnapshot: {
       type: 'integer',
-      columnName: 'count_snapshot'
-    }
+      columnName: 'count_snapshot',
+    },
   },
 };
 

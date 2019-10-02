@@ -281,7 +281,7 @@ module.exports = {
       utf8Fields.forEach((field) => {
         if (obj[field]) {
           try {
-            obj[field] = obj[field].replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"').replace(/[\u2013]/g, '-');
+            obj[field] = obj[field].replace(/[\u2018\u2019]/g, '\'').replace(/[\u201C\u201D]/g, '"').replace(/[\u2013]/g, '-');
             utf8.decode(obj[field]);
             obj[field] = utf8.decode(obj[field]);
           } catch (e) {
@@ -308,7 +308,7 @@ module.exports = {
     utf8Fields.forEach((field) => {
       if (values[field]) {
         try {
-          values[field] = values[field].replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"');
+          values[field] = values[field].replace(/[\u2018\u2019]/g, '\'').replace(/[\u201C\u201D]/g, '"');
         } catch (e) {
         }
       }
