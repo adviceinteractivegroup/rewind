@@ -210,6 +210,18 @@ module.exports = {
       type: 'float',
       columnName: 'aar_rate',
     },
+    spendMonth: {
+      type: 'float',
+      columnName: 'spend_month',
+    },
+    spendQuarter: {
+      type: 'float',
+      columnName: 'spend_quarter',
+    },
+    spendYear: {
+      type: 'float',
+      columnName: 'spend_year',
+    },
   },
 };
 
