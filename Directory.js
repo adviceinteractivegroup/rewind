@@ -92,9 +92,6 @@ let directoryModel = {
       integer: true,
       defaultsTo: 60,
     },
-    product: {
-      model: 'legacyproduct',
-    },
   },
 };
 
