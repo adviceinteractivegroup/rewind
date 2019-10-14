@@ -92,6 +92,10 @@ let directoryModel = {
       integer: true,
       defaultsTo: 60,
     },
+    optimized: {
+      type: 'boolean',
+      defaultsTo: false
+    }
   },
 };
 
