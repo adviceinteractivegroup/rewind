@@ -6,6 +6,12 @@ let directoryModel = {
       type: 'string',
       required: true,
     },
+    product: {
+      type: 'string',
+      unique: true,
+      required: true,
+      unique: true
+    },
     website: {
       type: 'string',
       required: true,
