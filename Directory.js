@@ -50,7 +50,7 @@ let directoryModel = {
       type: 'boolean',
       defaultsTo: true,
     },
-    highFrequency: {
+    highFrequencyInterval: {
       type: 'string',
       required: true,
       enum: [
@@ -60,12 +60,12 @@ let directoryModel = {
       ],
       defaultsTo: 'week',
     },
-    highFrequencyInterval: {
+    highFrequency: {
       type: 'integer',
       integer: true,
       defaultsTo: 1,
     },
-    lowFrequency: {
+    lowFrequencyInterval: {
       type: 'string',
       required: true,
       enum: [
@@ -75,7 +75,7 @@ let directoryModel = {
       ],
       defaultsTo: 'week',
     },
-    lowFrequencyInterval: {
+    lowFrequency: {
       type: 'integer',
       integer: true,
       defaultsTo: 1,
