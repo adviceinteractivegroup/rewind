@@ -12,6 +12,10 @@ module.exports = {
       primaryKey: true,
       columnName: 'id',
     },
+    directory: {
+      model: 'directory',
+      columnName: 'directory_id'
+    },
     name: {
       type: 'string',
       columnName: 'product',
