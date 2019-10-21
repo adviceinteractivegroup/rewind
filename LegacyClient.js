@@ -256,6 +256,10 @@ module.exports = {
     orders: {
       type: 'integer',
     },
+    ordersTotal: {
+      type: 'integer',
+      columnName: 'orders_total'
+    },
     publicKey: {
       type: 'string',
       columnName: 'public',
