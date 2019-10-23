@@ -173,6 +173,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_python',
     },
+    featurePythonCredits: {
+      type: 'integer',
+      defaultsTo: 10,
+      columnName: 'feature_python_credits',
+    },
     featureVerticals: {
       type: 'boolean',
       defaultsTo: true,
