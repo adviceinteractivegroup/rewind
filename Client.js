@@ -68,6 +68,15 @@ module.exports = {
     owner: {
       type: 'string',
     },
+    payment: {
+      type: 'string',
+    },
+    services: {
+      type: 'string',
+    },
+    license: {
+      type: 'string',
+    },
     isActive: {
       type: 'boolean',
       defaultsTo: true,
