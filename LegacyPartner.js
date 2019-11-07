@@ -203,6 +203,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_gmb',
     },
+    featureSimulation: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_simulation',
+    },
     aarTotal: {
       type: 'integer',
       columnName: 'aar_total',
