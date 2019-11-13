@@ -139,6 +139,10 @@ module.exports = {
       type: 'integer',
       columnName: 'feature_api',
     },
+    featureOptimized: {
+      type: 'integer',
+      columnName: 'feature_optimized',
+    },
     deactivationInterval: {
       type: 'string',
       enum: ['monthly', 'yearly'],
