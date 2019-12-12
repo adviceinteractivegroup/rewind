@@ -121,6 +121,10 @@ module.exports = {
       type: 'datetime',
       columnName: 'date_last_check',
     },
+    nextCheckAt: {
+      type: 'datetime',
+      columnName: 'date_next_check',
+    },
   },
 };
 
