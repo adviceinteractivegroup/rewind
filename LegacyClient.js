@@ -286,8 +286,8 @@ module.exports = {
         if (obj[field]) {
           try {
             obj[field] = obj[field].replace(/[\u2018\u2019]/g, '\'').replace(/[\u201C\u201D]/g, '"').replace(/[\u2013]/g, '-');
-            utf8.decode(obj[field]);
-            obj[field] = utf8.decode(obj[field]);
+            //utf8.decode(obj[field]);
+            //obj[field] = utf8.decode(obj[field]);
           } catch (e) {
           }
         }
