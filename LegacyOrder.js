@@ -67,7 +67,6 @@ module.exports = {
         defaultsTo: function() {
    return Date();
   },
-    },
     isPaid: {
       type: 'boolean',
       defaultsTo: false,
