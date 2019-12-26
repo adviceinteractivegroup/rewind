@@ -14,11 +14,11 @@ module.exports = {
     },
     directory: {
       model: 'directory',
-      columnName: 'directory_id'
+      columnName: 'directory_id',
     },
     directoryModule: {
       type: 'string',
-      columnName: 'scraper_module'
+      columnName: 'scraper_module',
     },
     name: {
       type: 'string',

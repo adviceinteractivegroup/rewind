@@ -12,5 +12,11 @@ module.exports = {
       required: true,
       index: true,
     },
+    acl: {
+      type: 'json',
+    }
+    expiresAt: {
+      type: 'date',
+    }
   },
 };

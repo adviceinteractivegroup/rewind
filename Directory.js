@@ -10,7 +10,7 @@ let directoryModel = {
       type: 'string',
       unique: true,
       required: true,
-      unique: true
+      unique: true,
     },
     website: {
       type: 'string',
@@ -94,8 +94,8 @@ let directoryModel = {
     },
     optimized: {
       type: 'boolean',
-      defaultsTo: false
-    }
+      defaultsTo: false,
+    },
   },
 };
 

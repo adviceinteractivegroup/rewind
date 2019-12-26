@@ -258,7 +258,7 @@ module.exports = {
     },
     ordersTotal: {
       type: 'integer',
-      columnName: 'orders_total'
+      columnName: 'orders_total',
     },
     publicKey: {
       type: 'string',
