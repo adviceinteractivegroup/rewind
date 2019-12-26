@@ -14,7 +14,7 @@ module.exports = {
     },
     acl: {
       type: 'json',
-    }
+    },
     expiresAt: {
       type: 'date',
     }
