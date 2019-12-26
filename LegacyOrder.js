@@ -39,34 +39,37 @@ module.exports = {
       type: 'datetime',
       columnName: 'dates',
       defaultsTo: function() {
- return Date();
-},
+       return Date();
+      },
     },
     startedAt: {
       type: 'datetime',
       columnName: 'start_date',
       defaultsTo: function() {
- return Date();
-},
+       return Date();
+      },
     },
     publishedAt: {
       type: 'datetime',
       columnName: 'publish_date',
       defaultsTo: function() {
- return Date();
-},
-  cancelledAt: {
-        type: 'datetime',
-        columnName: 'thedate_cancelled',
-        defaultsTo: function() {
-   return Date();
-  },
-  renewedAt: {
-        type: 'datetime',
-        columnName: 'thedate_renewal',
-        defaultsTo: function() {
-   return Date();
-  },
+       return Date();
+      },
+    },
+    cancelledAt: {
+      type: 'datetime',
+      columnName: 'thedate_cancelled',
+      defaultsTo: function() {
+       return Date();
+      },
+    },
+    renewedAt: {
+      type: 'datetime',
+      columnName: 'thedate_renewal',
+      defaultsTo: function() {
+       return Date();
+      },
+    },
     isPaid: {
       type: 'boolean',
       defaultsTo: false,
