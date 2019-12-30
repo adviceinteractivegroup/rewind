@@ -125,6 +125,10 @@ module.exports = {
       obj.products = obj.products.split('|');
       return obj;
     },
+    activeProducts: {
+      type: 'integer',
+      columnName: 'active_products'
+    }
   },
 };
 
