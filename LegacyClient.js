@@ -136,7 +136,7 @@ module.exports = {
     },
     paymentObject: {
       type: 'json',
-      columnName: 'paymentOobject',
+      columnName: 'paymentObject',
     },
     services: {
       type: 'string',
