@@ -71,6 +71,9 @@ module.exports = {
     payment: {
       type: 'string',
     },
+    paymentObject: {
+      type: 'json',
+    },
     services: {
       type: 'string',
     },
