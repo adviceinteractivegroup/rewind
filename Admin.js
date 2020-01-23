@@ -17,6 +17,6 @@ module.exports = {
     },
     expiresAt: {
       type: 'date',
-    }
+    },
   },
 };

@@ -127,8 +127,8 @@ module.exports = {
     },
     activeProducts: {
       type: 'integer',
-      columnName: 'active_products'
-    }
+      columnName: 'active_products',
+    },
   },
 };
 

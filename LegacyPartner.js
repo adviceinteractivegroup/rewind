@@ -234,8 +234,8 @@ module.exports = {
     },
     dbaAgencyId: {
       type: 'integer',
-      columnName: 'dba_agency_id'
-    }
+      columnName: 'dba_agency_id',
+    },
   },
 };
 
