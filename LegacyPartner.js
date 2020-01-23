@@ -233,7 +233,7 @@ module.exports = {
       columnName: 'spend_year',
     },
     dbaAgencyId: {
-      type: 'integer'
+      type: 'integer',
       columnName: 'dba_agency_id'
     }
   },
