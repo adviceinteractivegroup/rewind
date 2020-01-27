@@ -272,6 +272,10 @@ module.exports = {
       type: 'string',
       columnName: 'google_category_id',
     },
+    dbaClientId: {
+      type: 'integer',
+      columnName: 'dba_client_id',
+    },
     extra: {
       type: 'json',
     },
