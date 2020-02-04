@@ -236,6 +236,10 @@ module.exports = {
       type: 'integer',
       columnName: 'dba_agency_id',
     },
+    flagEngagement: {
+      type: 'string',
+      columnName: 'flag_engagement'
+    },
   },
 };
 

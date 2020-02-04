@@ -100,6 +100,10 @@ module.exports = {
       type: 'datetime',
       columnName: 'date_created',
     },
+    dateUrl: {
+      type: 'datetime',
+      columnName: 'date_url',
+    },
     dateUpdated: {
       type: 'datetime',
       columnName: 'date_updated',
