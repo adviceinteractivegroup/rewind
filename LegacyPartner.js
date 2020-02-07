@@ -238,7 +238,7 @@ module.exports = {
     },
     flagEngagement: {
       type: 'string',
-      columnName: 'flag_engagement'
+      columnName: 'flag_engagement',
     },
   },
 };

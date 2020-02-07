@@ -48,8 +48,16 @@ module.exports = {
     url: {
       type: 'string',
     },
+    urlRecalc: {
+      type: 'string',
+      columnName: 'url_recalc',
+    },
     data: {
       type: 'json',
+    },
+    dataRecalc: {
+      type: 'json',
+      columnName: 'data_recalc',
     },
     paid: {
       type: 'string',
@@ -94,6 +102,11 @@ module.exports = {
       type: 'float',
       required: true,
       columnName: 'total_grand',
+    },
+    totalRecalc: {
+      type: 'float',
+      required: true,
+      columnName: 'total_grand_recalc',
     },
     chargeId: {
       type: 'string',
