@@ -23,7 +23,7 @@ module.exports = {
     },
     status: {
       type: 'string'
-    }
+    },
     createdAt: {
       type: 'datetime',
       columnName: 'thedate_created',
