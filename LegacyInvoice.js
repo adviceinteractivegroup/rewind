@@ -105,7 +105,6 @@ module.exports = {
     },
     totalRecalc: {
       type: 'float',
-      required: true,
       columnName: 'total_grand_recalc',
     },
     chargeId: {
