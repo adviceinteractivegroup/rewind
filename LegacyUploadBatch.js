@@ -22,7 +22,7 @@ module.exports = {
       columnName: 'partner_id',
     },
     status: {
-      type: 'string'
+      type: 'string',
     },
     createdAt: {
       type: 'datetime',
