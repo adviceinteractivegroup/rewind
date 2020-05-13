@@ -38,7 +38,7 @@ module.exports = {
       columnName: 'date_updated',
     },
 
-    ls_score: {type: 'integer'},
+    la_score: {type: 'integer'},
     brand_score: {type: 'integer'},
     influence_score: {type: 'integer'},
     reputation_score: {type: 'integer'},
