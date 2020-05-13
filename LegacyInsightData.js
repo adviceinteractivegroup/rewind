@@ -47,7 +47,7 @@ module.exports = {
     phone_calls_clicks: {type: 'integer'},
     phone_calls_tracked: {type: 'integer'},
     directions: {type: 'integer'},
-    posts_clicks: {type: 'integer'},
+    post_clicks: {type: 'integer'},
     calls_directions: {type: 'integer'},
     conv_rate: {type: 'float'},
     total_conversions: {type: 'integer'},
