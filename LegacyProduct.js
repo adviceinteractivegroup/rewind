@@ -123,26 +123,36 @@ module.exports = {
       columnName: 'count_inactive',
     },
 
+    // boolean to tell if we have a read api
     featureRead: {
       type: 'integer',
       columnName: 'feature_read',
     },
+
+    // if directory supports hidden addreses
     featureHiddenAddress: {
       type: 'integer',
       columnName: 'feature_hidden_address',
     },
+
+    // if the directory has the capability to be disabled AND if we have implemented it
     featureDerez: {
       type: 'integer',
       columnName: 'feature_derez',
     },
+
+    // if we have API access to submit
     featureApi: {
       type: 'integer',
       columnName: 'feature_api',
     },
+
+    // if the module we have created supports passing in a url to scrape instead of search
     featureOptimized: {
       type: 'integer',
       columnName: 'feature_optimized',
     },
+
     deactivationInterval: {
       type: 'string',
       enum: ['monthly', 'yearly'],
