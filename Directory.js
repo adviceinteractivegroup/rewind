@@ -9,8 +9,6 @@ let directoryModel = {
     product: {
       type: 'string',
       unique: true,
-      required: true,
-      unique: true,
     },
     website: {
       type: 'string',
