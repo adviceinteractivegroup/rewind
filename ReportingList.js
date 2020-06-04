@@ -32,6 +32,9 @@ let model = {
       dominant: true,
       via: 'reportingList',
     },
+    partnerCount: {
+      type: 'number',
+    },
   },
 };
 
