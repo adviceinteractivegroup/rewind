@@ -232,7 +232,7 @@ module.exports = {
       type: 'float',
       columnName: 'spend_year',
     },
-    dbaAgencyId: {
+    egmb_agency_id: {
       type: 'integer',
       columnName: 'dba_agency_id',
     },

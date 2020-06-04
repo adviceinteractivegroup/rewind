@@ -33,7 +33,7 @@ let model = {
       via: 'reportingList',
     },
     partnerCount: {
-      type: 'number',
+      type: 'integer',
     },
   },
 };

@@ -272,7 +272,7 @@ module.exports = {
       type: 'string',
       columnName: 'google_category_id',
     },
-    dbaClientId: {
+    egmb_client_id: {
       type: 'integer',
       columnName: 'dba_client_id',
     },
