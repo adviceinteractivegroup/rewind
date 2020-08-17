@@ -163,7 +163,7 @@ module.exports = {
       defaultsTo: 'monthly',
       columnName: 'deactivation_interval',
     },
-    reportingListAppend: {
+    reportingList: {
       model: 'reportinglist',
       columnName: 'reporting_list_append',
     },
