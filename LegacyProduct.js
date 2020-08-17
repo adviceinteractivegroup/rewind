@@ -122,6 +122,10 @@ module.exports = {
       type: 'integer',
       columnName: 'count_inactive',
     },
+    countLink: {
+      type: 'integer',
+      columnName: 'count_link',
+    },
 
     // boolean to tell if we have a read api
     featureRead: {
@@ -158,6 +162,10 @@ module.exports = {
       enum: ['monthly', 'yearly'],
       defaultsTo: 'monthly',
       columnName: 'deactivation_interval',
+    },
+    reportingListAppend: {
+      model: 'reportinglist',
+      columnName: 'reporting_list_append',
     },
   },
 };
