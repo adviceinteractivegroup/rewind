@@ -173,6 +173,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_python',
     },
+    featureContractMonths: {
+      type: 'integer',
+      defaultsTo: 12,
+      columnName: 'feature_contract_months',
+    },
     featurePythonCredits: {
       type: 'integer',
       defaultsTo: 10,
