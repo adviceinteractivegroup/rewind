@@ -138,6 +138,13 @@ module.exports = {
       type: 'json',
     },
 
+    gmbLocation: {
+      type: 'string',
+    },
+    gmbAccount: {
+      type: 'string',
+    },
+
     custom1: {
       type: 'string',
       index: true,
