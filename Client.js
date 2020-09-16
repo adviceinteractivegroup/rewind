@@ -172,6 +172,9 @@ module.exports = {
     tokenGoogle: {
       type: 'string',
     },
+    multiLocation: {
+      type: 'boolean',
+    },
     extra: {
       type: 'json',
     },

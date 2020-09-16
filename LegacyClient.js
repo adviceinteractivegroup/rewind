@@ -192,6 +192,11 @@ module.exports = {
       type: 'string',
       columnName: 'd25',
     },
+    multi_location: {
+      type: 'boolean',
+      columnName: 'multilocation',
+      defaultsTo: false,
+    },
     hide: {
       type: 'string',
       columnName: 'hide_address',
