@@ -151,6 +151,12 @@ module.exports = {
       columnName: 'feature_api',
     },
 
+    // if we have API access to submit
+    featureFreshdesk: {
+      type: 'integer',
+      columnName: 'feature_freshdesk',
+    },
+
     // if the module we have created supports passing in a url to scrape instead of search
     featureOptimized: {
       type: 'integer',
