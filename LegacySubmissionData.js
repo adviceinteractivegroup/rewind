@@ -54,13 +54,13 @@ module.exports = {
       defaultsTo: 'false',
       columnName: 'processed',
     },
-    */
     isInvalid: {
       type: 'string',
       enum: ['false', 'true'],
       defaultsTo: 'false',
       columnName: 'invalid',
     },
+    */
   },
 };
 
