@@ -44,9 +44,11 @@ module.exports = {
     error: {
       type: 'string',
     },
+    /*
     data: {
       type: 'json',
     },
+    */
     /*
     isProcessed: {
       type: 'string',
