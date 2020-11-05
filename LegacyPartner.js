@@ -213,6 +213,20 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_simulation',
     },
+    featureSubtype: {
+      type: 'string',
+      defaultsTo: 'retail',
+      enum: ['retail', 'brand', 'agency'],
+      columnName: 'feature_subtype',
+    },
+    featureConfig: {
+      type: 'json',
+      columnName: 'feature_config',
+    },
+    featureBaselineLimit: {
+      type: 'integer',
+      columnName: 'feature_baseline_limit',
+    },
     aarTotal: {
       type: 'integer',
       columnName: 'aar_total',
