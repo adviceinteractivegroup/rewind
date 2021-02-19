@@ -58,7 +58,7 @@ module.exports = {
     avg_sale_price: {type: 'float'},
     potential_revenue: {type: 'integer'},
     investment: {type: 'integer'},
-    otential_roi: {type: 'integer'},
+    potential_roi: {type: 'integer'},
     review_rating: {type: 'float'},
     photo_views: {type: 'integer'},
     discovery_impressions: {type: 'integer'},
