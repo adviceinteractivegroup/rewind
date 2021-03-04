@@ -60,6 +60,7 @@ module.exports = {
     investment: {type: 'integer'},
     potential_roi: {type: 'integer'},
     review_rating: {type: 'float'},
+    reviews: {type: 'integer'},
     photo_views: {type: 'integer'},
     discovery_impressions: {type: 'integer'},
     direct_impressions: {type: 'integer'},
