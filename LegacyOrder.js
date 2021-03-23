@@ -59,16 +59,10 @@ module.exports = {
     cancelledAt: {
       type: 'datetime',
       columnName: 'thedate_cancelled',
-      defaultsTo: function() {
-       return Date();
-      },
     },
     renewedAt: {
       type: 'datetime',
       columnName: 'thedate_renewal',
-      defaultsTo: function() {
-       return Date();
-      },
     },
     isPaid: {
       type: 'boolean',
