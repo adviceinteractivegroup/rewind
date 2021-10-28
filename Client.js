@@ -137,6 +137,9 @@ module.exports = {
     submissions: {
       type: 'json',
     },
+    scans: {
+      type: 'json',
+    },
 
     gmbLocation: {
       type: 'string',
