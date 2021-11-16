@@ -227,6 +227,11 @@ module.exports = {
       type: 'integer',
       columnName: 'feature_baseline_limit',
     },
+    featureOnlyCustom: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_only_custom',
+    },
     aarTotal: {
       type: 'integer',
       columnName: 'aar_total',
