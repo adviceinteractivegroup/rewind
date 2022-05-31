@@ -152,6 +152,12 @@ module.exports = {
     },
 
     // if we have API access to submit
+    featureReviews: {
+      type: 'integer',
+      columnName: 'feature_reviews',
+    },
+
+    // if we have API access to submit
     featureFreshdesk: {
       type: 'integer',
       columnName: 'feature_freshdesk',
