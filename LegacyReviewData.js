@@ -29,6 +29,10 @@ module.exports = {
        return new Date();
       },
     },
+    reviewKey: {
+      type: 'string',
+      columnName: 'review_key',
+    },
     reviewedAt: {
       type: 'datetime',
       columnName: 'date_review',
