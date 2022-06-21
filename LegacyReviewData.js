@@ -58,6 +58,9 @@ module.exports = {
     score: {
       type: 'integer',
     },
+    comment: {
+      type: 'string'
+    }
   },
 };
 
