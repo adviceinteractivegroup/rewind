@@ -46,10 +46,11 @@ module.exports = {
     },
     rating: {
       type: 'integer',
-      columnName: 'max_rating',
+      columnName: 'rating',
     },
     maxRating: {
       type: 'integer',
+      columnName: 'max_rating',
     },
   },
 };
