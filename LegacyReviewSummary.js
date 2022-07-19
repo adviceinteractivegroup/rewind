@@ -35,6 +35,13 @@ module.exports = {
        return new Date();
       },
     },
+     updatedAt: {
+      type: 'datetime',
+      columnName: 'date_updated',
+      defaultsTo: function() {
+       return new Date();
+      },
+    },
     directory: {
       type: 'string',
       required: true,
