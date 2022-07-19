@@ -42,10 +42,11 @@ module.exports = {
     reviews: {
       type: 'integer',
       required: true,
-      columnName: 'total_reviews'
+      columnName: 'total_reviews',
     },
     rating: {
       type: 'integer',
+      columnName: 'max_rating',
     },
     maxRating: {
       type: 'integer',
