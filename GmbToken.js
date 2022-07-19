@@ -10,11 +10,9 @@ module.exports = {
     },
     url: {
       type: 'string',
-      required: true,
     },
     refresh_token: {
       type: 'string',
-      required: true,
     },
     status: {
       type: 'string',

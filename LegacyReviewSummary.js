@@ -1,11 +1,17 @@
 'use strict';
+/*
+ * total: 2,
+ rating: null,
+ maxRating: null,
+ reviews:
+ */
 
 module.exports = {
 	connection: 'mysql',
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'review_data',
+	tableName: 'review_summary',
   attributes: {
     id: {
       type: 'integer',
@@ -29,8 +35,19 @@ module.exports = {
        return new Date();
       },
     },
-    data: {
-      type: 'json',
+    directory: {
+      type: 'string',
+      required: true,
+    },
+    reviews: {
+      type: 'integer',
+      required: true,
+    },
+    rating: {
+      type: 'integer',
+    },
+    maxRating: {
+      type: 'integer',
     },
   },
 };

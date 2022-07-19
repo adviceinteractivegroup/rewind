@@ -59,8 +59,8 @@ module.exports = {
       type: 'integer',
     },
     comment: {
-      type: 'string'
-    }
+      type: 'string',
+    },
   },
 };
 
