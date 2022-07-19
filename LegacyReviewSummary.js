@@ -42,6 +42,7 @@ module.exports = {
     reviews: {
       type: 'integer',
       required: true,
+      columnName: 'total_reviews'
     },
     rating: {
       type: 'integer',
