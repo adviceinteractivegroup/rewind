@@ -35,6 +35,10 @@ module.exports = {
        return new Date();
       },
     },
+     errorAt: {
+      type: 'datetime',
+      columnName: 'date_error',
+    },
      updatedAt: {
       type: 'datetime',
       columnName: 'date_updated',
