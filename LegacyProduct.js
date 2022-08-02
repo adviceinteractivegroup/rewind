@@ -24,6 +24,9 @@ module.exports = {
       type: 'string',
       columnName: 'product',
     },
+     logo: {
+      type: 'string',
+    },
     description: {
       type: 'string',
     },
