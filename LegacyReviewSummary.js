@@ -56,7 +56,7 @@ module.exports = {
       columnName: 'total_reviews',
     },
     rating: {
-      type: 'integer',
+      type: 'float',
       columnName: 'rating',
     },
     maxRating: {
