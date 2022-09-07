@@ -211,6 +211,7 @@ module.exports = {
       type: 'boolean',
       columnName: 'inactive',
     },
+
     createdAt: {
       type: 'datetime',
       columnName: 'since',
@@ -218,6 +219,7 @@ module.exports = {
        return new Date();
       },
     },
+
     deletedAt: {
       type: 'datetime',
       columnName: 'date_deleted',

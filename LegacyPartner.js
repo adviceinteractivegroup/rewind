@@ -111,7 +111,11 @@ module.exports = {
       defaultsTo: 'retail',
       columnName: 'pay_type',
     },
-    agent: {
+    organization: {
+      model: 'legacyorganization',
+      columnName: 'organization_id',
+    },
+     agent: {
       model: 'legacysalesagent',
       columnName: 'sales_agent_id',
     },
@@ -197,6 +201,11 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false,
       columnName: 'feature_review',
+    },
+    featureVoicify: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_voicify',
     },
     featurePdfReports: {
       type: 'boolean',
