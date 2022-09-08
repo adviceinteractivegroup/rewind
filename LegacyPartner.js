@@ -207,6 +207,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_voicify',
     },
+     featureKeywords: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_keywords',
+    },
     featurePdfReports: {
       type: 'boolean',
       defaultsTo: false,
