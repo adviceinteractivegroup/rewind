@@ -177,6 +177,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_python',
     },
+    featureThreshold: {
+      type: 'integer',
+      defaultsTo: 50,
+      columnName: 'feature_threshold',
+    },
     featureContractMonths: {
       type: 'integer',
       defaultsTo: 12,
