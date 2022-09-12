@@ -182,6 +182,11 @@ module.exports = {
       defaultsTo: 50,
       columnName: 'feature_threshold',
     },
+     featureClientLimit: {
+      type: 'integer',
+      defaultsTo: 500,
+      columnName: 'feature_client_limit',
+    },
     featureContractMonths: {
       type: 'integer',
       defaultsTo: 12,
