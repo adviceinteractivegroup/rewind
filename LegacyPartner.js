@@ -256,6 +256,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_only_custom',
     },
+    featureBudget: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_budget',
+    },
     aarTotal: {
       type: 'integer',
       columnName: 'aar_total',
