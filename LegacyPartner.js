@@ -222,6 +222,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_keywords',
     },
+      featureCommBoard: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_commboard',
+    },
     featurePdfReports: {
       type: 'boolean',
       defaultsTo: false,
