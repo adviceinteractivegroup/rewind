@@ -217,6 +217,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_voicify',
     },
+     featureNoDupes: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_nodupes',
+    },
      featureKeywords: {
       type: 'boolean',
       defaultsTo: false,
