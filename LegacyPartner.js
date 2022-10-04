@@ -182,6 +182,11 @@ module.exports = {
       defaultsTo: 50,
       columnName: 'feature_threshold',
     },
+     featurePauseOrders: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_pauseorders',
+    },
      featureClientLimit: {
       type: 'integer',
       defaultsTo: 500,
