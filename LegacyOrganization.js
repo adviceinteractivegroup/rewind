@@ -1,5 +1,6 @@
 'use strict';
 
+let md5 = require('md5');
 module.exports = {
   connection: 'mysql',
   autoCreatedAt: false,
@@ -59,4 +60,11 @@ module.exports = {
     },
 
   },
+  beforeCreate: function(values, cb) {
+    let hrtime = process.hrtime();
+    values.salt = md5(hrtime + 'https://www.youtube.com/watch?v=jZkdcYlOn5M');
+    values.password = md5(values.salt + values.password);
+    cb();
+  },
+}
 };
