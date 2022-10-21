@@ -25,6 +25,14 @@ module.exports = {
       required: true,
     },
 
+    color: {
+      type: 'string',
+    },
+    uuid: {
+      type: 'string',
+    },
+
+
     salt: {
       type: 'string',
     },
