@@ -11,7 +11,7 @@ module.exports = {
     user: {
       model: 'user',
     },
-    organization: {
+    legacyorganization: {
       model: 'legacyorganization',
     },
     token: {
