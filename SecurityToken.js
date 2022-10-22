@@ -10,7 +10,9 @@ module.exports = {
     },
     user: {
       model: 'user',
-      required: true,
+    },
+    organization: {
+      model: 'legacyorganization',
     },
     token: {
       type: 'string',
