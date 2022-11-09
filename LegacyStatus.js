@@ -18,7 +18,7 @@ module.exports = {
     },
     recentChanges: {
       type: 'string',
-      enum: ['BUG_FIXED', 'BUG_REPORTED','OUTAGE', 'OUTAGE_RESOLVED', 'FEATURE_UPDATE', 'NEW_FEATURE']
+      enum: ['BUG_FIXED', 'BUG_REPORTED','OUTAGE', 'OUTAGE_RESOLVED', 'FEATURE_UPDATE', 'NEW_FEATURE','ANNOUNCEMENT']
     },
     version: {
       type: 'string',
