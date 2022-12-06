@@ -177,6 +177,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_python',
     },
+    featureWidget: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_widget',
+    },
     featureThreshold: {
       type: 'integer',
       defaultsTo: 50,
