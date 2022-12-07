@@ -54,6 +54,9 @@ module.exports = {
     extras: {
       type: 'json',
     },
+    widget: {
+      type: 'json',
+    },
     deactivated: {
       type: 'string',
       enum: ['false', 'true'],
@@ -100,6 +103,10 @@ module.exports = {
       type: 'string',
       columnName: 'api_key',
       index: true,
+    },
+    widgetKey: {
+      type: 'string',
+      columnName: 'widget_key',
     },
     createdAt: {
       type: 'datetime',
