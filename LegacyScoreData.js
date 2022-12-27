@@ -21,33 +21,11 @@ module.exports = {
       model: 'legacypartner',
       columnName: 'partner_id',
     },
-    admin: {
-      model: 'legacyuser',
-      columnName: 'adminuser_id',
-    },
-    batch: {
-      model: 'batch',
-      columnName: 'batch_id',
-    },
-    directories: {
-      type: 'json',
-    },
     data: {
       type: 'json',
     },
-    countRequested: {
-      type: 'integer',
-      columnName: 'num_requested',
-    },
-    countCompleted: {
-      type: 'integer',
-      columnName: 'num_completed',
-    },
     score: {
       type: 'integer',
-    },
-    version: {
-      type: 'string',
     },
     updatedAt: {
       type: 'datetime',
@@ -63,11 +41,5 @@ module.exports = {
        return new Date();
       },
     },
-    isComplete: {
-      type: 'boolean',
-      columnName: 'is_complete',
-      defaultsTo: 0,
-    },
   },
 };
-
