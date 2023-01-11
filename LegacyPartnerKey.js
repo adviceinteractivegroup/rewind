@@ -16,6 +16,7 @@ module.exports = {
     ipaddr: {
       type: 'string',
       required: true,
+      columnName: 'ip_addr'
     },
   },
 
