@@ -122,6 +122,10 @@ module.exports = {
       type: 'string',
       columnName: 'd31',
     },
+    score: {
+      type: 'integer',
+      columnName: 'orderid',
+    },
     years: {
       type: 'integer',
       columnName: 'd11',
