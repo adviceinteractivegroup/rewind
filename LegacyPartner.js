@@ -138,6 +138,10 @@ module.exports = {
       type: 'integer',
       columnName: 'total_active',
     },
+    totalClientsDeactive: {
+      type: 'integer',
+      columnName: 'total_deactive',
+    },
     totalOrders: {
       type: 'integer',
       columnName: 'total_orders',
