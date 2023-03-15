@@ -193,6 +193,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_widget',
     },
+    featureRollup: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_rollup',
+    },
     featureThreshold: {
       type: 'integer',
       defaultsTo: 50,
