@@ -1,5 +1,7 @@
 'use strict';
 
+let md5 = require('md5');
+
 module.exports = {
   connection: 'mysql',
   autoCreatedAt: false,
@@ -331,5 +333,13 @@ module.exports = {
       columnName: 'flag_engagement',
     },
   },
-};
 
+  beforeCreate: function(values, cb) {
+    let hrtime = process.hrtime();
+    values. = "pk_" + md5(hrtime + 'warpath forever!');
+    values.apiKey = "pk_" + md5(hrtime + 'warpath forever!');
+    values.widgetKey = "wk_" + md5(hrtime + 'warpath forever widget!'.substring(2, 22));
+    cb();
+  }
+
+};
