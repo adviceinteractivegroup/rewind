@@ -114,6 +114,9 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'thedate',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     type: {
       type: 'string',

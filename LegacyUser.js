@@ -1,5 +1,7 @@
 'use strict';
 
+let md5 = require('md5');
+
 module.exports = {
 	connection: 'mysql',
   autoCreatedAt: false,
@@ -24,6 +26,10 @@ module.exports = {
       type: 'string',
       columnName: 'last',
     },
+    act: {
+      type: 'string',
+      defaultsTo: 0,
+    },
     email: {
       type: 'string',
       required: true,
@@ -43,5 +49,11 @@ module.exports = {
       columnName: 'count_snapshot',
     },
   },
-};
 
+  beforeCreate: function(values, cb) {
+    for (let a = 0; a < 5000; a++) {
+      values.password = md5(values.password);
+    }
+    cb();
+  }
+};
