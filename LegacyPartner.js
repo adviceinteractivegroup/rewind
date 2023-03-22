@@ -336,7 +336,6 @@ module.exports = {
 
   beforeCreate: function(values, cb) {
     let hrtime = process.hrtime();
-    values. = "pk_" + md5(hrtime + 'warpath forever!');
     values.apiKey = "pk_" + md5(hrtime + 'warpath forever!');
     values.widgetKey = "wk_" + md5(hrtime + 'warpath forever widget!'.substring(2, 22));
     cb();
