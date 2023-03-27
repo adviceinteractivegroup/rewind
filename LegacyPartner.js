@@ -76,22 +76,22 @@ module.exports = {
     test: {
       type: 'string',
       enum: ['false', 'true'],
-      defaultsTo: 'false',
+      defaultsTo: 'true',
     },
     test2: {
       type: 'string',
       enum: ['false', 'true'],
-      defaultsTo: 'false',
+      defaultsTo: 'true',
     },
     test3: {
       type: 'string',
       enum: ['false', 'true'],
-      defaultsTo: 'false',
+      defaultsTo: 'true',
     },
     test4: {
       type: 'string',
       enum: ['false', 'true'],
-      defaultsTo: 'false',
+      defaultsTo: 'true',
     },
     invoiced: {
       type: 'string',
