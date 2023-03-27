@@ -191,12 +191,12 @@ module.exports = {
     },
     featurePython: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_python',
     },
     featureWidget: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_widget',
     },
     featureRollup: {
@@ -261,7 +261,7 @@ module.exports = {
     },
       featureCommBoard: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_commboard',
     },
     featurePdfReports: {
@@ -271,7 +271,7 @@ module.exports = {
     },
     featureGmb: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_gmb',
     },
     featureSimulation: {
@@ -341,6 +341,7 @@ module.exports = {
     let hrtime = process.hrtime();
     values.apiKey = "pk_" + md5(hrtime + 'warpath forever!');
     values.widgetKey = "wk_" + md5(hrtime + 'warpath forever widget!'.substring(2, 22));
+    values.ssdomain = md5(hrtime + 'warpath forever widget!'.substring(2, 16)) + ".lssdev.com";
     cb();
   }
 
