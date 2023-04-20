@@ -204,6 +204,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_rollup',
     },
+    featureTrial: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_trial',
+    },
     featureThreshold: {
       type: 'integer',
       defaultsTo: 50,
