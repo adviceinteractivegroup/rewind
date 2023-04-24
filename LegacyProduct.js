@@ -103,6 +103,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'link_back',
     },
+    hasOptions: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'options',
+    },
     replacement: {
       type: 'json',
     },
