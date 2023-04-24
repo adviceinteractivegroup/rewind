@@ -63,10 +63,6 @@ module.exports = {
     addressExtraObject: {
       type: 'json',
     },
-    productOptions: {
-      type: 'json',
-      columnName: 'product_options',
-    },
     hours: {
       type: 'string',
       columnName: 'd14',
