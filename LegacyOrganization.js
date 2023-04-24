@@ -76,7 +76,7 @@ module.exports = {
     let hrtime = process.hrtime();
     values.salt = md5(hrtime + 'https://www.youtube.com/watch?v=jZkdcYlOn5M');
     values.password = md5(values.salt + values.password);
-    values.apiKey = "ok_" + md5(values.salt + values.password);
+    values.apiKey = 'ok_' + md5(values.salt + values.password);
     cb();
   },
 };

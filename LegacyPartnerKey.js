@@ -17,13 +17,13 @@ module.exports = {
     ipaddr: {
       type: 'string',
       required: true,
-      columnName: 'ip_addr'
+      columnName: 'ip_addr',
     },
   },
 
   beforeCreate: function(values, cb) {
     let hrtime = process.hrtime();
-    values.hash = "tk_" + md5(hrtime + 'warpath forever!');
+    values.hash = 'tk_' + md5(hrtime + 'warpath forever!');
     cb();
-  }
+  },
 };

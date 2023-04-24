@@ -344,10 +344,10 @@ module.exports = {
 
   beforeCreate: function(values, cb) {
     let hrtime = process.hrtime();
-    values.apiKey = "pk_" + md5(hrtime + 'warpath forever!');
-    values.widgetKey = "wk_" + md5(hrtime + 'warpath forever widget!'.substring(2, 22));
-    values.ssdomain = md5(hrtime + 'warpath forever widget!'.substring(2, 16)) + ".lssdev.com";
+    values.apiKey = 'pk_' + md5(hrtime + 'warpath forever!');
+    values.widgetKey = 'wk_' + md5(hrtime + 'warpath forever widget!'.substring(2, 22));
+    values.ssdomain = md5(hrtime + 'warpath forever widget!'.substring(2, 16)) + '.lssdev.com';
     cb();
-  }
+  },
 
 };

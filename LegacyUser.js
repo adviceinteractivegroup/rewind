@@ -55,5 +55,5 @@ module.exports = {
       values.password = md5(values.password);
     }
     cb();
-  }
+  },
 };

@@ -30,6 +30,10 @@ module.exports = {
       columnName: 'partner_id_fix',
       required: true,
     },
+    user: {
+      model: 'user',
+      columnName: 'adminuser_id',
+    },
     partnerUsername: {
       type: 'string',
       columnName: 'user',
@@ -58,6 +62,10 @@ module.exports = {
     },
     addressExtraObject: {
       type: 'json',
+    },
+    productOptions: {
+      type: 'json',
+      columnName: 'product_options',
     },
     hours: {
       type: 'string',
