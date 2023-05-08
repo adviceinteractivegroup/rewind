@@ -194,6 +194,16 @@ module.exports = {
       defaultsTo: true,
       columnName: 'feature_python',
     },
+     featureReports: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_reports',
+    },
+     featureConfigs: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_configs',
+    },
     featureWidget: {
       type: 'boolean',
       defaultsTo: true,
