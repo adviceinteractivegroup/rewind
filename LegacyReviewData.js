@@ -61,6 +61,9 @@ module.exports = {
     comment: {
       type: 'string',
     },
+    replied: {
+      type: 'boolean',
+    },
   },
 };
 
