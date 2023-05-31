@@ -194,6 +194,11 @@ module.exports = {
       defaultsTo: true,
       columnName: 'feature_python',
     },
+     featureProtected: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_protected',
+    },
      featureReports: {
       type: 'boolean',
       defaultsTo: false,
