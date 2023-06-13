@@ -270,8 +270,8 @@ module.exports = {
       columnName: 'feature_voicify',
     },
      featureNoDupes: {
-      type: 'boolean',
-      defaultsTo: false,
+      type: 'integer',
+      defaultsTo: 0,
       columnName: 'feature_nodupes',
     },
      featureKeywords: {
