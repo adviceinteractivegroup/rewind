@@ -199,6 +199,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_protected',
     },
+     featureHomepage: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_homepage',
+    },
      featureReports: {
       type: 'boolean',
       defaultsTo: false,
