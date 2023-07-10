@@ -204,6 +204,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_homepage',
     },
+     featureGrid: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_grid',
+    },
      featureReports: {
       type: 'boolean',
       defaultsTo: false,
