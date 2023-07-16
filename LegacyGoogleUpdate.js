@@ -5,7 +5,7 @@ module.exports = {
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'google_update_queue',
+	tableName: 'google_updates',
   attributes: {
     id: {
       type: 'integer',
