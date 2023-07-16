@@ -20,7 +20,7 @@ module.exports = {
     field: {
       type: 'string',
       enum: ['name','category','secondary','address','description','website','phone'],
-    }
+    },
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id',
@@ -30,6 +30,7 @@ module.exports = {
       defaultsTo: function() {
        return new Date();
       },
+    },
     updatedAt: {
       type: 'datetime',
       defaultsTo: function() {
@@ -38,5 +39,5 @@ module.exports = {
     },
 
   },
-};
+}
 
