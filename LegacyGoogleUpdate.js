@@ -19,7 +19,7 @@ module.exports = {
     },
     field: {
       type: 'string',
-      enum: ['name','category','secondary','address','description','website','phone'],
+      enum: ['name','category','secondary','address','description','website','phone','hours'],
     },
     partner: {
       model: 'legacypartner',
