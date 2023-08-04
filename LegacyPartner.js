@@ -271,7 +271,7 @@ module.exports = {
     },
     featureReview: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_review',
     },
     featureVoicify: {
