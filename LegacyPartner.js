@@ -281,7 +281,7 @@ module.exports = {
     },
     featureVoicify: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_voicify',
     },
      featureNoDupes: {
