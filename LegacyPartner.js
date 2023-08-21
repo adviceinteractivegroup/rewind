@@ -38,6 +38,9 @@ module.exports = {
       type: 'string',
       required: true,
     },
+    notice: {
+      type: 'string',
+    },
     emailBilling: {
       type: 'string',
       columnName: 'email_billing',
