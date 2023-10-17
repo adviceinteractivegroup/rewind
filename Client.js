@@ -88,7 +88,10 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false,
     },
-    clientId: {
+    years: {
+      type: 'integer',
+    },
+     clientId: {
       type: 'integer',
       int: true,
       index: true,
