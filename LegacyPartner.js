@@ -57,6 +57,9 @@ module.exports = {
       type: 'datetime',
       columnName: 'date_lastrenewal',
     },
+    css: {
+      type: 'string',
+    },
     extras: {
       type: 'json',
     },
