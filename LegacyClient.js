@@ -60,6 +60,10 @@ module.exports = {
       type: 'string',
       columnName: 'suite',
     },
+    storeCode: {
+      type: 'string',
+      columnName: 'store_code',
+    },
     addressExtraObject: {
       type: 'json',
     },
