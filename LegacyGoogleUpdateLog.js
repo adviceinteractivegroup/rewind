@@ -17,21 +17,14 @@ module.exports = {
       model: 'legacyclient',
       columnName: 'client_id',
     },
-    field: {
-      type: 'string',
-      enum: ['name','category','secondary','address','description','website','phone','hours','storecode'],
-    },
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id',
     },
-    createdAt: {
-      type: 'datetime',
-      defaultsTo: function() {
-       return new Date();
-      },
+    data: {
+      type: 'json',
     },
-    updatedAt: {
+    createdAt: {
       type: 'datetime',
       defaultsTo: function() {
        return new Date();
