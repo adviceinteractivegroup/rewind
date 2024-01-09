@@ -5,7 +5,7 @@ module.exports = {
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'google_updates',
+	tableName: 'google_update_log',
   attributes: {
     id: {
       type: 'integer',
@@ -25,6 +25,7 @@ module.exports = {
       type: 'json',
     },
     createdAt: {
+      columnName: 'thedate',
       type: 'datetime',
       defaultsTo: function() {
        return new Date();
