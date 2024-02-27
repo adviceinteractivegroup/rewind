@@ -212,7 +212,7 @@ module.exports = {
     },
      featureHomepage: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_homepage',
     },
      featureGrid: {
