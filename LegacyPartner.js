@@ -202,7 +202,7 @@ module.exports = {
     },
      featureGoogle: {
       type: 'boolean',
-      defaultsTo: false,
+      defaultsTo: true,
       columnName: 'feature_google',
     },
      featureProtected: {
