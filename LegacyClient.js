@@ -30,6 +30,10 @@ module.exports = {
       columnName: 'partner_id_fix',
       required: true,
     },
+    groups: {
+      collection: 'legacygroup'
+      via: clients:
+    },
     user: {
       model: 'user',
       columnName: 'adminuser_id',

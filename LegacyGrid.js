@@ -40,6 +40,17 @@ module.exports = {
        return new Date();
       },
     },
+
+    isEnabled: {
+      type: 'boolean',
+      columnName: 'enabled'
+    },
+    keyword: {
+      type: 'string',
+    },
+    reference: {
+      type: 'string',
+    }
  
   },
 };
