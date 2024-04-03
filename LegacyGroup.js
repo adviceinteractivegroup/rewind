@@ -4,6 +4,8 @@ module.exports = {
 	connection: 'mysql',
   autoTK: false,
 	tableName: 'aclients_groups',
+  autoCreatedAt: false,
+  autoUpdatedAt: false,
   attributes: {
     id: {
       type: 'integer',
@@ -11,22 +13,29 @@ module.exports = {
     },
     name: {
       type: 'string',
+      required: true
     },
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id',
     },
     clients: { 
-      colleciton: 'legacyclient',
+      collection: 'legacyclient',
       via: 'groups'
     },
     createdAt: {
-      type: 'date',
-      column_name: 'thedate_created'
+      type: 'datetime',
+      columnName: 'thedate_created',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     updatedAt: {
-      type: 'date',
-      column_name: 'thedate_updated'
+      type: 'datetime',
+      columnName: 'thedate_updated',
+      defaultsTo: function() {
+       return new Date();
+      },
     },
     count: {
       type: 'integer',

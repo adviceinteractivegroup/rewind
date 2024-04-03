@@ -31,8 +31,8 @@ module.exports = {
       required: true,
     },
     groups: {
-      collection: 'legacygroup'
-      via: clients:
+      collection: 'legacygroup',
+      via: 'clients',
     },
     user: {
       model: 'user',
