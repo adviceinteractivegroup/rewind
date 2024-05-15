@@ -45,6 +45,10 @@ module.exports = {
       type: 'string',
       columnName: 'feature_fixit_link',
     },
+    featurePaymentText: {
+      type: 'string',
+      columnName: 'feature_fixit_text',
+    },
     emailBilling: {
       type: 'string',
       columnName: 'email_billing',
