@@ -50,14 +50,6 @@ module.exports = {
       required: true
     },
 
-    point: {
-      type: 'string',
-    },
-
-    rank: {
-      type: 'integer'
-    },
-
     createdAt: {
       type: 'datetime',
       columnName: 'thedate_created',
