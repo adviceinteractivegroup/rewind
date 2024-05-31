@@ -8,7 +8,7 @@ module.exports = {
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'grid_dots',
+	tableName: 'grids_points',
   attributes: {
     id: {
       type: 'integer',
@@ -21,12 +21,23 @@ module.exports = {
       columnName: 'partner_id',
       required: true
     },
+    grid: {
+      model: 'legacygrid',
+      columnName: 'grid_id',
+      required: true
+    },
 
     LAT: {
       type: 'float',
     },
     LON: {
       type: 'float',
+    },
+    ranking: {
+      type: 'integer'
+    },
+    coord: {
+      type: 'string'
     },
 
     client: {
@@ -46,13 +57,6 @@ module.exports = {
     createdAt: {
       type: 'datetime',
       columnName: 'thedate_created',
-      defaultsTo: function() {
-       return new Date();
-      },
-    },
-    updatedAt: {
-      type: 'datetime',
-      columnName: 'thedate_updated',
       defaultsTo: function() {
        return new Date();
       },

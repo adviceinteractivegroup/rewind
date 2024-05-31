@@ -8,7 +8,7 @@ module.exports = {
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'grid_reference',
+	tableName: 'grids',
   attributes: {
     id: {
       type: 'integer',
@@ -26,6 +26,21 @@ module.exports = {
       columnName: 'client_id',
       required: true
     },
+    keyword: {
+      model: 'legacyclient',
+      columnName: 'client_id',
+      required: true
+    },
+
+    LAT: {
+      type: 'float',
+      required: true
+    },
+    LON: {
+      type: 'float',
+      required: true
+    },
+
     createdAt: {
       type: 'datetime',
       columnName: 'thedate_created',
@@ -33,24 +48,7 @@ module.exports = {
        return new Date();
       },
     },
-    updatedAt: {
-      type: 'datetime',
-      columnName: 'thedate_updated',
-      defaultsTo: function() {
-       return new Date();
-      },
-    },
 
-    isEnabled: {
-      type: 'boolean',
-      columnName: 'enabled'
-    },
-    keyword: {
-      type: 'string',
-    },
-    reference: {
-      type: 'string',
-    }
  
   },
 };
