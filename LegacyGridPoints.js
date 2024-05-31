@@ -40,6 +40,10 @@ module.exports = {
       type: 'string'
     },
 
+    data: {
+      type: 'json'
+    },
+
     client: {
       model: 'legacyclient',
       columnName: 'client_id',
