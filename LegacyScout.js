@@ -8,7 +8,7 @@ module.exports = {
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'grids',
+	tableName: 'scouts',
   attributes: {
     id: {
       type: 'integer',
@@ -26,17 +26,14 @@ module.exports = {
       columnName: 'client_id',
       required: true
     },
+    scout: {
+      type: 'string',
+      required: true,
+      columnName: 'scout_id'
+    },
     keyword: {
-      model: 'string',
-      required: true
-    },
-
-    LAT: {
-      type: 'float',
-      required: true
-    },
-    LON: {
-      type: 'float',
+      model: 'legacyclient',
+      columnName: 'client_id',
       required: true
     },
 
