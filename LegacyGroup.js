@@ -14,15 +14,15 @@ module.exports = {
     },
     name: {
       type: 'string',
-      required: true
+      required: true,
     },
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id',
     },
-    clients: { 
+    clients: {
       collection: 'legacyclient',
-      via: 'groups'
+      via: 'groups',
     },
     createdAt: {
       type: 'datetime',
@@ -40,7 +40,7 @@ module.exports = {
     },
     count: {
       type: 'integer',
-    }
+    },
   },
 };
 

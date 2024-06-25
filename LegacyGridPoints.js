@@ -19,12 +19,12 @@ module.exports = {
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id',
-      required: true
+      required: true,
     },
     grid: {
       model: 'legacygrid',
       columnName: 'grid_id',
-      required: true
+      required: true,
     },
 
     LAT: {
@@ -34,20 +34,20 @@ module.exports = {
       type: 'float',
     },
     ranking: {
-      type: 'integer'
+      type: 'integer',
     },
     coord: {
-      type: 'string'
+      type: 'string',
     },
 
     data: {
-      type: 'json'
+      type: 'json',
     },
 
     client: {
       model: 'legacyclient',
       columnName: 'client_id',
-      required: true
+      required: true,
     },
 
     createdAt: {
@@ -57,6 +57,6 @@ module.exports = {
        return new Date();
       },
     },
- 
+
   },
 };

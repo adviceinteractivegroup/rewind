@@ -19,25 +19,25 @@ module.exports = {
     partner: {
       model: 'legacypartner',
       columnName: 'partner_id',
-      required: true
+      required: true,
     },
     client: {
       model: 'legacyclient',
       columnName: 'client_id',
-      required: true
+      required: true,
     },
     keyword: {
       model: 'string',
-      required: true
+      required: true,
     },
 
     LAT: {
       type: 'float',
-      required: true
+      required: true,
     },
     LON: {
       type: 'float',
-      required: true
+      required: true,
     },
 
     createdAt: {
@@ -48,6 +48,6 @@ module.exports = {
       },
     },
 
- 
+
   },
 };
