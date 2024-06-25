@@ -27,7 +27,7 @@ module.exports = {
       required: true,
     },
     keyword: {
-      model: 'string',
+      type: 'string',
       required: true,
     },
 
