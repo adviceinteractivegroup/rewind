@@ -306,20 +306,17 @@ module.exports = {
     },
 
     urlYoutube: {
-      type: 'strin',
-      allowNull: true,
+      type: 'string',
       columnName: 'url_youtube'
     },
 
     urlInstagram: {
-      type: 'strin',
-      allowNull: true,
+      type: 'string',
       columnName: 'url_instagram'
     },
 
     urlYelp: {
-      type: 'strin',
-      allowNull: true,
+      type: 'string',
       columnName: 'url_yelp'
     },
 
