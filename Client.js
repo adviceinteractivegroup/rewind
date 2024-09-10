@@ -88,6 +88,15 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false,
     },
+    urlYoutube: {
+      type: 'string'
+    },
+    urlInstagram: {
+      type: 'string'
+    },
+    urlYelp: {
+      type: 'string'
+    },
     years: {
       type: 'integer',
     },
