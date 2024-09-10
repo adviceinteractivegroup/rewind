@@ -304,6 +304,25 @@ module.exports = {
     extra: {
       type: 'json',
     },
+
+    urlYoutube: {
+      type: 'strin',
+      allowNull: true,
+      columnName: 'url_youtube'
+    },
+
+    urlInstagram: {
+      type: 'strin',
+      allowNull: true,
+      columnName: 'url_instagram'
+    },
+
+    urlYelp: {
+      type: 'strin',
+      allowNull: true,
+      columnName: 'url_yelp'
+    },
+
     toJSON: function() {
       let obj = this.toObject();
 
