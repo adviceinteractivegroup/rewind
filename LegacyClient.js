@@ -305,6 +305,11 @@ module.exports = {
       type: 'json',
     },
 
+    phoneMobile: {
+      type: 'string',
+      columnName: 'phone_mobile'
+    },
+
     urlYoutube: {
       type: 'string',
       columnName: 'url_youtube'
