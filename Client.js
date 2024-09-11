@@ -59,6 +59,12 @@ module.exports = {
     phone: {
       type: 'string',
     },
+    phoneAlt: {
+      type: 'string',
+    },
+    phoneMobile: {
+      type: 'string',
+    },
     fax: {
       type: 'string',
     },
