@@ -38,6 +38,9 @@ module.exports = {
       type: 'string',
       required: true,
     },
+    notes: {
+      type: 'string',
+    },
     notice: {
       type: 'string',
     },
