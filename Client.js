@@ -94,6 +94,12 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false,
     },
+    urlTwitter: {
+      type: 'string'
+    },
+    urlFacebook: {
+      type: 'string'
+    },
     urlYoutube: {
       type: 'string'
     },
