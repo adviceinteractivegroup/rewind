@@ -211,6 +211,11 @@ module.exports = {
       defaultsTo: true,
       columnName: 'feature_python',
     },
+     featureStage: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_stage',
+    },
      featureGoogle: {
       type: 'boolean',
       defaultsTo: true,
