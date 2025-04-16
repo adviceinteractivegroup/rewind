@@ -1,4 +1,4 @@
-guse strict';
+'use strict';
 
 module.exports = {
 	connection: 'mysql',
