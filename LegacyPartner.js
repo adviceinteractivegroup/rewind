@@ -211,6 +211,11 @@ module.exports = {
       defaultsTo: true,
       columnName: 'feature_python',
     },
+     featureHideFix: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_hidefix',
+    },
      featureStage: {
       type: 'boolean',
       defaultsTo: false,
