@@ -216,11 +216,20 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_hidefix',
     },
+
      featureStage: {
       type: 'boolean',
       defaultsTo: false,
       columnName: 'feature_stage',
     },
+
+
+     featureAI: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_ai',
+    },
+
      featureGoogle: {
       type: 'boolean',
       defaultsTo: true,
