@@ -14,7 +14,6 @@ module.exports = {
     },
     partner: {
       model: 'legacypartner',
-      required: true,
       columnName: 'partner_id',
     },
     createdAt: {
