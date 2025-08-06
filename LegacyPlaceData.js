@@ -16,10 +16,11 @@ module.exports = {
       columnName: 'partner_id',
     },
     createdAt: {
-      type: 'thedate_created',
+      type: 'datetime',
       defaultsTo: function() {
        return new Date();
       },
+      columnName: 'thedate_created',
     },
     ipaddr: {
       type: 'string',
