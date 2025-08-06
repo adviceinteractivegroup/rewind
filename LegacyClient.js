@@ -308,22 +308,22 @@ module.exports = {
 
     phoneMobile: {
       type: 'string',
-      columnName: 'phone_mobile'
+      columnName: 'phone_mobile',
     },
 
     urlYoutube: {
       type: 'string',
-      columnName: 'url_youtube'
+      columnName: 'url_youtube',
     },
 
     urlInstagram: {
       type: 'string',
-      columnName: 'url_instagram'
+      columnName: 'url_instagram',
     },
 
     urlYelp: {
       type: 'string',
-      columnName: 'url_yelp'
+      columnName: 'url_yelp',
     },
 
     toJSON: function() {

@@ -95,19 +95,19 @@ module.exports = {
       defaultsTo: false,
     },
     urlTwitter: {
-      type: 'string'
+      type: 'string',
     },
     urlFacebook: {
-      type: 'string'
+      type: 'string',
     },
     urlYoutube: {
-      type: 'string'
+      type: 'string',
     },
     urlInstagram: {
-      type: 'string'
+      type: 'string',
     },
     urlYelp: {
-      type: 'string'
+      type: 'string',
     },
     years: {
       type: 'integer',
