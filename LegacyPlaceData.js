@@ -5,12 +5,11 @@ module.exports = {
   autoCreatedAt: false,
   autoTK: false,
   autoUpdatedAt: false,
-	tableName: 'chat_data',
+	tableName: 'place_data',
   attributes: {
     id: {
       type: 'integer',
       primaryKey: true,
-      columnName: 'CHAT_DATA_ID',
     },
     partner: {
       model: 'legacypartner',
