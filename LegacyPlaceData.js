@@ -25,6 +25,15 @@ module.exports = {
     ipaddr: {
       type: 'string',
     },
+    requests: {
+      type: 'integer',
+    },
+    lookup: {
+      type: 'string',
+    },
+    ipaddr: {
+      type: 'string',
+    },
     data: {
       type: 'json',
     },
