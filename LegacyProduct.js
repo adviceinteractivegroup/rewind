@@ -95,7 +95,6 @@ module.exports = {
     },
     country: {
       type: 'string',
-      enum: ['us', 'ca'],
       defaultsTo: 'us',
     },
     hasLink: {
