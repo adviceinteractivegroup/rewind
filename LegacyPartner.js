@@ -235,6 +235,12 @@ module.exports = {
       defaultsTo: true,
       columnName: 'feature_google',
     },
+
+     featureNoGoogle: {
+      type: 'boolean',
+      defaultsTo: true,
+      columnName: 'feature_no_google',
+    },
      featureProtected: {
       type: 'boolean',
       defaultsTo: false,
