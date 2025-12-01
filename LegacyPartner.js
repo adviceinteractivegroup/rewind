@@ -44,6 +44,16 @@ module.exports = {
     notice: {
       type: 'string',
     },
+
+    featureProductWhitelist: {
+      type: 'string',
+      columnName: 'feature_product_whitelist',
+    },
+    featureProductBlacklist: {
+      type: 'string',
+      columnName: 'feature_product_blacklist',
+    },
+
     featurePaymentLink: {
       type: 'string',
       columnName: 'feature_fixit_link',
