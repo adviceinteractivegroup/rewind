@@ -27,8 +27,8 @@ module.exports = {
       required: true,
     },
 
-    name: {
-      type: 'string',
+    count: {
+      type: 'integer',
       required: true,
     },
 
