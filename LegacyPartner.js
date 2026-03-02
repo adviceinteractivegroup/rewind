@@ -261,7 +261,12 @@ module.exports = {
       defaultsTo: true,
       columnName: 'feature_homepage',
     },
-     featureGrid: {
+     featureBulkUploader: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_bulk_uploader',
+    },
+      featureGrid: {
       type: 'boolean',
       defaultsTo: false,
       columnName: 'feature_grid',
