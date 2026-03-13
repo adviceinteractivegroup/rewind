@@ -371,6 +371,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_simulation',
     },
+    featureOrderPage: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_order_page',
+    },
     featureSubtype: {
       type: 'string',
       defaultsTo: 'retail',
