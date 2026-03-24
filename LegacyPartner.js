@@ -331,6 +331,11 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_social',
     },
+     featureEditClient: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_edit_client',
+    },
     featureReview: {
       type: 'boolean',
       defaultsTo: true,
