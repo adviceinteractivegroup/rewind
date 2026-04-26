@@ -42,6 +42,16 @@ module.exports = {
       required: true,
     },
 
+    countPartners: {
+      type: 'integer',
+      columnName: 'count_partners',
+    },
+
+    countClients: {
+      type: 'integer',
+      columnName: 'count_clients',
+    },
+
     totalLogins: {
       type: 'integer',
       columnName: 'count_logins',
