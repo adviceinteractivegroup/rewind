@@ -74,6 +74,9 @@ module.exports = {
     labels: {
       type: 'json',
     },
+    links: {
+      type: 'json',
+    },
     hours: {
       type: 'string',
       columnName: 'd14',
