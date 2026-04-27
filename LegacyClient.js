@@ -74,12 +74,10 @@ module.exports = {
     labels: {
       type: 'json',
     },
-    /*
     links: {
       type: 'json',
-
+        allowNull: true,
     },
-    */
     hours: {
       type: 'string',
       columnName: 'd14',
