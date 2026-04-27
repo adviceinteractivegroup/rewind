@@ -76,7 +76,7 @@ module.exports = {
     },
     links: {
       type: 'json',
-        allowNull: true,
+      defaultsTo: {},
     },
     hours: {
       type: 'string',
