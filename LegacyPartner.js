@@ -233,6 +233,13 @@ module.exports = {
     },
 
 
+     featureSocialPosting: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_social_posting',
+    },
+
+
      featureAI: {
       type: 'boolean',
       defaultsTo: false,
