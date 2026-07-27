@@ -3,15 +3,17 @@
 let md5 = require('md5');
 
 module.exports = {
-	connection: 'mysql',
+  connection: 'mysql',
+  tableName: 'adminusers',
+  autoPK: false,
   autoCreatedAt: false,
   autoUpdatedAt: false,
-  autoTK: false,
-	tableName: 'adminusers',
+
   attributes: {
     id: {
       type: 'integer',
       primaryKey: true,
+      autoIncrement: true,
       columnName: 'user_id',
     },
     partner: {
@@ -26,17 +28,12 @@ module.exports = {
       type: 'string',
       columnName: 'last',
     },
-    act: {
-      type: 'string',
-      defaultsTo: 0,
-    },
     email: {
       type: 'string',
       required: true,
     },
     password: {
       type: 'string',
-      columnName: 'password',
     },
     role: {
       type: 'string',
@@ -44,15 +41,83 @@ module.exports = {
       defaultsTo: 'admin',
       columnName: 'utype',
     },
+    act: {
+      type: 'string',
+      defaultsTo: '',
+    },
+    support: {
+      type: 'string',
+      defaultsTo: 'false',
+    },
+    master: {
+      type: 'string',
+      defaultsTo: 'false',
+    },
+    isDeleted: {
+      type: 'boolean',
+      columnName: 'is_deleted',
+      defaultsTo: false,
+    },
+    ip: {
+      type: 'string',
+      defaultsTo: '',
+    },
+    discount: {
+      type: 'integer',
+      defaultsTo: 0,
+    },
+    countLive: {
+      type: 'integer',
+      columnName: 'count_live',
+      defaultsTo: 0,
+    },
     countSnapshot: {
       type: 'integer',
       columnName: 'count_snapshot',
+      defaultsTo: 0,
+    },
+    whitelist: {
+      type: 'string',
+      defaultsTo: '',
+    },
+    filters: {
+      type: 'string',
+      defaultsTo: '',
+    },
+    logins: {
+      type: 'integer',
+      defaultsTo: 0,
+    },
+    lastLogin: {
+      type: 'string',
+      columnName: 'last_login',
+    },
+    dateJoined: {
+      type: 'string',
+      columnName: 'date_joined',
+    },
+    passwordResetKey: {
+      type: 'string',
+      columnName: 'password_reset_key',
+    },
+    passwordResetExpiration: {
+      type: 'string',
+      columnName: 'password_reset_expiration',
     },
   },
 
   beforeCreate: function(values, cb) {
     for (let a = 0; a < 5000; a++) {
       values.password = md5(values.password);
+    }
+    cb();
+  },
+
+  beforeUpdate: function(values, cb) {
+    if (values.password) {
+      for (let a = 0; a < 5000; a++) {
+        values.password = md5(values.password);
+      }
     }
     cb();
   },
