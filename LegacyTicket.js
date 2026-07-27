@@ -2,6 +2,8 @@ module.exports = {
   tableName: 'tickets',
   connection: 'mysql',
   autoPK: false,
+  autoCreatedAt: false,
+  autoUpdatedAt: false,
 
   attributes: {
     ticketId: {
