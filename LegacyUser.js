@@ -54,9 +54,9 @@ module.exports = {
       defaultsTo: 'false',
     },
     isDeleted: {
-      type: 'boolean',
+      type: 'integer',
       columnName: 'is_deleted',
-      defaultsTo: false,
+      defaultsTo: 0,
     },
     ip: {
       type: 'string',
