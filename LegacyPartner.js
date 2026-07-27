@@ -411,6 +411,10 @@ module.exports = {
       defaultsTo: false,
       columnName: 'feature_budget',
     },
+    featureUnicronBranch: {
+      type: 'string',
+      columnName: 'feature_unicron_branch',
+    },
     aarTotal: {
       type: 'integer',
       columnName: 'aar_total',
