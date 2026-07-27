@@ -415,6 +415,11 @@ module.exports = {
       type: 'string',
       columnName: 'feature_unicron_branch',
     },
+    featurePreview: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_preview',
+    },
     aarTotal: {
       type: 'integer',
       columnName: 'aar_total',
