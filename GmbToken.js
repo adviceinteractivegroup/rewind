@@ -5,7 +5,6 @@ module.exports = {
     email: {
       type: 'string',
       required: true,
-      unique: true,
       index: true,
     },
     url: {
