@@ -14,6 +14,25 @@ Because the model `identity` is the lowercased filename, `LegacyOrderProduct.js`
 
 There are no build/run commands here. `package.json` defines only a placeholder `test` script (no real tests). The only workflow is editing model files and bumping `version` for consumers to pick up.
 
+## ⚠️ Deploy ordering: push rewind BEFORE the apps that use it
+
+Consumers depend on rewind as a **git dependency** (`package.json` → the bare repo URL, **no commit/branch pin**), and their `package-lock.json` is **gitignored/untracked**. So a fresh `npm install` on the build agent resolves to **rewind's `master` HEAD**. Therefore:
+
+- **Always commit + push a model change to rewind `master` BEFORE building/deploying `warpath`, `chronos`, or `grimlock`.** Otherwise their build pulls the OLD models and ships stale schema or fails tests.
+- Bump `version` per commit (convention; patch bump). It isn't required for resolution (there's no lock pin) but keeps history sane.
+- There is no Jenkins job for rewind itself — it ships purely by being on `master` when a consumer builds.
+
+## Recipe: adding a NEW MySQL-backed model
+
+A new model that needs a real MySQL table (in `lss_prod` AND `lss_test`) MUST follow the **Legacy style**, NOT the bare non-Legacy style:
+
+1. **Create the table in BOTH `lss_prod` and `lss_test`** first (CI unit tests query `lss_test` for any `connection: 'mysql'` model — missing table = failing build). Model the DDL on a comparable small table (e.g. `team_users`): int AUTO_INCREMENT PK, real `enum(...)` columns, `tinyint(1)` booleans, `datetime` timestamps.
+2. **Set `connection: 'mysql'` explicitly.** Without it the model defaults to the Mongo/`mongoServer` connection and gets NO MySQL table. (`User.js`/`Admin.js`/`Token.js` are Mongo models — do not copy their connection style for a MySQL table.)
+3. Also set `autoCreatedAt: false`, `autoUpdatedAt: false`, `autoTK: false`, and `tableName`.
+4. Declare an explicit `id` attribute: `{ type: 'integer', primaryKey: true, columnName: '<the_pk_column>' }`.
+5. Map timestamps to real columns via `columnName` (e.g. `createdAt → date_created`); do not rely on Waterline auto timestamps.
+6. The `identity` is the lowercased filename (set by the consumer's loader) — `ExternalUser.js` → `externaluser`, queried/routed as such (Sails blueprints pluralize to `/externalusers`).
+
 ## Legacy vs non-Legacy models
 
 The repo has two families of models:

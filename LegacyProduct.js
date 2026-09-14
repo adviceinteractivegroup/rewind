@@ -43,6 +43,25 @@ module.exports = {
     extras: {
       type: 'json',
     },
+
+    // employee-configured explanation of why/how we can scan this directory, nuances
+    scanInfo: {
+      type: 'text',
+      columnName: 'scan_info',
+    },
+
+    // employee-configured notes on submissions (turnaround time, known issues)
+    submissionInfo: {
+      type: 'text',
+      columnName: 'submission_info',
+    },
+
+    // employee-configured general information about the directory
+    directoryInfo: {
+      type: 'text',
+      columnName: 'directory_info',
+    },
+
     priceRetail: {
       type: 'float',
       columnName: 'priceb',
