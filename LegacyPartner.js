@@ -86,6 +86,9 @@ module.exports = {
     widget: {
       type: 'json',
     },
+    pricing: {
+      type: 'json',
+    },
     deactivated: {
       type: 'string',
       enum: ['false', 'true'],
