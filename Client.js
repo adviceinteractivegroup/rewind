@@ -127,6 +127,11 @@ module.exports = {
     categories: {
       type: 'json',
     },
+    // Display names of the client's secondary Google categories, mirrored from
+    // aclients.extra.gmbData.secondaryCategories so scans can score them.
+    secondaryCategories: {
+      type: 'json',
+    },
     keywords: {
       collection: 'keyword',
       via: 'client',
