@@ -39,6 +39,11 @@ module.exports = {
       type: 'float',
       required: true,
     },
+    distance: {
+      type: 'float',
+      columnName: 'distance',
+      defaultsTo: 6,
+    },
 
     createdAt: {
       type: 'datetime',
