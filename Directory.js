@@ -94,6 +94,10 @@ let directoryModel = {
       type: 'boolean',
       defaultsTo: false,
     },
+    hiddenAddress: {
+      type: 'boolean',
+      defaultsTo: false,
+    },
   },
 };
 
