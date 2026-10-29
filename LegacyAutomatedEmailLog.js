@@ -31,6 +31,13 @@ module.exports = {
     changes: {
       type: 'json',
     },
+    // 'automated' for scheduled report sends, 'sendnow' for the dashboard's
+    // Send Now test sends. The score-change baseline only considers
+    // source='automated', so a test send never moves it.
+    source: {
+      type: 'string',
+      defaultsTo: 'automated',
+    },
     createdAt: {
       type: 'datetime',
       columnName: 'created_at',
