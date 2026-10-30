@@ -52,10 +52,11 @@ module.exports = {
     category: {
       type: 'string',
     },
+    // review_data.score is nullable, so this must be too: a review with no
+    // rating must still be answerable.
     reviewRating: {
       type: 'integer',
       columnName: 'review_rating',
-      required: true,
     },
     reviewText: {
       type: 'text',
@@ -174,10 +175,17 @@ module.exports = {
       type: 'text',
       columnName: 'back_translation',
     },
-    // ISO timestamp kept while a campaign is paused, so resume restores it.
+    // Original publish time kept while a campaign is paused, so resume restores
+    // it. A real datetime (not an ISO string) so DATE_SUB()/comparisons work.
     pausedFrom: {
-      type: 'string',
+      type: 'datetime',
       columnName: 'paused_from',
+    },
+    // Set when an already-published reply is retracted from the publisher. The
+    // row is kept (status moves back to APPROVED) so the history survives.
+    retractedAt: {
+      type: 'datetime',
+      columnName: 'retracted_at',
     },
     createdAt: {
       type: 'datetime',
