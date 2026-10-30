@@ -350,6 +350,13 @@ module.exports = {
       defaultsTo: true,
       columnName: 'feature_review',
     },
+    // Review Responder (AI replies to Google reviews). Off by default so the
+    // feature is opt-in per partner until the publish path is proven.
+    featureResponder: {
+      type: 'boolean',
+      defaultsTo: false,
+      columnName: 'feature_responder',
+    },
     featureVoicify: {
       type: 'boolean',
       defaultsTo: true,
