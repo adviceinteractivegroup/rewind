@@ -3,12 +3,20 @@
 /**
  * SupportCategory
  *
- * The shared ticket topic list (billing, account, listings, reviews, …). It is
- * deliberately global rather than per project: the same funnel is used on every
- * support desk, which is what lets the operator compare categories across
- * projects.
+ * A ticket topic (billing, account, listings, reviews, …) used by the support
+ * desks. `projectId` scopes it:
  *
- * Table: support_categories (see ~/advice/docs/support-desk-ddl.sql)
+ *   projectId = null      shared category, offered on every desk (the original
+ *                         behaviour, and what keeps cross-project reporting
+ *                         comparable)
+ *   projectId = <id>      owned by one desk only
+ *
+ * Slug is unique per scope, enforced by the functional unique index
+ * uq_support_categories_scope_slug on (IFNULL(project_id, 0), slug) — not by
+ * the model, because two desks may each own a "billing".
+ *
+ * Table: support_categories (see ~/advice/docs/support-desk-ddl.sql and
+ * ~/advice/docs/support-desk-settings-ddl.sql)
  */
 module.exports = {
   connection: 'mysql',
@@ -23,6 +31,10 @@ module.exports = {
       columnName: 'id',
       autoIncrement: true,
     },
+    projectId: {
+      type: 'integer',
+      columnName: 'project_id',
+    },
     name: {
       type: 'string',
       required: true,
@@ -30,7 +42,6 @@ module.exports = {
     slug: {
       type: 'string',
       required: true,
-      unique: true,
     },
     description: {
       type: 'string',
